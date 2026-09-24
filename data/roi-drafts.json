@@ -1,5 +1,5 @@
 {
-  "model_version": "0.1.2-draft",
+  "model_version": "0.1.4-draft",
   "audit_status": "pending",
   "drafts": {
     "170k-1": {
@@ -151,7 +151,72 @@
         "ltv_pct": 70
       },
       "note": "Draft — C21 Alfama T2 furnished."
+    },
+    "market-mid-studio": {
+      "band": "170k",
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 155000,
+        "nightly_rate": 110,
+        "occupancy_pct": 65,
+        "furniture_fitout": 6500,
+        "loan_amount": 108500,
+        "ltv_pct": 70
+      },
+      "note": "Market-mid stub — T0 × Santa Maria Maior (SMM) / Alfama–Baixa tourist-core. Cites AirDNA Lisbon city Pages overview (updated 2026-09-22; data through Aug 2026) and Airbtics Alfama (Feb 2025–Jan 2026); Airbtics 85% occupancy is upper/optimistic, not the global default. BNBCalc size ladder + GuestFavorites parish multipliers provide the size×area cross-check; property AirDNA Rentalizer needs a paid login/pasted comps. GuestFavorites SMM multiplier ×1.12; working grid €24–27k gross. Gross check ≈€26.1k at ADR €110 × 65%; ADR is a mid case, not the €95 / 55% conservative global default."
+    },
+    "market-mid-t1": {
+      "band": "240k",
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 215000,
+        "nightly_rate": 130,
+        "occupancy_pct": 65,
+        "furniture_fitout": 6500,
+        "loan_amount": 150500,
+        "ltv_pct": 70
+      },
+      "note": "Market-mid stub — T1 × Santa Maria Maior (SMM) / Alfama–Baixa tourist-core. Cites AirDNA Lisbon city Pages overview (updated 2026-09-22; data through Aug 2026) and Airbtics Alfama (Feb 2025–Jan 2026); Airbtics 85% occupancy is upper/optimistic, not the global default. BNBCalc size ladder + GuestFavorites parish multipliers provide the size×area cross-check; property AirDNA Rentalizer needs a paid login/pasted comps. GuestFavorites SMM multiplier ×1.12; working grid €31–32k gross. Better T1 mid ADR €125–140; gross check ≈€30.8k at ADR €130 × 65%. Market-mid only; not the €95 / 55% conservative global default."
+    },
+    "market-mid-studio-misericordia": {
+      "band": "170k",
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 155000,
+        "nightly_rate": 105,
+        "occupancy_pct": 65,
+        "furniture_fitout": 6500,
+        "loan_amount": 108500,
+        "ltv_pct": 70
+      },
+      "note": "Optional grid stub — T0 × Misericórdia. BNBCalc size ladder × GuestFavorites Misericórdia multiplier ×1.10; working gross €23–26k. ADR €105 @ 65% gives ≈€24.9k; market-mid, not a global default."
+    },
+    "market-mid-t1-misericordia": {
+      "band": "240k",
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 215000,
+        "nightly_rate": 125,
+        "occupancy_pct": 65,
+        "furniture_fitout": 6500,
+        "loan_amount": 150500,
+        "ltv_pct": 70
+      },
+      "note": "Optional grid stub — T1 × Misericórdia. BNBCalc size ladder × GuestFavorites Misericórdia multiplier ×1.10; working gross €30–31k. ADR €125 @ 65% gives ≈€29.7k; market-mid, not a global default."
+    },
+    "market-mid-studio-arroios": {
+      "band": "170k",
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 155000,
+        "nightly_rate": 95,
+        "occupancy_pct": 60,
+        "furniture_fitout": 6500,
+        "loan_amount": 108500,
+        "ltv_pct": 70
+      },
+      "note": "Optional conservative grid stub — T0 × Arroios / near-core. BNBCalc size ladder × GuestFavorites Arroios multiplier ×0.95; working gross €20–23k. ADR €95 @ 60% gives ≈€20.8k; below the SMM market-mid case."
     }
   },
-  "note": "Listing stubs use 70% LTV capped at €170k; occupancy defaults are conservative and ADR varies by typology."
+  "note": "Listing stubs use 70% LTV capped at €170k; market-mid stubs use BNBCalc size ladder + GuestFavorites parish multipliers and AirDNA-like 55–70% occupancy. Calculator default remains ADR €95 @ 55% (≈€19k gross); Airbtics 80%+ is not a global default."
 }

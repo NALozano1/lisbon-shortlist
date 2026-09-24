@@ -1,17 +1,17 @@
 [
   {
-    "id": "roi-model-v010",
-    "agency": "ROI model 0.1.0-draft",
+    "id": "roi-model-v014",
+    "agency": "ROI model 0.1.4-draft",
     "related": "Global STR assumptions — see roi.html",
-    "stage": "roi_audited",
-    "stage_label": "ROI draft · pending audit",
-    "roi_status": "roi_audited",
+    "stage": "roi_draft",
+    "stage_label": "ROI 0.1.4-draft · awaiting market re-audit",
+    "roi_status": "roi_draft",
     "last_action": "2026-09-24",
-    "last_action_note": "Calculator + roi-model.json seeded; audited_by empty",
+    "last_action_note": "Market inputs revised; market-mid stubs added; awaiting Seller market re-confirm",
     "bullets": [
-      "Open ROI calculator to tweak assumptions",
-      "No personal mortgage details on the public site",
-      "Bump model_version when assumptions change after audit"
+      "Market-mid T0/T1 stubs use comps mid; calculator default stays ADR €95 @ 55%",
+      "Tax/IRS/IMT/closing/LTV/CoC fields unchanged",
+      "No personal mortgage details on the public site"
     ]
   },
   {
@@ -19,10 +19,10 @@
     "agency": "≤€170k top picks — ROI drafts",
     "related": "Castelo Picão, Beco Achada, Martim Vaz, Regueira reno, São Rafael",
     "stage": "roi_audited",
-    "stage_label": "ROI draft",
-    "roi_status": "roi_audited",
+    "stage_label": "ROI 0.1.4-draft · market-mid stubs / awaiting re-audit",
+    "roi_status": "roi_draft",
     "last_action": "2026-09-24",
-    "last_action_note": "Stub nightly/occupancy in data/roi-drafts.json",
+    "last_action_note": "Listing stubs retained; market-mid T0/area stubs added in roi-drafts.json",
     "bullets": [
       "Most ≤170k core stock is capex — model furniture/works carefully",
       "See Shortlist filter ≤€170k"
@@ -40,10 +40,10 @@
     "agency": "≤€240k top 5 — ROI drafts",
     "related": "Remédios AL, Portas do Sol AL, IAD Alfama, KW duplex, C21 T2",
     "stage": "roi_audited",
-    "stage_label": "ROI pending / draft stubs",
-    "roi_status": "roi_audited",
+    "stage_label": "ROI 0.1.4-draft · market-mid stubs / awaiting re-audit",
+    "roi_status": "roi_draft",
     "last_action": "2026-09-24",
-    "last_action_note": "Draft stubs keyed in roi-drafts.json; loan default capped €170k",
+    "last_action_note": "Listing stubs retained; market-mid T1/area stubs added; awaiting Seller market re-confirm",
     "bullets": [
       "Loan amount defaults to min(price, 170000) in calculator"
     ],

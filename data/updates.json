@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "ROI 0.1.4-draft — market comps and size×area mids",
+    "body": "Applied AirDNA/Airbtics/ListingOK market citations, Seller BNBCalc + GuestFavorites size×area context, and market-mid T0/T1 (plus compact area) draft stubs. Tax/IRS/IMT/closing/LTV/CoC fields unchanged; awaiting Seller market re-confirm."
+  },
+  {
+    "date": "2026-09-24",
     "title": "ROI calculator audited (0.1.3)",
     "body": "Seller + Finanças Docs final PASS. Model still illustrative (pre-IRS banners remain); safe for comparing listings under ≤€240k."
   },
