@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "Stock expand + seen-dedup: +8 ready-to-let",
+    "body": "Created seen-listings.json (seeded 25 → 52 URLs). Imovirtual SMM+Misericórdia newest-first; Idealista blocked/captcha (no bypass). Strict ready-to-let audit demoted reabilitação/occupied/Arroios/Graça false positives. Rejected (this run, by reason): {'price': 0, 'area': 2, 'needs_works': 9, 'typology': 3, 'other': 0, 'occupied': 5}. Added: #26 Apartamento T0 para venda €172,500; #27 Apartamento T1 para venda €195,000; #28 Apartamento T1 | Investimento Acessível no Ce €196,000; #29 T0 Santa Maria Maior com AL — mobilado em pré €185,000; #30 Apartamento remodelado 20m² Alfama (Outeirinh €195,000; #31 Apartamento Remodelado Alfama (Outeirinho) €1 €190,000; #32 Estúdio remodelado mobilado+AC Alfama €200,000; #33 T0 Mouraria 40m² ótimas condições €210,000"
+  },
+  {
+    "date": "2026-09-24",
     "title": "Turnkey filter: ready-to-let only by default",
     "body": "Alex confirmed no obras/construction. Results and shortlist now show 20 ready-to-let flats by default; five shells/reno listings remain available only via Show obras. No construction CapEx was zeroed or re-run; #7 renovado is no longer flagged as uncertain renovation."
   },

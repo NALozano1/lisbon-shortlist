@@ -1118,5 +1118,352 @@
     "roi_status": "computed",
     "ready_to_let": false,
     "needs_works": true
+  },
+  {
+    "rank": 26,
+    "title": "T0 mezanino Santa Maria Maior (cash-only owner)",
+    "price_eur": 172500,
+    "area_m2": 25.46,
+    "typology": "T0",
+    "area_parish": "Santa Maria Maior",
+    "parish_filter": "Santa Maria Maior",
+    "agency": "RE/MAX Siimgroup",
+    "phone": "+351217520640",
+    "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-para-venda-ID1iDqw",
+    "notes": "Mezzanine T0 SMM; ready/habitable. CAUTION: owner refuses mortgage/crédito habitação proposals (cash-only). Has licença habitação.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW",
+      "cash-only"
+    ],
+    "al": false,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ6ZmloN2Zqa2JtbC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.CLnPs_4SP8KSx6WkpoYUIfqBhXjNH4YDWVJ9PeYQqR8/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im02MXZ0dzExa3JmMzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.c-9857HJUEZRPOtSwzw4JBV9XgjS6hnchU1EW_2eKC8/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InB3YWNiZW42aThweTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.jrtiJ0CGeoZ3euQ6guiDhFS8w9pmzbGwpMMpZ82_myc/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inhlb3JiNGI2YmdodDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.7g-G2JC2i1XM5eFpXhqgnzvPAEJ-viME9zHt5v-_-FI/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5ydGFweTZmdTkxNTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0._lsHbuk8x_63hAqQGU7a-hjCpineqxOBDBT4DD8m2wo/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjV2aWs4aWM0NWMyOTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.3eU5qcIGNzBZNW7QDD_qY0vryy0c0lc5Bc4e0SL9kxQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU4ZnRidTN1YnR4Yy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.YfWGkR8UP4aELUSqghK4kIWgB4ohR8DIzUb2COykxjg/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV0N3NsM3NqYXN4NjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.lKL7dg4bS-SOhfDI53msm7fy0FYQXHMiZ_cLtNPQ8SQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRocGdlemljdWYyMzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.LvaEJtYeeYXJ3qcOhI5zztinRGVTLym_Gp8aupW6ty0/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjI5OWhxN3NzMXdwNzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MmobukDOJ2dCiHp2zixoldgr8nvc2ukp210Qv9d8RCA/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.717606,
+    "lng": -9.134192,
+    "coord_source": "listing",
+    "street": "Calçada Agostinho de Carvalho",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-para-venda-ID1iDqw"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 27,
+    "title": "T1 Mouraria open-space (habitável)",
+    "price_eur": 195000,
+    "area_m2": 22,
+    "typology": "T1",
+    "area_parish": "Mouraria / Santa Maria Maior",
+    "parish_filter": "Mouraria",
+    "agency": "RE/MAX + Grupo Vantagem",
+    "phone": "+351808200030",
+    "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1iqgb",
+    "notes": "Mouraria T1 open-space sala/cozinha; pitched as habitação or investment — reads habitable/ready.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF4OTM2MW4zd3dqbS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.wVzDbZgJoeUNz7UAZZ4Ob6pBxxRjHm3IRoO0lpTw1O8/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImgwdjlmZmZpZWlxbjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.thrVZfiNIfvLtdJ2mboxJYILCc9gTucV4aia0SO8vew/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlkdDU4ZTNvaXNmbjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.IZMjxpJbcH_07VZrUfdMEWgQ1aHeKb7YCYO3FKm2mgQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlwbGhvYnk1NXFrMy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.T95ryTQ0cVb5nlhxrEwurb7V0VodNQo739-gHIKwWKQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMydnF2cnZpbndvZy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.bDUcaIqp7rbnfberaYVVW-4Ma_LZTngAwpQMjqnXizw/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1tMzZkbWp1ZWRlajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.KdKUQGJPga6DkJKHJPwt4dhin2NZSp7nzdHb-92U-k4/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY3Y2lwNjkxY3p5Zi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.Z0SSCaR1wALmCg_Es7bRkuSDm1R-7CTM7VhAHxXDQXI/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdoMWRoemRtcXdvMzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.06YiWa4FAmuBZhAjmUovZ8Gwd7K4xJWEVi2MvEannZ4/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBtdGR6YjE0aG1nZjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.NPbWTm_Z5abTLUKaTmKUJwe1-oS7-OJ2KnEUk9PDl6s/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImkyNDB0cG9uMnpyZDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.iIbZK1a8Zk9SrheYvOFECqduR4jQ5bPs-hu_nVqG6QU/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.71609,
+    "lng": -9.133298,
+    "coord_source": "listing",
+    "street": "Largo do Terreirinho",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1iqgb"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 28,
+    "title": "T1 Travessa dos Lagares — usable light-works",
+    "price_eur": 196000,
+    "area_m2": 26,
+    "typology": "T1",
+    "area_parish": "Travessa dos Lagares / Socorro / Santa Maria Maior",
+    "parish_filter": "Mouraria",
+    "agency": "KW Ábaco",
+    "phone": "+351217920620",
+    "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-investimento-acessivel-no-centro-ID1ijmx",
+    "notes": "T1 1º andar pre-1951; usable as-is with small improvements (not full obras). Light-works ready.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW",
+      "light"
+    ],
+    "al": false,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlkNzl4aG1qZXZlLUVDT1NZU1RFTSIsInciOlt7ImZuIjoiNjlubHBhN2VjcW03MS1BUFQiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.19ZN5Qx7BLuL8gzl9wTGF-MxPn_con_oU9aXhqEho5Q/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InF2Y3IyaDVjdXE2ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.77_SMNRPLFPKCPD8Ot6C1-XsNIIAOmhqVPJSjz6JQzo/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjB0ZjQwYTVna2hsYTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.SXoVUgwECJ8H-wnDKfiRme2vE6Rkf2GBCkVJE7V9F0E/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJqY3V6amw4dGRtYTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.9ufdjmAyJmH6IYxeeNdKu36O7DbHE-rA3GIu0VY_OTQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFjaWZuYXdnZzB3MzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.YSZQXkKUTOZlHl4fGXaULxpEHnM0zaFwvRukgUuFNDQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFrazI2NWwyZmFuZi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.9HZ2OiZHD1gO1hdkR2ky58GMY7Dx4S20R6XhT__XtLU/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0emE2djF5aWZ3ZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.fuQn81Z2R1iNnDpRi9BB_L9mhJy3RRAbYMmYT1IIREQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlycHllMmQxYTlmbTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.8pIEwJinIlCFcTOpzfVTnz8lc9RpDVsspxVKN2a_8xE/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im04Mm1sdzNnaTA0bTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.GgOkkApAD1nkSZwTzZtz9WAEe4A07HdXVBjX0BPkGYY/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh3NTN1YjNkNjViMjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.XG38SThBNp5qBEsp7aU1kZLMCEJfybj-SE1U0Bwu70Y/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.71636,
+    "lng": -9.13305,
+    "coord_source": "listing",
+    "street": "Travessa dos Lagares",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-investimento-acessivel-no-centro-ID1ijmx"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 29,
+    "title": "T0 Santa Maria Maior com AL — mobilado em prédio remodelado",
+    "price_eur": 185000,
+    "area_m2": 18,
+    "typology": "T0",
+    "area_parish": "Santa Maria Maior",
+    "parish_filter": "Santa Maria Maior",
+    "agency": "RE/MAX + Grupo Vantagem",
+    "phone": "+351808200030",
+    "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1hPdu",
+    "notes": "STRONG: T0 in fully remodelled building, AL licence, sold furnished+equipped, city view. Title said T1 but desc is T0.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW",
+      "AL"
+    ],
+    "al": true,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5qb21uajdneThzdTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RtLRMEeHNvJDKVp5vCOiwJoCiMAMS7_izUwXfOsEyGg/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImQ4OWllZ2Jkd3JmNjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.YTeGm6BDc2_tb8Ha77Jln6vpMqnwUuEwn7WmXXEPibE/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5ycGphZTdqOWRzNC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.I_NGag0epK3D1xo_DXI0ogOnj9ghjp-BQopwg8oDa78/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InI5cGJldmt2eHltcTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.g2FgOfuqFY_Vr5c0L081mbbw0nIyu8-uV-3dM6ciWJs/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imc1a3ZzeHY3aW11djEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fOXj5p-UWAAgqWC3F2LdX2cmrgHGRIueyJAhc_U5reM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRkdTRrd3Y5ZTRqbTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fcwTYrah5FQfkQNAtsuk75U7Z1ugsdiOfr5h2AuH5MY/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJieXhvdTRjbWMxdS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.Ap7_MfMSEvAJ4q_FAm07RYXPS8LgBu_IS5AnTRLkEwM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5wbGVqbXk3dzAycS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.qebKVeoud5N3spHTP4w-UJVvogNJYM1AwslPSteKTRA/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc0aXNtM2t1NGo5Zi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.Npbn_Um7XQAPKwH0BN8sIzFbluw54V_NzWUlJJCzWQs/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd1cGZnNTl3dXVmbTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MyQJcL8WImEIQ3n4JEqbooL2rPcYeDBtjspwZ8hKncU/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.713585,
+    "lng": -9.135851,
+    "coord_source": "listing",
+    "street": "Beco das Farinhas",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1hPdu"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 30,
+    "title": "Apartamento remodelado 20m² Alfama (Outeirinho da Amendoeira)",
+    "price_eur": 195000,
+    "area_m2": 20,
+    "typology": "T0",
+    "area_parish": "Alfama / Santa Maria Maior",
+    "parish_filter": "Alfama",
+    "agency": "Century21 Nações",
+    "phone": "+351218938020",
+    "url": "https://www.imovirtual.com/pt/anuncio/apartamento-20-m-santa-maria-maior-ID1hvGH",
+    "notes": "Totally remodelled open-space Alfama near Panteão; same Beco Outeirinho building cluster as #11 (ID1hvGE). 20 m².",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im45MzJlZmx4eGFtZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.eTH9Q2zhBjwtABAiXR7jD5qxr7jjLjAYGBfhQWusfuI/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inhhc3EwbTJpeGhzMTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.vzZITKNyhH7i88b9tYlUGN-FX5naDm02FZaHzObXTjM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhtZXhuNjNpNjd5MDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.qqkQeaBcFXfLkVkndoFmO7DBPPC48X5H79IkA1cm8iY/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZjMGZqZzd2MXFsMy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.P_QPnvMQP2EqzW_084DQK3FPiWqlbznxma3loJnOibs/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZ6cmhrdWJ6eGxzejItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.I5W8-7LUYYctv_9Ey011diqArPDA7DM15x4DZd4P9Ao/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0xdzUxM3owazBidDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.8hrK5sroGE2Xq28127kRiC_Yq3eoZRJnfDCkuLzLFBg/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImI5bnNobmxnMWp6dy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.iIi5C41D08U-18XGE7_kd9cIPT2hoG1dlRBqGH8teWU/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InoyaDVicnB4bmQyMDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0._onrqFuMMInhYuRMTvkz83DZV8nW_mR3NAwo9TosoOQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdudGhyb2RsdTczMjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.byQjggCo7xDgr0TTYRj7obW5yrydmNeVU08TfmIgcBg/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InI0cDRyNzVmdmRzYy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.gpX6FZK9u5xjVQubB6CjGTNwtTDj7TVDUsa0ScDyeoY/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.71293,
+    "lng": -9.126637,
+    "coord_source": "listing",
+    "street": "Beco Outeirinho da Amendoeira",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/apartamento-20-m-santa-maria-maior-ID1hvGH"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 31,
+    "title": "Apartamento Remodelado Alfama (Outeirinho) €190k",
+    "price_eur": 190000,
+    "area_m2": 22,
+    "typology": "T0",
+    "area_parish": "Alfama / Santa Maria Maior",
+    "parish_filter": "Alfama",
+    "agency": "Century21 Nações",
+    "phone": "+351218938020",
+    "url": "https://www.imovirtual.com/pt/anuncio/apartamento-remodelado-alfama-ID1hvGB",
+    "notes": "Totally remodelled Alfama twin of #11 cluster (ID1hvGB). Prior search noted €190k turnkey.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im41ZXd4OXBta2ZrOTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pekM-1828j4RWlm_CvbKNHScyDMhaGY_8_dbyNCD0WE/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU4YjFtb3dpajZibzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.VhsCXysLDdudUkc8iDzdhjh76p_vBysviZ-eq3s9tlQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InozYmxhODRzZmU3dTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.HyM63SyjHJ6porkiBWHufEVnQj6Uqscv6RJg1imOPoE/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdrNTdwcHA4amU0bDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.EWHPj-Ex9-gXjVoUNifoPcfVYphlgLvKPb4yhH3YviE/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdrcmM2eDhnbzZ4YzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.X5kFCsnzZItuB5IfddXu_sPOXjjncrjdoZqzVje39Uk/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InN0M2szbXFyeG5vcTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.6PcEhRccVPcWFO6BzeodQMulKsUz9PWbdGATzAb5Gu8/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY0ZWI0dGFjaG9wYjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.aM0ovmUlwOopE_qIlk2DDQ36Fj5bdOSRVjiegqKIxNs/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh6bGlqOG9kcDNvejEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.UYCXLwneg5hWW7pX5yurh1kUJ-yXt68VSNuSRmuvJoY/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im40bTZ0YnYzbWpkNjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.R_sqw7VCnnG4tYUYGgPkUuP_bik03DYTCwT-MYvAflM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo0YTNpeHExMm1rNjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bWMUJp49If-0Kh8aYn13YLx5x37yteXh-KVY0dqNE60/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.712933,
+    "lng": -9.12661,
+    "coord_source": "listing",
+    "street": "Beco Outeirinho da Amendoeira",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/apartamento-remodelado-alfama-ID1hvGB"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 32,
+    "title": "Estúdio remodelado mobilado+AC Alfama",
+    "price_eur": 200000,
+    "area_m2": 30,
+    "typology": "T0",
+    "area_parish": "Alfama / Santa Maria Maior",
+    "parish_filter": "Alfama",
+    "agency": "Opinião Magnata, lda",
+    "phone": "+351218763381",
+    "url": "https://www.imovirtual.com/pt/anuncio/venda-apartamento-ID1hwaj",
+    "notes": "Recently remodelled studio+AC, kitchenette fully equipped, sold furnished. 5 min walk to Tejo.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF6dm5zbWdyeWYyczMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.AOnmSjkwYCg6bm9Td-a-fKJfPBdTlighUGIyfyHdi-Y/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA5dHNxNGwzYnI2NDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.YWjQUjEbjv5xwGUH4M1mdWDt2gumFsUFAG-5lwec87s/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImpxZXkwOTE1b2VubDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.uxzgAwxj_tRT7odauXaOrrDnVQIvwTIojx1gpdV5hiU/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtvMHRjMzJ6cTRubDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.6333EIrNKQXHAFjF7lSZ1dMg22PtmuIycWVrJAGANsM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdyYm9wZmw1NGtjZTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.0KibKQGBfgQAuojCysLAwyMgsvyyUjkZUshFafrUdcU/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1jMzRoMm1kOHVnNzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.TZW_M3ydGBwXZsaOHTXWVU1s8b-647-Fpl1EtzdH6mI/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjYyczhzZDVyYWFiODEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.-8LZadTKxT8OhLALAn4M_HhqSRKtbbg8TpT5pUjeLDQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZ4anR6aG16NHBzdjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0._XpGa2i1aAyr613IoYjNu1myzngDoZCuXchl05xAkeQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inljdzgxa3Qzc3FnZy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.xY84dYrVMpgLH4xqUjfjA6nfiu5rQCegOiLDf-Giu9Q/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind2NG9pN2Vlc2FxZi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.dOk5nYSy82jj2Wl4Nm4feeqReHM_U42IvCxdHsyJd8k/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.7129,
+    "lng": -9.126457,
+    "coord_source": "listing",
+    "street": "Beco Paus",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/venda-apartamento-ID1hwaj"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 33,
+    "title": "T0 Mouraria 40m² ótimas condições",
+    "price_eur": 210000,
+    "area_m2": 40,
+    "typology": "T0",
+    "area_parish": "Mouraria / Santa Maria Maior",
+    "parish_filter": "Mouraria",
+    "agency": "Imojoy Real Estate",
+    "phone": "+351210205745",
+    "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-para-venda-na-mouraria-em-lisboa-ID1h1RN",
+    "notes": "Estúdio 40m² ótimas condições, cozinha equipada, WC moderna; near Castelo/Panteão/Rossio/Martim Moniz. Energy D.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZrNncxaGljNDY3bTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.PcEeeQ-sk2v3HMuHVKCY4XTdwg3kBvdUizufBB5D9oM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRwMXhraDdhZ2Nlei1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.TkL8OKHt6Mlq_-y1YASDHjzDlAyxk7ogkr2yBX9sViM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ4cjg4bHMycHNnZTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5Obal5ftSa-yafamQqqadF4kriQZorL36-LIgSg458g/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRqNHp2b24wc3I5di1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.n5Hi3LHNuMEBDRRsjqxYbPZvovq8PkdbshN4cw_3sYg/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ims0MDd4aXRnOGdvbDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.rCBb-BlOKxPit39V_1p0r17IvHzBNh342QKVxi0l__0/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImwyaHdpOWVvaHFtazEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.xvlimexW6SsuUUNFM5v-JBZZNRmoIQHD5MRfa3M45nE/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR3NTI2cW4wa2p3MzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MDr4oy9wAumxlXgrmQnfLPMM5aKT28IV2R2L4yYgFDg/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InliY256ZXg5Z3hqci1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.duKbgX-qCZQGs4gDkl8e8lV71CbjmZrVpCtz-Cd12IA/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt1Y3lka2t3emcxNzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.kT6UFsr7mHFJT4yT7o6M4WiNQl8quSRKydi61FXEZcQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZ6N3U0emJvazY0ajMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2VK7afzLkT4dEduRFHIlzFxwX64oNZGrmwZPcjwb5Os/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.71664,
+    "lng": -9.13298,
+    "coord_source": "listing",
+    "street": "Travessa do Terreirinho",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-para-venda-na-mouraria-em-lisboa-ID1h1RN"
+      }
+    ],
+    "band": "240k",
+    "roi_status": "computed",
+    "ready_to_let": true
   }
 ]

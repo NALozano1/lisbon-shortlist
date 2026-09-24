@@ -182,5 +182,29 @@
       5
     ],
     "roi_status": "roi_audited"
+  },
+  {
+    "id": "new-ready-20260924",
+    "agency": "New ready-to-let finds (this run)",
+    "related": "Apartamento T0 para venda, Apartamento T1 para venda, Apartamento T1 | Investimento Acessível , T0 Santa Maria Maior com AL — mobilado e, Apartamento remodelado 20m² Alfama (Oute, Apartamento Remodelado Alfama (Outeirinh",
+    "stage": "notcontacted",
+    "stage_label": "Not contacted",
+    "last_action": "2026-09-24",
+    "last_action_note": "Added by expand+dedup run — do not email agents this run",
+    "bullets": [
+      "8 new ready-to-let tourist-core ≤€240k after strict audit",
+      "Seen-cache dedup active; Idealista blocked (captcha) — Imovirtual primary"
+    ],
+    "listing_ranks": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "roi_status": "roi_draft"
   }
 ]
