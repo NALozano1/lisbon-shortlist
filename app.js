@@ -65,11 +65,11 @@
     arr.sort((a, b) => {
       if (sortKey === 'price') return (a.price_eur || 0) - (b.price_eur || 0);
       if (sortKey === 'm2') return (b.area_m2 || 0) - (a.area_m2 || 0);
-      if (sortKey === 'str_mid_coc') {
+      if (sortKey === 'str_mid_coverage') {
         const ar = getRoi(a);
         const br = getRoi(b);
-        const ac = ar && ar.str_mid && ar.str_mid.coc_pct != null ? ar.str_mid.coc_pct : -Infinity;
-        const bc = br && br.str_mid && br.str_mid.coc_pct != null ? br.str_mid.coc_pct : -Infinity;
+        const ac = ar && ar.str_mid && ar.str_mid.coverage_ratio != null ? ar.str_mid.coverage_ratio : -Infinity;
+        const bc = br && br.str_mid && br.str_mid.coverage_ratio != null ? br.str_mid.coverage_ratio : -Infinity;
         return bc - ac;
       }
       return a.rank - b.rank;
@@ -120,35 +120,28 @@
               <span>${escapeHtml(d.typology || '')}</span>
               <span>${escapeHtml(d.area_parish || '')}</span>
             </div>
-            <div class="badges">${badges.join('')}</div>
             ${(() => {
               const roi = getRoi(d);
               if (!roi || !roi.str_mid) return '';
-              const mid = roi.str_mid.coc_pct != null ? Number(roi.str_mid.coc_pct).toFixed(1) + '%' : '—';
-              const ltr = roi.ltr && roi.ltr.coc_pct != null ? Number(roi.ltr.coc_pct).toFixed(1) + '%' : '—';
-              const cf = roi.str_mid.cf != null
-                ? '€' + Math.round(roi.str_mid.cf).toLocaleString('pt-PT')
-                : null;
-              const cov = roi.str_mid.coverage_ratio != null
-                ? Number(roi.str_mid.coverage_ratio).toFixed(1)
-                : null;
-              const covFlag = roi.str_mid.coverage_flag || '';
-              let covHuman = '';
-              if (covFlag === 'below') covHuman = 'below mortgage';
-              else if (covFlag === 'tight') covHuman = 'tight';
-              else if (covFlag === 'comfortable') covHuman = 'comfortable';
-              const covCls = covFlag === 'below' ? 'cov-below'
-                : covFlag === 'tight' ? 'cov-tight'
-                : covFlag === 'comfortable' ? 'cov-ok' : '';
-              return `<div class="roi-chips" aria-label="ROI batch">` +
-                `<span class="roi-chip str">STR mid ${mid}</span>` +
-                `<span class="roi-chip ltr">LTR ${ltr}</span>` +
-                (cf != null ? `<span class="roi-chip cf">CF ${cf}</span>` : '') +
-                (cov != null
-                  ? `<span class="roi-chip cov ${covCls}">STR covers ${cov}× 40y · ${covHuman}</span>`
-                  : '') +
-                `</div>`;
+              const mid = roi.str_mid;
+              const ltr = roi.ltr || {};
+              const midFlag = mid.coverage_flag || '';
+              const ltrFlag = ltr.coverage_flag || '';
+              const midLabel = midFlag === 'comfortable' ? 'Covers'
+                : midFlag === 'tight' ? 'Tight'
+                : midFlag === 'below' ? 'Below mortgage' : '—';
+              const ltrLabel = ltrFlag === 'comfortable' ? 'covers'
+                : ltrFlag === 'tight' ? 'tight'
+                : ltrFlag === 'below' ? 'below' : null;
+              const ratio = mid.coverage_ratio != null ? ` ${Number(mid.coverage_ratio).toFixed(1)}×` : '';
+              const ltrText = ltrLabel ? ` <span class="roi-line-muted">· Long-let ${ltrLabel}</span>` : '';
+              const covCls = midFlag === 'below' ? 'cov-below'
+                : midFlag === 'tight' ? 'cov-tight'
+                : midFlag === 'comfortable' ? 'cov-ok' : '';
+              return `<div class="roi-line ${covCls}" aria-label="Short-let mortgage coverage">` +
+                `Short-let: <strong>${midLabel}${midLabel === 'Below mortgage' ? '' : ratio}</strong>${ltrText}</div>`;
             })()}
+            <div class="badges">${badges.join('')}</div>
             ${d.notes ? `<div class="notes">${escapeHtml(d.notes)}</div>` : ''}
             <div class="portal-links">${portals}${waBtn}</div>
             ${d.agency ? `<div class="notes agency-line" style="margin-top:.45rem">${escapeHtml(d.agency)}${d.phone ? ' · ' + escapeHtml(d.phone) : ''}</div>` : ''}

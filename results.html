@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>ROI Results · Lisbon · ≤€240k</title>
-  <meta name="description" content="Batch STR/LTR ROI results for all 25 Lisbon shortlist listings — ranked by STR mid CoC. Pre-tax, parish/city comps." />
+  <title>Results · Lisbon shortlist</title>
+  <meta name="description" content="See which Lisbon shortlist homes can cover a 40-year mortgage with short-let income." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="page-results">
   <header class="site-header">
     <div class="brand">
       <h1>
-        <span class="full">ROI Results · batch 0.1.6</span>
+        <span class="full">Lisbon shortlist · Results</span>
         <span class="short">Results</span>
       </h1>
-      <p>All 25 shortlist · ranked STR mid CoC · <span id="results-asof"></span></p>
+      <p>Can short-let cover the mortgage? <span id="results-asof"></span></p>
     </div>
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Shortlist</a>
@@ -26,27 +26,21 @@
 
   <main class="results-wrap">
     <div class="results-banner" role="status">
-      <strong>Batch ROI — parish/city comps</strong>
-      <p class="method-note" id="method-note">
-        Parish/city comps only — no address-level AirDNA Rentalizer. Pre-tax (excludes IRS / AL tax).
-        Loan = min(70% LTV, €170k) · term 40y. Coverage = (NOI/12) ÷ mortgage monthly. Fit-out illustrative; reno flagged. Not financial advice.
-      </p>
-      <p class="results-meta" id="results-meta"></p>
+      <p class="method-note" id="method-note">Illustrative · 40y loan · not tax advice.</p>
     </div>
 
     <div class="toolbar results-toolbar" id="filters">
       <div class="chip-row" role="group" aria-label="Filters">
         <button type="button" class="chip active" data-filter="all">All</button>
         <button type="button" class="chip" data-filter="170k">≤€170k</button>
-        <button type="button" class="chip" data-filter="240k">≤€240k</button>
         <button type="button" class="chip" data-filter="al">AL only</button>
       </div>
       <label class="sort-label">
         Sort
         <select class="sort-select" id="sort" aria-label="Sort results">
-          <option value="str_mid_coc" selected>STR mid CoC</option>
-          <option value="price">Price</option>
-          <option value="ltr_coc">LTR CoC</option>
+          <option value="str_mid_coverage" selected>Best short-let cover</option>
+          <option value="price">Cheapest</option>
+          <option value="ltr_coverage">Best long-let cover</option>
         </select>
       </label>
     </div>
@@ -56,7 +50,7 @@
   </main>
 
   <footer class="site-footer">
-    For Alex Lozano · data from <code>data/roi-results.json</code> · no bank / personal mortgage details · illustrative only.
+    For Alex Lozano · illustrative figures from <code>data/roi-results.json</code>.
   </footer>
 
   <script src="results.js"></script>
