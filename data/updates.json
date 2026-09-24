@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "LTR Seller Idealista asking mids — 2026-09-24",
+    "body": "Updated ltr-t0-smm €850 (n=9), ltr-t1-smm €1,100 (n=16), ltr-t0-misericordia €1,100 (n=11), ltr-t1-misericordia €1,050 (n=18), ltr-t0-arroios €975 (n=10), and ltr-t1-arroios €1,100 (n=16) using Seller Idealista asking mids. Added optional ltr-t1-smm-blend at €950 (60% INE + 40% Idealista). All LTR drafts retain 1-month vacancy and LTR OpEx notes; STR stubs and tax defaults unchanged."
+  },
+  {
+    "date": "2026-09-24",
     "title": "ROI 0.1.5-draft — STR/LTR toggle + soft-market refresh",
     "body": "Dual income mode on roi.html (Short-let AL/Airbnb vs Long-let arrendamento). AirDNA cites refreshed thru Jul 2026 (65% occ / $147 ADR / ~$23.1k). Platform fees default 15.5% (EEA host-only from 2026-10-13). LTR drafts ltr-t0-smm (€1,000/mo) and ltr-t1-smm (€1,300/mo). Conservative STR defaults kept (ADR €95 / 55% / maint 8%). IMT/closing/IRS unchanged; audit_status changes_applied_awaiting_reaudit."
   },

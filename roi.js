@@ -1,6 +1,6 @@
 (() => {
   const LS_KEY = 'lisbon-roi-inputs-v015';
-  const CACHE_BUST = '0.1.5';
+  const CACHE_BUST = '0.1.5b';
   const inputsEl = document.getElementById('inputs');
   const outputsEl = document.getElementById('outputs');
   const tableBody = document.querySelector('#assumptions-table tbody');

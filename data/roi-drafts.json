@@ -276,7 +276,7 @@
       "assumptions": {
         "income_mode": "ltr",
         "purchase_price": 155000,
-        "monthly_rent": 1000,
+        "monthly_rent": 850,
         "vacancy_months": 1,
         "furniture_fitout": 4000,
         "utilities_monthly": 0,
@@ -288,7 +288,7 @@
         "loan_amount": 108500,
         "ltv_pct": 70
       },
-      "note": "LTR T0 × Santa Maria Maior / tourist-core. Monthly rent €1,000 mid (€950–1,100 band); vacancy 1 month (~8%). Gross ≈ €11,000 after vacancy (€12k × 11/12). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+      "note": "LTR T0 × Santa Maria Maior. Idealista asking mid €850/month (2026-09-24; n=9); vacancy 1 month (~8%). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
     },
     "ltr-t1-smm": {
       "listing_key": null,
@@ -298,7 +298,7 @@
       "assumptions": {
         "income_mode": "ltr",
         "purchase_price": 215000,
-        "monthly_rent": 1300,
+        "monthly_rent": 1100,
         "vacancy_months": 1,
         "furniture_fitout": 5000,
         "utilities_monthly": 0,
@@ -310,8 +310,118 @@
         "loan_amount": 150500,
         "ltv_pct": 70
       },
-      "note": "LTR T1 × Santa Maria Maior / tourist-core. Monthly rent €1,300 mid (€1,200–1,400 band); vacancy 1 month (~8%). Gross ≈ €14,300 after vacancy (€15.6k × 11/12). OpEx: tenant pays utils; condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+      "note": "LTR T1 × Santa Maria Maior. Idealista asking mid €1,100/month (2026-09-24; n=16); vacancy 1 month (~8%). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+    },
+    "ltr-t0-misericordia": {
+      "listing_key": null,
+      "band": "170k",
+      "status": "roi_draft",
+      "income_mode": "ltr",
+      "assumptions": {
+        "income_mode": "ltr",
+        "purchase_price": 155000,
+        "monthly_rent": 1100,
+        "vacancy_months": 1,
+        "furniture_fitout": 4000,
+        "utilities_monthly": 0,
+        "maintenance_pct_gross": 7,
+        "management_fee_pct": 0,
+        "condo_monthly": 60,
+        "imi_annual": 250,
+        "insurance_monthly": 18,
+        "loan_amount": 108500,
+        "ltv_pct": 70
+      },
+      "note": "LTR T0 × Misericórdia. Idealista asking mid €1,100/month (2026-09-24; n=11); vacancy 1 month (~8%). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+    },
+    "ltr-t1-misericordia": {
+      "listing_key": null,
+      "band": "240k",
+      "status": "roi_draft",
+      "income_mode": "ltr",
+      "assumptions": {
+        "income_mode": "ltr",
+        "purchase_price": 215000,
+        "monthly_rent": 1050,
+        "vacancy_months": 1,
+        "furniture_fitout": 5000,
+        "utilities_monthly": 0,
+        "maintenance_pct_gross": 7,
+        "management_fee_pct": 0,
+        "condo_monthly": 60,
+        "imi_annual": 300,
+        "insurance_monthly": 20,
+        "loan_amount": 150500,
+        "ltv_pct": 70
+      },
+      "note": "LTR T1 × Misericórdia. Idealista asking mid €1,050/month (2026-09-24; n=18); vacancy 1 month (~8%). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+    },
+    "ltr-t0-arroios": {
+      "listing_key": null,
+      "band": "170k",
+      "status": "roi_draft",
+      "income_mode": "ltr",
+      "assumptions": {
+        "income_mode": "ltr",
+        "purchase_price": 155000,
+        "monthly_rent": 975,
+        "vacancy_months": 1,
+        "furniture_fitout": 4000,
+        "utilities_monthly": 0,
+        "maintenance_pct_gross": 7,
+        "management_fee_pct": 0,
+        "condo_monthly": 60,
+        "imi_annual": 250,
+        "insurance_monthly": 18,
+        "loan_amount": 108500,
+        "ltv_pct": 70
+      },
+      "note": "LTR T0 × Arroios. Idealista asking mid €975/month (2026-09-24; n=10); vacancy 1 month (~8%). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+    },
+    "ltr-t1-arroios": {
+      "listing_key": null,
+      "band": "240k",
+      "status": "roi_draft",
+      "income_mode": "ltr",
+      "assumptions": {
+        "income_mode": "ltr",
+        "purchase_price": 215000,
+        "monthly_rent": 1100,
+        "vacancy_months": 1,
+        "furniture_fitout": 5000,
+        "utilities_monthly": 0,
+        "maintenance_pct_gross": 7,
+        "management_fee_pct": 0,
+        "condo_monthly": 60,
+        "imi_annual": 300,
+        "insurance_monthly": 20,
+        "loan_amount": 150500,
+        "ltv_pct": 70
+      },
+      "note": "LTR T1 × Arroios. Idealista asking mid €1,100/month (2026-09-24; n=16); vacancy 1 month (~8%). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+    },
+    "ltr-t1-smm-blend": {
+      "listing_key": null,
+      "band": "240k",
+      "status": "roi_draft",
+      "income_mode": "ltr",
+      "assumptions": {
+        "income_mode": "ltr",
+        "purchase_price": 215000,
+        "monthly_rent": 950,
+        "vacancy_months": 1,
+        "furniture_fitout": 5000,
+        "utilities_monthly": 0,
+        "maintenance_pct_gross": 7,
+        "management_fee_pct": 0,
+        "condo_monthly": 60,
+        "imi_annual": 300,
+        "insurance_monthly": 20,
+        "loan_amount": 150500,
+        "ltv_pct": 70
+      },
+      "note": "Conservative LTR blend stub — T1 × Santa Maria Maior. 60% INE + 40% Idealista asking-rent blend ≈ €950/month (2026-09-24; Idealista asking mid €1,100, n=16); vacancy 1 month (~8%). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
     }
   },
-  "note": "Listing stubs use 70% LTV capped at €170k; STR market-mid stubs use BNBCalc × GuestFavorites and 60–65% occ. Calculator STR default remains ADR €95 @ 55% / platform 15.5% / maint 8%. LTR stubs ltr-t0-smm (€1,000/mo, vac 1) and ltr-t1-smm (€1,300/mo, vac 1) set income_mode=ltr. Airbtics 80%+ is not a global default. Draft picker sets income mode from each stub. Model 0.1.5-draft awaiting re-audit; tax stack unchanged."
+  "note": "Listing stubs use 70% LTV capped at €170k; STR market-mid stubs use BNBCalc × GuestFavorites and 60–65% occ. Calculator STR default remains ADR €95 @ 55% / platform 15.5% / maint 8%. LTR stubs use Seller 2026-09-24 Idealista asking mids (plus optional ltr-t1-smm-blend at €950/mo), all with 1-month vacancy. Airbtics 80%+ is not a global default. Draft picker sets income mode from each stub. Model 0.1.5-draft awaiting re-audit; tax stack unchanged."
 }
