@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "ROI batch 0.1.5 — all 25 listings computed",
+    "body": "Batch STR cons/mid + LTR for all 25 shortlist units using live roi.js compute and roi-model.json defaults. Validation vs AirDNA city Jul-2026 + BNBCalc/GuestFavorites parish bands + Idealista LTR mids (no property-level AirDNA Rentalizer). Results in data/roi-results.json. Top STR-mid CoC: Apartamento T1 para Remodela… CoC 17.3%, C21 Colombo 2 T2 mobilado Al… CoC 15.9%, T1 para obras em prédio reab… CoC 15.5%. Reno/obras fit-outs flagged high uncertainty."
+  },
+  {
+    "date": "2026-09-24",
     "title": "LTR Seller Idealista asking mids — 2026-09-24",
     "body": "Updated ltr-t0-smm €850 (n=9), ltr-t1-smm €1,100 (n=16), ltr-t0-misericordia €1,100 (n=11), ltr-t1-misericordia €1,050 (n=18), ltr-t0-arroios €975 (n=10), and ltr-t1-arroios €1,100 (n=16) using Seller Idealista asking mids. Added optional ltr-t1-smm-blend at €950 (60% INE + 40% Idealista). All LTR drafts retain 1-month vacancy and LTR OpEx notes; STR stubs and tax defaults unchanged."
   },

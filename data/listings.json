@@ -37,7 +37,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 2,
@@ -81,7 +81,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 3,
@@ -124,7 +124,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 4,
@@ -167,7 +167,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 5,
@@ -210,7 +210,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 6,
@@ -249,7 +249,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 7,
@@ -292,7 +292,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 8,
@@ -335,7 +335,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 9,
@@ -379,7 +379,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 10,
@@ -419,7 +419,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 11,
@@ -462,7 +462,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 12,
@@ -505,7 +505,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 13,
@@ -548,7 +548,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 14,
@@ -591,7 +591,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 15,
@@ -634,7 +634,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 16,
@@ -677,7 +677,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 17,
@@ -713,7 +713,7 @@
       }
     ],
     "band": "240k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 18,
@@ -756,7 +756,7 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_draft"
+    "roi_status": "computed"
   },
   {
     "rank": 19,
@@ -800,7 +800,7 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_draft"
+    "roi_status": "computed"
   },
   {
     "rank": 20,
@@ -842,7 +842,7 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_draft"
+    "roi_status": "computed"
   },
   {
     "rank": 21,
@@ -895,7 +895,7 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_draft"
+    "roi_status": "computed"
   },
   {
     "rank": 22,
@@ -936,7 +936,7 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_draft"
+    "roi_status": "computed"
   },
   {
     "rank": 23,
@@ -986,7 +986,7 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 24,
@@ -1027,7 +1027,7 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   },
   {
     "rank": 25,
@@ -1087,6 +1087,6 @@
       }
     ],
     "band": "170k",
-    "roi_status": "roi_pending"
+    "roi_status": "computed"
   }
 ]
