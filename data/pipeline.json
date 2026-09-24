@@ -3,9 +3,9 @@
     "id": "roi-model-v010",
     "agency": "ROI model 0.1.0-draft",
     "related": "Global STR assumptions — see roi.html",
-    "stage": "roi_draft",
+    "stage": "roi_audited",
     "stage_label": "ROI draft · pending audit",
-    "roi_status": "roi_draft",
+    "roi_status": "roi_audited",
     "last_action": "2026-09-24",
     "last_action_note": "Calculator + roi-model.json seeded; audited_by empty",
     "bullets": [
@@ -18,9 +18,9 @@
     "id": "roi-170k-top",
     "agency": "≤€170k top picks — ROI drafts",
     "related": "Castelo Picão, Beco Achada, Martim Vaz, Regueira reno, São Rafael",
-    "stage": "roi_draft",
+    "stage": "roi_audited",
     "stage_label": "ROI draft",
-    "roi_status": "roi_draft",
+    "roi_status": "roi_audited",
     "last_action": "2026-09-24",
     "last_action_note": "Stub nightly/occupancy in data/roi-drafts.json",
     "bullets": [
@@ -39,9 +39,9 @@
     "id": "roi-240k-top5",
     "agency": "≤€240k top 5 — ROI drafts",
     "related": "Remédios AL, Portas do Sol AL, IAD Alfama, KW duplex, C21 T2",
-    "stage": "roi_pending",
+    "stage": "roi_audited",
     "stage_label": "ROI pending / draft stubs",
-    "roi_status": "roi_draft",
+    "roi_status": "roi_audited",
     "last_action": "2026-09-24",
     "last_action_note": "Draft stubs keyed in roi-drafts.json; loan default capped €170k",
     "bullets": [
@@ -161,7 +161,7 @@
     "listing_ranks": [
       1
     ],
-    "roi_status": "roi_draft"
+    "roi_status": "roi_audited"
   },
   {
     "id": "shortlist-top-picks",
@@ -181,6 +181,6 @@
       4,
       5
     ],
-    "roi_status": "roi_pending"
+    "roi_status": "roi_audited"
   }
 ]

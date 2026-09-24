@@ -317,9 +317,10 @@
       model = m;
       drafts = d;
       stampEl.textContent = `model_version ${m.model_version}`;
-      const auditors = (m.audited_by || []).length
-        ? m.audited_by.join(', ')
-        : '[]';
+      const ab = m.audited_by || [];
+      const auditors = ab.length
+        ? ab.map((a) => (typeof a === 'string' ? a : `${a.agent} (${a.verdict})`)).join(', ')
+        : '—';
       auditEl.textContent = `audit_status: ${m.audit_status} · audited_by: ${auditors} · updated ${m.updated || ''}`;
 
       const saved = loadLS();
