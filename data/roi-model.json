@@ -1,5 +1,5 @@
 {
-  "model_version": "0.1.5-draft",
+  "model_version": "0.1.6-draft",
   "audited_by": [
     {
       "agent": "Seller",
@@ -480,14 +480,14 @@
     {
       "id": "mortgage_term_years",
       "label": "Mortgage term",
-      "value": 30,
+      "value": 40,
       "unit": "years",
       "input": true,
       "min": 5,
       "max": 40,
       "step": 1,
       "source": "Standard amortising term",
-      "note": "Monthly payment via standard amortising formula.",
+      "note": "Monthly payment via standard amortising formula. Default 40y (Alex 2026-09-24).",
       "modes": [
         "str",
         "ltr"
@@ -640,7 +640,7 @@
     "Seller": "0.1.4 PASS 2026-09-24 retained; 0.1.5-draft market+LTR changes awaiting re-audit",
     "Finanças Docs": "PASS 2026-09-24 retained for IMT/closing/IRS labels; tax stack unchanged in 0.1.5-draft"
   },
-  "audit_notes": "0.1.5-draft: dual income mode (STR/LTR), refreshed AirDNA cites thru Jul 2026 (65% occ / $147 ADR / ~$23.1k city avg), platform fees default 15.5% (EEA host-only from 2026-10-13), LTR stubs ltr-t0-smm / ltr-t1-smm, soft-market + RMAL licensed-AL notes. Conservative STR defaults kept (ADR €95 / occ 55% / maint 8%; optional 10% for old high-turnover stock). IMT/closing/IRS legal framing unchanged. audit_status: changes_applied_awaiting_reaudit.",
+  "audit_notes": "0.1.5-draft: dual income mode (STR/LTR), refreshed AirDNA cites thru Jul 2026 (65% occ / $147 ADR / ~$23.1k city avg), platform fees default 15.5% (EEA host-only from 2026-10-13), LTR stubs ltr-t0-smm / ltr-t1-smm, soft-market + RMAL licensed-AL notes. Conservative STR defaults kept (ADR €95 / occ 55% / maint 8%; optional 10% for old high-turnover stock). IMT/closing/IRS legal framing unchanged. audit_status: changes_applied_awaiting_reaudit. | 2026-09-24: term 30→40.",
   "market_note": "AirDNA Lisbon overview data thru Jul 2026 (page updated 2026-08-05): 65% occ, ADR $147, RevPAR $94, avg active revenue ~$23.1k — softer than prior ~70% / ~$33.9k cite; reinforces conservative defaults. ListingOK Lisbon YoY revenue −11–13% (soft-market). Seller size×area working grid: BNBCalc Lisbon size ladder × GuestFavorites parish multipliers (SMM ×1.12, Misericórdia ×1.10, Santo António ×1.13, Arroios ×0.95; GuestFavorites Dec 2025–Aug 2026). Market-mid drafts use 60–65% occ; Airbtics 80%+ is not the global default. STR path assumes licensed AL (RMAL); LTR is the fallback when AL blocked.",
   "income_modes": {
     "default": "str",

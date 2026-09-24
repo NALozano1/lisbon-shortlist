@@ -6,6 +6,8 @@
   const latestStrip = document.getElementById('latest-strip');
   const latestDateEl = document.getElementById('latest-date');
   let listings = [];
+  let roiByUrl = {};
+  let roiByRank = {};
   let filter = 'all';
   let sortKey = 'rank';
   let map, markersLayer, markerByRank = {};
@@ -51,11 +53,25 @@
     return d.parish_filter === filter || (d.area_parish || '').includes(filter);
   }
 
+  function getRoi(d) {
+    if (!d) return null;
+    if (d.url && roiByUrl[d.url]) return roiByUrl[d.url];
+    if (d.rank != null && roiByRank[d.rank]) return roiByRank[d.rank];
+    return null;
+  }
+
   function sorted() {
     const arr = listings.filter(matchesFilter);
     arr.sort((a, b) => {
       if (sortKey === 'price') return (a.price_eur || 0) - (b.price_eur || 0);
       if (sortKey === 'm2') return (b.area_m2 || 0) - (a.area_m2 || 0);
+      if (sortKey === 'str_mid_coc') {
+        const ar = getRoi(a);
+        const br = getRoi(b);
+        const ac = ar && ar.str_mid && ar.str_mid.coc_pct != null ? ar.str_mid.coc_pct : -Infinity;
+        const bc = br && br.str_mid && br.str_mid.coc_pct != null ? br.str_mid.coc_pct : -Infinity;
+        return bc - ac;
+      }
       return a.rank - b.rank;
     });
     return arr;
@@ -105,6 +121,34 @@
               <span>${escapeHtml(d.area_parish || '')}</span>
             </div>
             <div class="badges">${badges.join('')}</div>
+            ${(() => {
+              const roi = getRoi(d);
+              if (!roi || !roi.str_mid) return '';
+              const mid = roi.str_mid.coc_pct != null ? Number(roi.str_mid.coc_pct).toFixed(1) + '%' : '—';
+              const ltr = roi.ltr && roi.ltr.coc_pct != null ? Number(roi.ltr.coc_pct).toFixed(1) + '%' : '—';
+              const cf = roi.str_mid.cf != null
+                ? '€' + Math.round(roi.str_mid.cf).toLocaleString('pt-PT')
+                : null;
+              const cov = roi.str_mid.coverage_ratio != null
+                ? Number(roi.str_mid.coverage_ratio).toFixed(1)
+                : null;
+              const covFlag = roi.str_mid.coverage_flag || '';
+              let covHuman = '';
+              if (covFlag === 'below') covHuman = 'below mortgage';
+              else if (covFlag === 'tight') covHuman = 'tight';
+              else if (covFlag === 'comfortable') covHuman = 'comfortable';
+              const covCls = covFlag === 'below' ? 'cov-below'
+                : covFlag === 'tight' ? 'cov-tight'
+                : covFlag === 'comfortable' ? 'cov-ok' : '';
+              return `<div class="roi-chips" aria-label="ROI batch">` +
+                `<span class="roi-chip str">STR mid ${mid}</span>` +
+                `<span class="roi-chip ltr">LTR ${ltr}</span>` +
+                (cf != null ? `<span class="roi-chip cf">CF ${cf}</span>` : '') +
+                (cov != null
+                  ? `<span class="roi-chip cov ${covCls}">STR covers ${cov}× 40y · ${covHuman}</span>`
+                  : '') +
+                `</div>`;
+            })()}
             ${d.notes ? `<div class="notes">${escapeHtml(d.notes)}</div>` : ''}
             <div class="portal-links">${portals}${waBtn}</div>
             ${d.agency ? `<div class="notes agency-line" style="margin-top:.45rem">${escapeHtml(d.agency)}${d.phone ? ' · ' + escapeHtml(d.phone) : ''}</div>` : ''}
@@ -242,10 +286,21 @@
   syncMapMode();
   loadUpdates();
 
-  fetch('data/listings.json')
-    .then(r => r.json())
-    .then(data => {
+  function indexRoi(payload) {
+    const rows = (payload && payload.results) || [];
+    rows.forEach(r => {
+      if (r.url) roiByUrl[r.url] = r;
+      if (r.listing_rank != null) roiByRank[r.listing_rank] = r;
+    });
+  }
+
+  Promise.all([
+    fetch('data/listings.json').then(r => r.json()),
+    fetch('data/roi-results.json?v=20260924-40y').then(r => r.ok ? r.json() : null).catch(() => null)
+  ])
+    .then(([data, roi]) => {
       listings = data;
+      if (roi) indexRoi(roi);
       refresh();
     })
     .catch(err => {

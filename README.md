@@ -7,7 +7,8 @@ Living shortlist, outreach tracker, and **ROI calculator (draft — pending audi
 ## Pages
 - `index.html` — shortlist + map (`data/listings.json`) — filter chips include **≤€170k** / **≤€240k**
 - `pipeline.html` — outreach + **ROI status** (`data/pipeline.json`, `data/updates.json`, `data/roi-drafts.json`)
-- `roi.html` — labelled STR ROI calculator (`data/roi-model.json`, `roi.js`), explicitly pre-tax and pending full audit
+- `roi.html` — labelled STR/LTR ROI calculator (`data/roi-model.json`, `roi.js`), explicitly pre-tax and pending full audit
+- `results.html` — ranked batch ROI for all 25 (`data/roi-results.json`); CoC + 40y mortgage coverage chips; mobile stacked cards
 
 ## How to append (no HTML rewrites)
 
