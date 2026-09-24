@@ -1,5 +1,5 @@
 {
-  "model_version": "0.1.2-draft",
+  "model_version": "0.1.3-draft",
   "audited_by": [],
   "audit_status": "changes_applied_awaiting_reaudit",
   "updated": "2026-09-24",
@@ -37,15 +37,15 @@
     },
     {
       "id": "imt_purchase_pct",
-      "label": "IMT estimate (secondary habitação)",
-      "value": 3.7,
+      "label": "IMT override (%) — 0 = illustrative Tabela III secondary proxy — not official calculator",
+      "value": 0,
       "unit": "%",
       "input": true,
       "min": 0,
       "max": 15,
       "step": 0.1,
-      "source": "Illustrative purchase-side estimate",
-      "note": "Use an actual IMT simulation for the property/buyer; this estimate plus stamp duty targets roughly 4.0–4.5% purchase-side."
+      "source": "Illustrative Tabela III secondary proxy — not official calculator",
+      "note": "Leave at 0 to derive an illustrative price-linked secondary-habitação proxy from worked-check interpolation; enter a positive percentage only to override. Not the official IMT calculator; verify taxable base, buyer, and property facts."
     },
     {
       "id": "stamp_duty_purchase_pct",
@@ -236,7 +236,7 @@
     },
     {
       "id": "irs_rental_pct",
-      "label": "IRS rental tax stress",
+      "label": "IRS rental tax stress — illustrative % of NOI only — not legal Cat. F",
       "value": 0,
       "unit": "% of NOI",
       "input": true,
@@ -244,7 +244,7 @@
       "max": 100,
       "step": 1,
       "source": "Optional illustrative stress input",
-      "note": "Default 0 = pre-tax; Cat. F 28% mode is a rough stress only and actual treatment depends on facts/regime."
+      "note": "Optional stress only: illustrative % of NOI only — not legal Cat. F. Cat. F treatment is based on taxable rents and depends on facts/regime; default 0 = pre-tax."
     },
     {
       "id": "irs_rental_tax",
@@ -391,7 +391,12 @@
     },
     {
       "id": "cash_on_cash_pct",
-      "label": "Cash-on-cash return",
+      "label": "Cash-on-cash return (pre-tax)",
+      "unit": "%"
+    },
+    {
+      "id": "cash_on_cash_after_irs_pct",
+      "label": "Cash-on-cash return after IRS stress",
       "unit": "%"
     },
     {
@@ -410,14 +415,19 @@
       "unit": "EUR"
     },
     {
+      "id": "imt_eur",
+      "label": "IMT € (cash-in; illustrative Tabela III secondary proxy — not official calculator)",
+      "unit": "EUR"
+    },
+    {
       "id": "turnovers_per_month",
       "label": "Turnovers / month (derived)",
       "unit": "count"
     }
   ],
   "reviewers": {
-    "Seller": "PASS WITH CHANGES 2026-09-24",
-    "Finanças Docs": "PASS WITH CHANGES 2026-09-24"
+    "Seller": "PASS WITH CHANGES re-audit 2026-09-24 — CoC pre-tax label and IRS-gated after-IRS CoC applied.",
+    "Finanças Docs": "PASS WITH CHANGES re-audit 2026-09-24 — price-linked IMT proxy, IMT cash-in line, Cat. F/NOI caveat, and LS bump applied."
   },
-  "audit_notes": "Seller and Finanças Docs changes applied; awaiting re-audit before audited status."
+  "audit_notes": "Seller + Finanças Docs re-audits PASS WITH CHANGES; CoC labels/gating, price-linked IMT proxy, Cat. F/NOI caveat, and localStorage namespace changes applied; awaiting final re-audit."
 }

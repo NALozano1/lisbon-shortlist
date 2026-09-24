@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "ROI 0.1.3-draft: dual re-audit changes applied",
+    "body": "Applied Seller and Finanças Docs re-audit PASS WITH CHANGES: pre-tax CoC labels and IRS-gated after-IRS CoC, price-linked illustrative IMT secondary proxy with cash-in line and override, corrected Cat. F/NOI caveat, and bumped localStorage namespace; awaiting re-audit."
+  },
+  {
+    "date": "2026-09-24",
     "title": "Seller audit PASS WITH CHANGES; Finanças Docs PASS WITH CHANGES",
     "body": "Applied Seller LTV/OpEx fixes and Finanças Docs closing-cost, insurance, utilities, tax-stress, and pre-tax-label fixes; awaiting re-audit."
   },

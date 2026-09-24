@@ -1,5 +1,5 @@
 (() => {
-  const LS_KEY = 'lisbon-roi-inputs-v1';
+  const LS_KEY = 'lisbon-roi-inputs-v013';
   const inputsEl = document.getElementById('inputs');
   const outputsEl = document.getElementById('outputs');
   const tableBody = document.querySelector('#assumptions-table tbody');
@@ -29,10 +29,33 @@
     return (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
   }
 
+  // Effective-rate interpolation of illustrative Continente secondary-habitação
+  // worked checks; this is a proxy, not the official IMT calculator.
+  function imtProxyPct(price) {
+    const checks = [
+      [0, 0],
+      [155000, 1.5],
+      [170000, 1.8],
+      [200000, 2.3],
+      [240000, 3.1],
+    ];
+    if (price <= 0) return 0;
+    for (let i = 1; i < checks.length; i += 1) {
+      const [x1, y1] = checks[i - 1];
+      const [x2, y2] = checks[i];
+      if (price <= x2) return y1 + ((price - x1) * (y2 - y1)) / (x2 - x1);
+    }
+    const [x1, y1] = checks[checks.length - 2];
+    const [x2, y2] = checks[checks.length - 1];
+    return y2 + ((price - x2) * (y2 - y1)) / (x2 - x1);
+  }
+
   function compute(v) {
     const price = Number(v.purchase_price) || 0;
     const closeOverridePct = Number(v.closing_costs_override_pct) || 0;
-    const imtPct = Number(v.imt_purchase_pct) || 0;
+    const imtOverridePct = Number(v.imt_purchase_pct) || 0;
+    const imtPct = imtOverridePct > 0 ? imtOverridePct : imtProxyPct(price);
+    const imtEur = price * (imtPct / 100);
     const stampPurchasePct = Number(v.stamp_duty_purchase_pct) || 0;
     const notaryLegal = Number(v.notary_registry_lawyer_eur) || 0;
     const mortgageStampPct = Number(v.mortgage_stamp_duty_pct) || 0;
@@ -51,7 +74,7 @@
     const maintPct = (Number(v.maintenance_pct_gross) || 0) / 100;
     const loan = Number(v.loan_amount) || 0;
     const closingStack =
-      price * ((imtPct + stampPurchasePct) / 100) +
+      imtEur + price * (stampPurchasePct / 100) +
       notaryLegal +
       loan * (mortgageStampPct / 100);
     const closing = closeOverridePct > 0 ? price * (closeOverridePct / 100) : closingStack;
@@ -73,6 +96,7 @@
     const down = Math.max(price - loan, 0);
     const cashIn = down + closing + fitout;
     const coc = cashIn > 0 ? (cashFlow / cashIn) * 100 : null;
+    const cocAfterIrs = cashIn > 0 ? (cashFlowAfterIrs / cashIn) * 100 : null;
     const cap = price > 0 ? (noi / price) * 100 : null;
 
     // Break-even occupancy: solve for occ where cashFlow = 0
@@ -105,6 +129,8 @@
       cash_flow: cashFlow,
       cash_flow_after_irs: cashFlowAfterIrs,
       cash_on_cash_pct: coc,
+      cash_on_cash_after_irs_pct: cocAfterIrs,
+      imt_eur: imtEur,
       cap_rate_pct: cap,
       break_even_occupancy_pct: be,
       total_cash_in: cashIn,
@@ -195,7 +221,11 @@
     });
     const order = (model.outputs || [])
       .map((o) => o.id)
-      .filter((id) => id !== 'cash_flow_after_irs' || (Number(values.irs_rental_pct) || 0) > 0);
+      .filter(
+        (id) =>
+          !['cash_flow_after_irs', 'cash_on_cash_after_irs_pct'].includes(id) ||
+          (Number(values.irs_rental_pct) || 0) > 0
+      );
     outputsEl.innerHTML = order
       .map((id) => {
         const m = meta[id] || { label: id, unit: '' };
