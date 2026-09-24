@@ -2,36 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lisbon shortlist · ≤€240k · 24 Sep 2026</title>
-  <meta name="description" content="Alex Lozano Lisbon tourist-core apartment shortlist — portal links and map." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Lisbon · ≤€240k · Progress portal</title>
+  <meta name="description" content="Living shortlist & outreach tracker for Alex Lozano — Lisbon tourist-core apartments ≤€240k." />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-shortlist">
   <header class="site-header">
     <div class="brand">
-      <h1>Lisbon shortlist · ≤€240k · 24 Sep 2026</h1>
-      <p>Research shortlist for Alex Lozano — tourist-core links + map. Not financial advice.</p>
+      <h1>
+        <span class="full">Lisbon · ≤€240k</span>
+        <span class="short">Lisbon · ≤€240k</span>
+      </h1>
+      <p>Living shortlist &amp; outreach tracker for Alex <span id="latest-date" class="latest-date"></span></p>
     </div>
     <nav class="nav">
       <a class="active" href="index.html">Shortlist</a>
-      <a href="pipeline.html">Pipeline / Contact</a>
+      <a href="pipeline.html">Pipeline</a>
     </nav>
   </header>
+
+  <div id="latest-strip" class="latest-strip" hidden></div>
 
   <div class="layout">
     <aside class="list-pane">
       <div class="toolbar" id="filters">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="al">AL only</button>
-        <button class="chip" data-filter="price-cut">Price cut</button>
-        <button class="chip" data-filter="NEW">NEW</button>
-        <button class="chip" data-filter="Alfama">Alfama</button>
-        <button class="chip" data-filter="Misericórdia">Misericórdia</button>
-        <button class="chip" data-filter="Mouraria">Mouraria</button>
-        <button class="chip" data-filter="Martim Moniz">Martim Moniz</button>
-        <label style="margin-left:auto;font-size:.8rem;color:var(--muted)">
+        <div class="chip-row">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="al">AL only</button>
+          <button class="chip" data-filter="price-cut">Price cut</button>
+          <button class="chip" data-filter="NEW">NEW</button>
+          <button class="chip" data-filter="Alfama">Alfama</button>
+          <button class="chip" data-filter="Misericórdia">Misericórdia</button>
+          <button class="chip" data-filter="Mouraria">Mouraria</button>
+          <button class="chip" data-filter="Martim Moniz">Martim Moniz</button>
+        </div>
+        <label class="sort-label">
           Sort
           <select class="sort-select" id="sort">
             <option value="rank">Rank</option>
@@ -42,16 +49,15 @@
       </div>
       <div id="cards"></div>
     </aside>
-    <section class="map-pane" id="mapPane">
+    <section class="map-pane collapsed" id="mapPane">
       <div id="map"></div>
     </section>
   </div>
 
-  <button class="mobile-map-toggle" id="mapToggle" type="button">Toggle map</button>
+  <button class="mobile-map-toggle" id="mapToggle" type="button">Map</button>
 
   <footer class="site-footer">
     Portal buttons open listing pages in a new tab. Data from Imovirtual / RE/MAX research · 24 Sep 2026 PT.
-    Photos (if shown) are hotlinked from portal CDNs for reference only.
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>

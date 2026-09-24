@@ -2,149 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pipeline / Contact · Lisbon shortlist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Pipeline · Lisbon · ≤€240k</title>
+  <meta name="description" content="Agency outreach tracker for Alex Lozano Lisbon property search." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-pipeline">
   <header class="site-header">
     <div class="brand">
-      <h1>Pipeline / Contact</h1>
-      <p>Agency outreach status for Alex Lozano · Lisbon ≤€240k</p>
+      <h1>
+        <span class="full">Lisbon · Pipeline</span>
+        <span class="short">Pipeline</span>
+      </h1>
+      <p>Outreach tracker for Alex · append via data/pipeline.json</p>
     </div>
     <nav class="nav">
       <a href="index.html">Shortlist</a>
-      <a class="active" href="pipeline.html">Pipeline / Contact</a>
+      <a class="active" href="pipeline.html">Pipeline</a>
     </nav>
   </header>
 
   <main class="pipeline-wrap">
     <div class="pipeline-note">
-      Updated from AgentMail outreach · last routine check <strong>24 Sep 2026 morning PT</strong>.
-      Stages reflect what Portugal Real Estate has already done talking to agencies. Do not re-chase threads marked as owned by an agent.
+      Updated from outreach · append via <code>data/pipeline.json</code>
+      <span id="pipeline-meta" class="pipeline-meta"></span>
     </div>
 
-    <div class="stage-legend">
-      <span class="stage replied">Replied / Waiting</span>
-      <span class="stage chased">Chased · no reply</span>
+    <section class="updates-section" aria-label="Latest updates">
+      <h2 class="section-label">Latest</h2>
+      <div id="updates-list" class="updates-list"></div>
+    </section>
+
+    <div class="stage-legend" aria-label="Stage legend">
+      <span class="stage waiting">Waiting</span>
+      <span class="stage chased">Chased</span>
       <span class="stage reserved">Reserved</span>
       <span class="stage notcontacted">Not contacted</span>
-      <span class="stage dead">Dead / Gone</span>
+      <span class="stage dead">Dead</span>
+      <span class="stage replied">Replied</span>
     </div>
 
-    <section class="p-card">
-      <span class="stage waiting">Agent owns search · waiting on stock</span>
-      <h3>CB City — Andréa Leitão</h3>
-      <div class="p-meta contact-line">
-        Contact: <a href="mailto:al@cbcity.pt">al@cbcity.pt</a> ·
-        Related: Lisboa ≤€240k search (general mandate)
-      </div>
-      <div class="p-meta">Last action: <strong>14 Sep 2026</strong> (her reply) · Warm ack confirming criteria sent · Thread ongoing</div>
-      <ul class="timeline">
-        <li>REPLIED 14 Sep — she owns the Lisboa ≤€240k search; nothing matching yet.</li>
-        <li>Warm acknowledgement of criteria sent; waiting on new stock.</li>
-        <li><strong>Do NOT re-chase</strong> — Andréa owns this thread.</li>
-      </ul>
-    </section>
-
-    <section class="p-card">
-      <span class="stage dead">Chased · no reply · listing dead</span>
-      <h3>Siimgroup Beato</h3>
-      <div class="p-meta contact-line">
-        Contact: <a href="mailto:empreendimentos@siimgroup.pt">empreendimentos@siimgroup.pt</a> ·
-        Thread ~226bc09c · Related: Beato T1 (ID1ilek, was €235k) — <strong>GONE 24 Sep</strong>
-      </div>
-      <div class="p-meta">Last action: <strong>23 Sep 2026</strong> (stock chase from alex.lozano@agentmail.to)</div>
-      <ul class="timeline">
-        <li>First contact ~27 Aug on Beato listing.</li>
-        <li>Stock chases 17 / 21 / 23 Sep — no reply since Andréa on 14 Sep.</li>
-        <li>Beato listing confirmed GONE (HTTP 410) on 24 Sep.</li>
-      </ul>
-    </section>
-
-    <section class="p-card">
-      <span class="stage chased">Chased · no reply</span>
-      <h3>Pata Brava</h3>
-      <div class="p-meta">Thread 4a3a2b37 · Related: general stock follow-up</div>
-      <div class="p-meta">Last action: <strong>23 Sep 2026</strong></div>
-      <ul class="timeline">
-        <li>Stock chases 17 / 21 / 23 Sep from alex.lozano@agentmail.to.</li>
-        <li>No reply since Andréa on 14 Sep.</li>
-      </ul>
-    </section>
-
-    <section class="p-card">
-      <span class="stage chased">Chased · no reply</span>
-      <h3>CB Seed</h3>
-      <div class="p-meta">Thread 4626917f · Related: general stock follow-up</div>
-      <div class="p-meta">Last action: <strong>23 Sep 2026</strong></div>
-      <ul class="timeline">
-        <li>Stock chases 17 / 21 / 23 Sep.</li>
-        <li>No reply since Andréa on 14 Sep.</li>
-      </ul>
-    </section>
-
-    <section class="p-card">
-      <span class="stage chased">Chased · no reply</span>
-      <h3>ERA Laranjeiras</h3>
-      <div class="p-meta">Thread 1b0011a5 · Related: general stock follow-up</div>
-      <div class="p-meta">Last action: <strong>23 Sep 2026</strong></div>
-      <ul class="timeline">
-        <li>Stock chases 17 / 21 / 23 Sep.</li>
-        <li>No reply since Andréa on 14 Sep.</li>
-      </ul>
-    </section>
-
-    <section class="p-card">
-      <span class="stage reserved">Reserved listing · chased · no new reply</span>
-      <h3>Century21 — João Amaral Costa</h3>
-      <div class="p-meta contact-line">
-        Contact: <a href="mailto:j.amaralcosta@century21.pt">j.amaralcosta@century21.pt</a> ·
-        <a href="https://wa.me/351910580735">+351 910 580 735</a> ·
-        Thread 058b0233 · Related: Estrela T0 ref 0739-04503 (was reserved)
-      </div>
-      <div class="p-meta">Last action: <strong>23 Sep 2026</strong></div>
-      <ul class="timeline">
-        <li>Estrela T0 0739-04503 was reserved; asked to ping if it frees + other stock.</li>
-        <li>Stock chases 17 / 21 / 23 Sep — no new reply.</li>
-      </ul>
-    </section>
-
-    <h2 style="margin:1.5rem 0 .75rem;font-size:1.1rem;color:var(--muted)">Shortlist listings — contact stage</h2>
-    <p style="color:var(--muted);font-size:.88rem;margin-top:0">Top picks not listed in active agency threads above are treated as not contacted.</p>
-
-    <section class="p-card">
-      <span class="stage notcontacted">Not contacted</span>
-      <h3>RE/MAX Prestige — Escadinhas dos Remédios AL · €215k</h3>
-      <div class="p-meta">
-        Agent: Sónia Pais · +351 964 061 361 ·
-        <a href="https://remax.pt/pt/imoveis/venda-apartamento-t1-lisboa-santa-maria-maior/123751650-19" target="_blank" rel="noopener">RE/MAX listing ↗</a>
-      </div>
-      <ul class="timeline">
-        <li><strong>NOT emailed yet</strong> — awaiting Alex go-ahead.</li>
-        <li>Caveat: Propostas Múltiplas sealed bids <strong>06/10/2026</strong> above base.</li>
-      </ul>
-    </section>
-
-    <section class="p-card">
-      <span class="stage notcontacted">Not contacted</span>
-      <h3>Other top picks (Portas do Sol AL, IAD Alfama AL, KW duplex, C21 Alfama T2, etc.)</h3>
-      <div class="p-meta">See <a href="index.html">Shortlist</a> for portal links and phones.</div>
-      <ul class="timeline">
-        <li>Not contacted unless named in an agency thread above.</li>
-        <li>Use listing WhatsApp / portal contact only when Alex green-lights outreach.</li>
-      </ul>
-    </section>
-
-    <section class="p-card">
-      <span class="stage dead">Contacted · listing gone</span>
-      <h3>Beato ID1ilek (RE/MAX Siimgroup)</h3>
-      <div class="p-meta">Was €235k · Contacted via Siimgroup → confirmed GONE 24 Sep</div>
-    </section>
+    <div id="pipeline-list" class="pipeline-list"></div>
   </main>
 
   <footer class="site-footer">
-    For Alex Lozano · research / outreach tracker only · no mortgage or bank details on this page.
+    For Alex Lozano · research / outreach tracker · no mortgage or bank details.
   </footer>
+
+  <script src="pipeline.js"></script>
 </body>
 </html>

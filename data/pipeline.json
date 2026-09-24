@@ -1,0 +1,102 @@
+[
+  {
+    "id": "cb-city-andrea",
+    "agency": "CB City — Andréa Leitão",
+    "contact": { "email": "al@cbcity.pt" },
+    "related": "Lisboa ≤€240k search (general mandate)",
+    "stage": "waiting",
+    "stage_label": "Waiting on stock",
+    "last_action": "2026-09-14",
+    "last_action_note": "Owns ≤240k search; do not re-chase",
+    "bullets": [
+      "Replied 14 Sep — nothing matching yet",
+      "Do NOT re-chase — Andréa owns this thread"
+    ]
+  },
+  {
+    "id": "siimgroup-beato",
+    "agency": "Siimgroup Beato",
+    "contact": { "email": "empreendimentos@siimgroup.pt" },
+    "related": "Beato T1 (was €235k)",
+    "stage": "dead",
+    "stage_label": "Dead / Gone",
+    "last_action": "2026-09-23",
+    "last_action_note": "Listing gone 24 Sep; chases unanswered",
+    "bullets": [
+      "Beato listing confirmed GONE (HTTP 410) 24 Sep",
+      "Stock chases 17 / 21 / 23 Sep — no reply"
+    ]
+  },
+  {
+    "id": "pata-brava",
+    "agency": "Pata Brava",
+    "related": "General stock follow-up",
+    "stage": "chased",
+    "stage_label": "Chased · no reply",
+    "last_action": "2026-09-23",
+    "last_action_note": "Stock chase; no reply",
+    "bullets": ["Stock chases 17 / 21 / 23 Sep"]
+  },
+  {
+    "id": "cb-seed",
+    "agency": "CB Seed",
+    "related": "General stock follow-up",
+    "stage": "chased",
+    "stage_label": "Chased · no reply",
+    "last_action": "2026-09-23",
+    "last_action_note": "Stock chase; no reply",
+    "bullets": ["Stock chases 17 / 21 / 23 Sep"]
+  },
+  {
+    "id": "era-laranjeiras",
+    "agency": "ERA Laranjeiras",
+    "related": "General stock follow-up",
+    "stage": "chased",
+    "stage_label": "Chased · no reply",
+    "last_action": "2026-09-23",
+    "last_action_note": "Stock chase; no reply",
+    "bullets": ["Stock chases 17 / 21 / 23 Sep"]
+  },
+  {
+    "id": "c21-joao-amaral",
+    "agency": "C21 — João Amaral Costa",
+    "contact": { "email": "j.amaralcosta@century21.pt", "phone": "+351 910 580 735" },
+    "related": "Estrela T0 (was reserved)",
+    "stage": "reserved",
+    "stage_label": "Reserved",
+    "last_action": "2026-09-23",
+    "last_action_note": "Estrela reserved; chased; no new reply",
+    "bullets": [
+      "Asked to ping if it frees + other stock",
+      "Chases 17 / 21 / 23 Sep — no new reply"
+    ]
+  },
+  {
+    "id": "remax-remedios",
+    "agency": "RE/MAX Remédios AL",
+    "related": "Escadinhas dos Remédios · €215k",
+    "stage": "notcontacted",
+    "stage_label": "Not contacted",
+    "last_action": "2026-09-24",
+    "last_action_note": "Awaiting Alex go-ahead; sealed bids 06/10/2026",
+    "bullets": [
+      "Sealed bids (Propostas Múltiplas) 06/10/2026 above base",
+      "See Shortlist rank #1 for portal / WhatsApp"
+    ],
+    "listing_ranks": [1]
+  },
+  {
+    "id": "shortlist-top-picks",
+    "agency": "Top picks not contacted yet",
+    "related": "Portas do Sol, IAD Alfama, KW duplex, C21 Alfama, etc.",
+    "stage": "notcontacted",
+    "stage_label": "Not contacted",
+    "last_action": null,
+    "last_action_note": "Not emailed yet — see Shortlist",
+    "bullets": [
+      "Open Shortlist for portal links and phones",
+      "Outreach only when Alex green-lights"
+    ],
+    "listing_ranks": [2, 3, 4, 5]
+  }
+]
