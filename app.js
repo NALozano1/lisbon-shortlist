@@ -5,9 +5,12 @@
   const mapToggle = document.getElementById('mapToggle');
   const latestStrip = document.getElementById('latest-strip');
   const latestDateEl = document.getElementById('latest-date');
+  const shortlistCountEl = document.getElementById('shortlist-count');
+  const readinessEl = document.getElementById('readiness-filters');
   let listings = [];
   let roiByUrl = {};
   let roiByRank = {};
+  let readiness = 'ready';
   let filter = 'all';
   let sortKey = 'rank';
   let map, markersLayer, markerByRank = {};
@@ -44,6 +47,7 @@
   }
 
   function matchesFilter(d) {
+    if (readiness === 'ready' && d.ready_to_let === false) return false;
     if (filter === 'all') return true;
     if (filter === '170k') return d.band === '170k' || (d.price_eur != null && d.price_eur <= 170000);
     if (filter === '240k') return d.band === '240k' || (d.price_eur != null && d.price_eur > 170000 && d.price_eur <= 240000);
@@ -83,6 +87,12 @@
 
   function renderCards() {
     const arr = sorted();
+    const hiddenWorks = listings.filter((d) => d.ready_to_let === false).length;
+    if (shortlistCountEl) {
+      shortlistCountEl.textContent = readiness === 'ready'
+        ? `Ready to let only · ${arr.length} listings · ${hiddenWorks} obras hidden`
+        : `Showing obras too · ${arr.length} listings`;
+    }
     if (!arr.length) {
       cardsEl.innerHTML = '<div class="empty">No listings match this filter.</div>';
       return;
@@ -232,10 +242,19 @@
     updateToggleLabel();
   }
 
+  readinessEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.chip');
+    if (!btn) return;
+    readinessEl.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    readiness = btn.dataset.readiness;
+    refresh();
+  });
+
   document.getElementById('filters').addEventListener('click', (e) => {
     const btn = e.target.closest('.chip');
     if (!btn) return;
-    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('#filters .chip').forEach(c => c.classList.remove('active'));
     btn.classList.add('active');
     filter = btn.dataset.filter;
     refresh();

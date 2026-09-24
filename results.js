@@ -3,8 +3,10 @@
   const sortEl = document.getElementById('sort');
   const countEl = document.getElementById('results-count');
   const asofEl = document.getElementById('results-asof');
+  const readinessEl = document.getElementById('readiness-filters');
 
   let results = [];
+  let readiness = 'ready';
   let filter = 'all';
   let sortKey = 'str_mid_coverage';
 
@@ -28,6 +30,7 @@
   }
 
   function matchesFilter(r) {
+    if (readiness === 'ready' && r.ready_to_let === false) return false;
     if (filter === 'all') return true;
     if (filter === '170k') return !!r.price_band_170k || r.band === '170k' || (r.price_eur != null && r.price_eur <= 170000);
     if (filter === 'al') return !!r.al;
@@ -55,7 +58,7 @@
   function badges(r) {
     const items = [];
     if (r.al) items.push('<span class="badge AL">AL</span>');
-    if (r.high_uncertainty_reno) items.push('<span class="badge reno">Needs works</span>');
+    if (r.needs_works || r.high_uncertainty_reno) items.push('<span class="badge reno">Needs works</span>');
     return items.join('');
   }
 
@@ -94,13 +97,27 @@
 
   function render() {
     const arr = sorted();
-    if (countEl) countEl.textContent = arr.length ? `${arr.length} listings` : 'No results match this filter.';
+    const hiddenWorks = results.filter((r) => r.ready_to_let === false).length;
+    if (countEl) {
+      if (!arr.length) countEl.textContent = 'No results match this filter.';
+      else if (readiness === 'ready') countEl.textContent = `Ready to let only · ${arr.length} deals · ${hiddenWorks} obras hidden`;
+      else countEl.textContent = `Showing obras too · ${arr.length} deals`;
+    }
     if (!arr.length) {
       listEl.innerHTML = '<div class="empty">No results match this filter.</div>';
       return;
     }
     listEl.innerHTML = arr.map((r, i) => renderCard(r, i + 1)).join('');
   }
+
+  readinessEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.chip');
+    if (!btn) return;
+    readinessEl.querySelectorAll('.chip').forEach((c) => c.classList.remove('active'));
+    btn.classList.add('active');
+    readiness = btn.dataset.readiness;
+    render();
+  });
 
   document.getElementById('filters').addEventListener('click', (e) => {
     const btn = e.target.closest('.chip');

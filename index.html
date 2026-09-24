@@ -29,8 +29,12 @@
 
   <div class="layout">
     <aside class="list-pane">
-      <div class="toolbar" id="filters">
-        <div class="chip-row">
+      <div class="toolbar">
+        <div class="chip-row readiness-row" id="readiness-filters" role="group" aria-label="Readiness">
+          <button class="chip active" data-readiness="ready">Ready only</button>
+          <button class="chip" data-readiness="all">Show obras</button>
+        </div>
+        <div class="chip-row" id="filters">
           <button class="chip active" data-filter="all">All</button>
           <button class="chip" data-filter="170k">≤€170k</button>
           <button class="chip" data-filter="240k">≤€240k</button>
@@ -52,6 +56,7 @@
           </select>
         </label>
       </div>
+      <p class="results-count" id="shortlist-count" aria-live="polite"></p>
       <div id="cards"></div>
     </aside>
     <section class="map-pane collapsed" id="mapPane">

@@ -107,7 +107,9 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": true,
-      "rank_str_mid_coc": 1
+      "rank_str_mid_coc": 1,
+      "ready_to_let": false,
+      "needs_works": true
     },
     {
       "listing_rank": 5,
@@ -179,7 +181,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 2
+      "rank_str_mid_coc": 2,
+      "ready_to_let": true
     },
     {
       "listing_rank": 24,
@@ -249,7 +252,9 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": true,
-      "rank_str_mid_coc": 3
+      "rank_str_mid_coc": 3,
+      "ready_to_let": false,
+      "needs_works": true
     },
     {
       "listing_rank": 25,
@@ -319,7 +324,9 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": true,
-      "rank_str_mid_coc": 4
+      "rank_str_mid_coc": 4,
+      "ready_to_let": false,
+      "needs_works": true
     },
     {
       "listing_rank": 19,
@@ -389,7 +396,8 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 5
+      "rank_str_mid_coc": 5,
+      "ready_to_let": true
     },
     {
       "listing_rank": 18,
@@ -459,7 +467,8 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 6
+      "rank_str_mid_coc": 6,
+      "ready_to_let": true
     },
     {
       "listing_rank": 21,
@@ -529,7 +538,9 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": true,
-      "rank_str_mid_coc": 7
+      "rank_str_mid_coc": 7,
+      "ready_to_let": false,
+      "needs_works": true
     },
     {
       "listing_rank": 7,
@@ -594,14 +605,14 @@
         "STR assumes licence obtainable / already licensed — regulatory risk (RMAL; underwrite STR only on licensed AL)",
         "T2 STR comps thinner (BNBCalc 2BR ladder); ADR 160–175 @ 60–62% illustrative",
         "LTR rent €1,500/mo — T2 mid €1500 low confidence (Idealista T0/T1 parish mids only)",
-        "HIGH UNCERTAINTY: reno/obras fit-out €18,000 (illustrative €15–25k band; not a contractor quote)",
         "T2 market-mid: thinner public comps (BNBCalc ladder)"
       ],
       "financeable_loan_cap": true,
       "price_band_170k": false,
       "str_mid_cf_negative": false,
-      "high_uncertainty_reno": true,
-      "rank_str_mid_coc": 8
+      "high_uncertainty_reno": false,
+      "rank_str_mid_coc": 8,
+      "ready_to_let": true
     },
     {
       "listing_rank": 12,
@@ -670,7 +681,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 9
+      "rank_str_mid_coc": 9,
+      "ready_to_let": true
     },
     {
       "listing_rank": 11,
@@ -739,7 +751,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 10
+      "rank_str_mid_coc": 10,
+      "ready_to_let": true
     },
     {
       "listing_rank": 1,
@@ -808,7 +821,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 11
+      "rank_str_mid_coc": 11,
+      "ready_to_let": true
     },
     {
       "listing_rank": 6,
@@ -877,7 +891,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 12
+      "rank_str_mid_coc": 12,
+      "ready_to_let": true
     },
     {
       "listing_rank": 22,
@@ -947,7 +962,9 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": true,
-      "rank_str_mid_coc": 13
+      "rank_str_mid_coc": 13,
+      "ready_to_let": false,
+      "needs_works": true
     },
     {
       "listing_rank": 3,
@@ -1018,7 +1035,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 14
+      "rank_str_mid_coc": 14,
+      "ready_to_let": true
     },
     {
       "listing_rank": 2,
@@ -1087,7 +1105,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 15
+      "rank_str_mid_coc": 15,
+      "ready_to_let": true
     },
     {
       "listing_rank": 17,
@@ -1156,7 +1175,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 16
+      "rank_str_mid_coc": 16,
+      "ready_to_let": true
     },
     {
       "listing_rank": 9,
@@ -1225,7 +1245,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 17
+      "rank_str_mid_coc": 17,
+      "ready_to_let": true
     },
     {
       "listing_rank": 10,
@@ -1295,7 +1316,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 18
+      "rank_str_mid_coc": 18,
+      "ready_to_let": true
     },
     {
       "listing_rank": 14,
@@ -1364,7 +1386,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 19
+      "rank_str_mid_coc": 19,
+      "ready_to_let": true
     },
     {
       "listing_rank": 20,
@@ -1433,7 +1456,8 @@
       "price_band_170k": true,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 20
+      "rank_str_mid_coc": 20,
+      "ready_to_let": true
     },
     {
       "listing_rank": 4,
@@ -1503,7 +1527,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 21
+      "rank_str_mid_coc": 21,
+      "ready_to_let": true
     },
     {
       "listing_rank": 8,
@@ -1572,7 +1597,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 22
+      "rank_str_mid_coc": 22,
+      "ready_to_let": true
     },
     {
       "listing_rank": 16,
@@ -1642,7 +1668,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 23
+      "rank_str_mid_coc": 23,
+      "ready_to_let": true
     },
     {
       "listing_rank": 15,
@@ -1711,7 +1738,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 24
+      "rank_str_mid_coc": 24,
+      "ready_to_let": true
     },
     {
       "listing_rank": 13,
@@ -1781,7 +1809,8 @@
       "price_band_170k": false,
       "str_mid_cf_negative": false,
       "high_uncertainty_reno": false,
-      "rank_str_mid_coc": 25
+      "rank_str_mid_coc": 25,
+      "ready_to_let": true
     }
   ]
 }

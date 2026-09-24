@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "Turnkey filter: ready-to-let only by default",
+    "body": "Alex confirmed no obras/construction. Results and shortlist now show 20 ready-to-let flats by default; five shells/reno listings remain available only via Show obras. No construction CapEx was zeroed or re-run; #7 renovado is no longer flagged as uncertain renovation."
+  },
+  {
+    "date": "2026-09-24",
     "title": "Results page live + 40y mortgage default",
     "body": "New results.html ranks all 25 batch ROIs (STR mid/cons + LTR) with mobile stacked cards, filters, and coverage vs 40y mortgage (NOI/12 ÷ mort). Shortlist cards show STR/LTR CoC chips + coverage. Model 0.1.6-draft: mortgage_term_years default 30→40; batch recalculated. Pre-tax; parish/city comps only."
   },

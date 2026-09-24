@@ -29,8 +29,12 @@
       <p class="method-note" id="method-note">Illustrative · 40y loan · not tax advice.</p>
     </div>
 
-    <div class="toolbar results-toolbar" id="filters">
-      <div class="chip-row" role="group" aria-label="Filters">
+    <div class="toolbar results-toolbar">
+      <div class="chip-row readiness-row" id="readiness-filters" role="group" aria-label="Readiness">
+        <button type="button" class="chip active" data-readiness="ready">Ready only</button>
+        <button type="button" class="chip" data-readiness="all">Show obras</button>
+      </div>
+      <div class="chip-row" id="filters" role="group" aria-label="Filters">
         <button type="button" class="chip active" data-filter="all">All</button>
         <button type="button" class="chip" data-filter="170k">≤€170k</button>
         <button type="button" class="chip" data-filter="al">AL only</button>
