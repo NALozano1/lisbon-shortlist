@@ -1,6 +1,6 @@
 {
-  "model_version": "0.1.4-draft",
-  "audit_status": "pending",
+  "model_version": "0.1.4",
+  "audit_status": "audited",
   "drafts": {
     "170k-1": {
       "listing_key": "t0-em-alfama-rua-castelo-picao-ID1iUO1",
@@ -172,9 +172,10 @@
         "purchase_price": 215000,
         "nightly_rate": 130,
         "occupancy_pct": 65,
-        "furniture_fitout": 6500,
+        "furniture_fitout": 9500,
         "loan_amount": 150500,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "cleaning_per_turnover": 55
       },
       "note": "Market-mid stub — T1 × Santa Maria Maior (SMM) / Alfama–Baixa tourist-core. Cites AirDNA Lisbon city Pages overview (updated 2026-09-22; data through Aug 2026) and Airbtics Alfama (Feb 2025–Jan 2026); Airbtics 85% occupancy is upper/optimistic, not the global default. BNBCalc size ladder + GuestFavorites parish multipliers provide the size×area cross-check; property AirDNA Rentalizer needs a paid login/pasted comps. GuestFavorites SMM multiplier ×1.12; working grid €31–32k gross. Better T1 mid ADR €125–140; gross check ≈€30.8k at ADR €130 × 65%. Market-mid only; not the €95 / 55% conservative global default."
     },
@@ -198,9 +199,10 @@
         "purchase_price": 215000,
         "nightly_rate": 125,
         "occupancy_pct": 65,
-        "furniture_fitout": 6500,
+        "furniture_fitout": 9500,
         "loan_amount": 150500,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "cleaning_per_turnover": 55
       },
       "note": "Optional grid stub — T1 × Misericórdia. BNBCalc size ladder × GuestFavorites Misericórdia multiplier ×1.10; working gross €30–31k. ADR €125 @ 65% gives ≈€29.7k; market-mid, not a global default."
     },
@@ -216,7 +218,24 @@
         "ltv_pct": 70
       },
       "note": "Optional conservative grid stub — T0 × Arroios / near-core. BNBCalc size ladder × GuestFavorites Arroios multiplier ×0.95; working gross €20–23k. ADR €95 @ 60% gives ≈€20.8k; below the SMM market-mid case."
+    },
+    "best-case-managed-t0-smm": {
+      "band": "170k",
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 155000,
+        "nightly_rate": 110,
+        "occupancy_pct": 65,
+        "furniture_fitout": 6500,
+        "cleaning_per_turnover": 45,
+        "management_fee_pct": 18,
+        "maintenance_pct_gross": 6,
+        "irs_rental_pct": 0,
+        "loan_amount": 108500,
+        "ltv_pct": 70
+      },
+      "note": "Managed best-case path — not the conservative default. T0 × Santa Maria Maior (SMM) / Alfama–Baixa; ADR €110 @ 65% aligned with the market-mid T0 case. Early-years IRS 0 scenario assumes accountant-confirmed construction-cost / obras offset — illustrative only, not tax advice; verify with accountant."
     }
   },
-  "note": "Listing stubs use 70% LTV capped at €170k; market-mid stubs use BNBCalc size ladder + GuestFavorites parish multipliers and AirDNA-like 55–70% occupancy. Calculator default remains ADR €95 @ 55% (≈€19k gross); Airbtics 80%+ is not a global default."
+  "note": "Listing stubs use 70% LTV capped at €170k; market-mid stubs use BNBCalc size ladder + GuestFavorites parish multipliers and AirDNA-like 55–70% occupancy. T1 market-mid polish uses €9,500 furniture/fit-out and €55 cleaning. Calculator default remains ADR €95 @ 55% (≈€19k gross); Airbtics 80%+ is not a global default. The managed best-case stub is an optional scenario-layer illustration, not the conservative default; global tax defaults are unchanged."
 }

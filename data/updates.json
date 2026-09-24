@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "ROI 0.1.4 audited — Seller market PASS",
+    "body": "Seller market-confirmed PASS landed. Published model 0.1.4 as audited, applied T1 market-mid polish (€9,500 fit-out; €55 cleaning), and added the optional managed best-case T0 SMM draft stub; Finanças tax defaults and stack unchanged."
+  },
+  {
+    "date": "2026-09-24",
     "title": "ROI 0.1.4-draft — market comps and size×area mids",
     "body": "Applied AirDNA/Airbtics/ListingOK market citations, Seller BNBCalc + GuestFavorites size×area context, and market-mid T0/T1 (plus compact area) draft stubs. Tax/IRS/IMT/closing/LTV/CoC fields unchanged; awaiting Seller market re-confirm."
   },

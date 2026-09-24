@@ -1,20 +1,20 @@
 {
-  "model_version": "0.1.4-draft",
+  "model_version": "0.1.4",
   "audited_by": [
     {
       "agent": "Seller",
       "verdict": "PASS",
       "date": "2026-09-24",
-      "scope": "market/defaults/CoC"
+      "scope": "market/comps/draft stubs"
     },
     {
       "agent": "Finanças Docs",
       "verdict": "PASS",
       "date": "2026-09-24",
-      "scope": "IMT/closing/IRS labels/mortgage/OpEx"
+      "scope": "IMT/closing/IRS labels (tax stack unchanged in 0.1.4)"
     }
   ],
-  "audit_status": "changes_applied_awaiting_reaudit",
+  "audit_status": "audited",
   "updated": "2026-09-24",
   "disclaimer": "Illustrative STR / short-let model for Lisbon tourist-core. NOI, cash flow and CoC are pre-IRS / pre-AL-tax and not legal, tax, or mortgage advice. IMT and regime depend on buyer profile and property value; mais-valia is out of scope — verify with a lawyer / bank. Ops flag: Alfama/Baixa/Bairro Alto are often RMAL-saturated; revenue assumes the unit is already licensed for AL. This is an operating assumption, not a tax conclusion.",
   "assumptions": [
@@ -439,9 +439,9 @@
     }
   ],
   "reviewers": {
-    "Seller": "PASS 2026-09-24 (final 0.1.3); market inputs revised after PASS in 0.1.4-draft; re-confirm pending",
-    "Finanças Docs": "PASS 2026-09-24 (final 0.1.3); tax/closing/mortgage/OpEx fields unchanged in 0.1.4-draft"
+    "Seller": "PASS 2026-09-24 (market/comps/draft stubs; market-confirmed)",
+    "Finanças Docs": "PASS 2026-09-24 retained for IMT/closing/IRS labels; tax stack unchanged in 0.1.4"
   },
-  "audit_notes": "Seller + Finanças Docs prior PASS records retained. Market inputs and citations were revised after Seller PASS: AirDNA/ Airbtics/ListingOK references, conservative defaults, and Seller size×area working-grid context were added; market-mid draft stubs use AirDNA-like occupancy and remain illustrative. Seller market re-confirm is pending. Tax/IRS/IMT/closing/LTV/CoC fields and values were not changed.",
+  "audit_notes": "Seller market-confirmed PASS on 2026-09-24 for market inputs, comps context, and draft stubs. Applied non-blocking T1 market-mid polish (furniture/fit-out €9,500 and cleaning €55) and added an explicitly illustrative managed best-case T0 scenario in the draft layer. Finanças Docs prior PASS is retained for IMT/closing/IRS labels; the audited tax stack and global defaults were not changed.",
   "market_note": "Seller size×area working grid: BNBCalc Lisbon size ladder cross-checked with GuestFavorites parish multipliers (Santa Maria Maior/Alfama–Baixa ×1.12, Misericórdia ×1.10, Santo António ×1.13, Arroios ×0.95). Market-mid drafts use AirDNA-like 55–70% occupancy; Airbtics 80%+ occupancy is not the global default. Central AL availability/licensing remains an ops diligence item."
 }

@@ -308,8 +308,8 @@
   draftSelect.addEventListener('change', () => applyDraft(draftSelect.value));
 
   Promise.all([
-    fetch('data/roi-model.json').then((r) => r.json()),
-    fetch('data/roi-drafts.json')
+    fetch('data/roi-model.json?v=0.1.4').then((r) => r.json()),
+    fetch('data/roi-drafts.json?v=0.1.4')
       .then((r) => r.json())
       .catch(() => null),
   ])
