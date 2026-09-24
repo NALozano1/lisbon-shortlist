@@ -308,7 +308,7 @@
 
   Promise.all([
     fetch('data/listings.json').then(r => r.json()),
-    fetch('data/roi-results.json?v=20260924-40y').then(r => r.ok ? r.json() : null).catch(() => null)
+    fetch('data/roi-results.json?v=20260924-turnkey').then(r => r.ok ? r.json() : null).catch(() => null)
   ])
     .then(([data, roi]) => {
       listings = data;

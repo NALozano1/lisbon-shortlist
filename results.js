@@ -132,7 +132,7 @@
     render();
   });
 
-  fetch('data/roi-results.json?v=20260924-40y')
+  fetch('data/roi-results.json?v=20260924-turnkey')
     .then((r) => {
       if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
       return r.json();
