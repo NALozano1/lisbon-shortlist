@@ -1,8 +1,66 @@
 [
   {
+    "id": "roi-model-v010",
+    "agency": "ROI model 0.1.0-draft",
+    "related": "Global STR assumptions — see roi.html",
+    "stage": "roi_draft",
+    "stage_label": "ROI draft · pending audit",
+    "roi_status": "roi_draft",
+    "last_action": "2026-09-24",
+    "last_action_note": "Calculator + roi-model.json seeded; audited_by empty",
+    "bullets": [
+      "Open ROI calculator to tweak assumptions",
+      "No personal mortgage details on the public site",
+      "Bump model_version when assumptions change after audit"
+    ]
+  },
+  {
+    "id": "roi-170k-top",
+    "agency": "≤€170k top picks — ROI drafts",
+    "related": "Castelo Picão, Beco Achada, Martim Vaz, Regueira reno, São Rafael",
+    "stage": "roi_draft",
+    "stage_label": "ROI draft",
+    "roi_status": "roi_draft",
+    "last_action": "2026-09-24",
+    "last_action_note": "Stub nightly/occupancy in data/roi-drafts.json",
+    "bullets": [
+      "Most ≤170k core stock is capex — model furniture/works carefully",
+      "See Shortlist filter ≤€170k"
+    ],
+    "listing_ranks": [
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  {
+    "id": "roi-240k-top5",
+    "agency": "≤€240k top 5 — ROI drafts",
+    "related": "Remédios AL, Portas do Sol AL, IAD Alfama, KW duplex, C21 T2",
+    "stage": "roi_pending",
+    "stage_label": "ROI pending / draft stubs",
+    "roi_status": "roi_draft",
+    "last_action": "2026-09-24",
+    "last_action_note": "Draft stubs keyed in roi-drafts.json; loan default capped €170k",
+    "bullets": [
+      "Loan amount defaults to min(price, 170000) in calculator"
+    ],
+    "listing_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
     "id": "cb-city-andrea",
     "agency": "CB City — Andréa Leitão",
-    "contact": { "email": "al@cbcity.pt" },
+    "contact": {
+      "email": "al@cbcity.pt"
+    },
     "related": "Lisboa ≤€240k search (general mandate)",
     "stage": "waiting",
     "stage_label": "Waiting on stock",
@@ -11,12 +69,15 @@
     "bullets": [
       "Replied 14 Sep — nothing matching yet",
       "Do NOT re-chase — Andréa owns this thread"
-    ]
+    ],
+    "roi_status": null
   },
   {
     "id": "siimgroup-beato",
     "agency": "Siimgroup Beato",
-    "contact": { "email": "empreendimentos@siimgroup.pt" },
+    "contact": {
+      "email": "empreendimentos@siimgroup.pt"
+    },
     "related": "Beato T1 (was €235k)",
     "stage": "dead",
     "stage_label": "Dead / Gone",
@@ -25,7 +86,8 @@
     "bullets": [
       "Beato listing confirmed GONE (HTTP 410) 24 Sep",
       "Stock chases 17 / 21 / 23 Sep — no reply"
-    ]
+    ],
+    "roi_status": null
   },
   {
     "id": "pata-brava",
@@ -35,7 +97,10 @@
     "stage_label": "Chased · no reply",
     "last_action": "2026-09-23",
     "last_action_note": "Stock chase; no reply",
-    "bullets": ["Stock chases 17 / 21 / 23 Sep"]
+    "bullets": [
+      "Stock chases 17 / 21 / 23 Sep"
+    ],
+    "roi_status": null
   },
   {
     "id": "cb-seed",
@@ -45,7 +110,10 @@
     "stage_label": "Chased · no reply",
     "last_action": "2026-09-23",
     "last_action_note": "Stock chase; no reply",
-    "bullets": ["Stock chases 17 / 21 / 23 Sep"]
+    "bullets": [
+      "Stock chases 17 / 21 / 23 Sep"
+    ],
+    "roi_status": null
   },
   {
     "id": "era-laranjeiras",
@@ -55,12 +123,18 @@
     "stage_label": "Chased · no reply",
     "last_action": "2026-09-23",
     "last_action_note": "Stock chase; no reply",
-    "bullets": ["Stock chases 17 / 21 / 23 Sep"]
+    "bullets": [
+      "Stock chases 17 / 21 / 23 Sep"
+    ],
+    "roi_status": null
   },
   {
     "id": "c21-joao-amaral",
     "agency": "C21 — João Amaral Costa",
-    "contact": { "email": "j.amaralcosta@century21.pt", "phone": "+351 910 580 735" },
+    "contact": {
+      "email": "j.amaralcosta@century21.pt",
+      "phone": "+351 910 580 735"
+    },
     "related": "Estrela T0 (was reserved)",
     "stage": "reserved",
     "stage_label": "Reserved",
@@ -69,7 +143,8 @@
     "bullets": [
       "Asked to ping if it frees + other stock",
       "Chases 17 / 21 / 23 Sep — no new reply"
-    ]
+    ],
+    "roi_status": null
   },
   {
     "id": "remax-remedios",
@@ -83,7 +158,10 @@
       "Sealed bids (Propostas Múltiplas) 06/10/2026 above base",
       "See Shortlist rank #1 for portal / WhatsApp"
     ],
-    "listing_ranks": [1]
+    "listing_ranks": [
+      1
+    ],
+    "roi_status": "roi_draft"
   },
   {
     "id": "shortlist-top-picks",
@@ -97,6 +175,12 @@
       "Open Shortlist for portal links and phones",
       "Outreach only when Alex green-lights"
     ],
-    "listing_ranks": [2, 3, 4, 5]
+    "listing_ranks": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "roi_status": "roi_pending"
   }
 ]

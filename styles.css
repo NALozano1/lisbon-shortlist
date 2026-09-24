@@ -307,3 +307,101 @@ a:hover { text-decoration: underline; }
   .card { padding: .7rem .75rem; }
   .portal-btn { padding: .45rem .6rem; font-size: .75rem; }
 }
+
+/* —— ROI calculator —— */
+.roi-wrap { max-width: 1100px; margin: 0 auto; padding: 1rem 1rem 3rem; }
+.roi-banner {
+  background: #2a241f; border: 1px solid var(--border); border-radius: 12px;
+  padding: .85rem 1rem; margin-bottom: 1rem;
+  display: flex; flex-direction: column; gap: .35rem;
+}
+.roi-banner strong { color: var(--accent); font-size: 1.05rem; }
+.roi-disclaimer { color: var(--muted); font-size: .8rem; }
+.roi-grid {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 1rem; align-items: start;
+}
+@media (max-width: 900px) {
+  .roi-grid { grid-template-columns: 1fr; }
+}
+.roi-inputs, .roi-outputs, .roi-assumptions {
+  background: #1e1a17; border: 1px solid var(--border); border-radius: 12px; padding: .85rem;
+}
+.roi-assumptions { margin-top: 1rem; }
+.section-label { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 .75rem; }
+.section-label .muted { font-weight: 400; text-transform: none; letter-spacing: 0; }
+.roi-field {
+  display: flex; flex-direction: column; gap: .25rem;
+  padding: .55rem 0; border-bottom: 1px solid var(--border);
+}
+.roi-field-label { font-weight: 650; font-size: .9rem; display: flex; flex-wrap: wrap; gap: .35rem; align-items: baseline; }
+.assump-id {
+  font-size: .65rem; font-weight: 500; color: var(--muted);
+  background: #2c2621; padding: .1rem .35rem; border-radius: 4px;
+}
+.roi-field-input { display: flex; gap: .45rem; align-items: center; }
+.roi-field-input input {
+  flex: 1; min-width: 0; background: #12100e; border: 1px solid var(--border);
+  color: var(--text); border-radius: 8px; padding: .55rem .65rem; font: inherit; font-size: 1rem;
+  min-height: 44px;
+}
+.roi-field-input .unit { color: var(--muted); font-size: .8rem; min-width: 4.5rem; }
+.roi-field-note { color: var(--muted); font-size: .72rem; line-height: 1.35; }
+.roi-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .85rem; }
+.btn {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #1a120c; border: none; border-radius: 8px; padding: .55rem .85rem;
+  font-weight: 700; cursor: pointer; min-height: 44px; font: inherit;
+}
+.btn-ghost {
+  background: transparent; color: var(--text); border: 1px solid var(--border);
+}
+.draft-picker {
+  display: flex; flex-direction: column; gap: .35rem; margin-top: .85rem;
+  font-size: .8rem; color: var(--muted);
+}
+.draft-picker select {
+  background: #12100e; color: var(--text); border: 1px solid var(--border);
+  border-radius: 8px; padding: .5rem; min-height: 44px; font: inherit;
+}
+.output-cards {
+  display: grid; grid-template-columns: 1fr 1fr; gap: .55rem;
+}
+.out-card {
+  background: #12100e; border: 1px solid var(--border); border-radius: 10px; padding: .65rem .7rem;
+}
+.out-card.hi { border-color: #5a4a35; background: #241e18; }
+.out-card.neg .out-value { color: #f07178; }
+.out-label { font-size: .72rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .25rem; align-items: baseline; margin-bottom: .25rem; }
+.out-value { font-size: 1.25rem; font-weight: 750; color: var(--accent); }
+.out-unit { font-size: .68rem; color: var(--muted); }
+.assumptions-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.assumptions-table {
+  width: 100%; border-collapse: collapse; font-size: .78rem;
+}
+.assumptions-table th, .assumptions-table td {
+  text-align: left; padding: .45rem .5rem; border-bottom: 1px solid var(--border); vertical-align: top;
+}
+.assumptions-table th { color: var(--muted); font-weight: 650; white-space: nowrap; }
+.assumptions-table code { font-size: .7rem; }
+
+/* ROI pipeline stages */
+.stage.roi_pending, .stage.roi-pending { background: #2a3040; color: #9db4d4; }
+.stage.roi_draft, .stage.roi-draft { background: #3d3520; color: #e6c07b; }
+.stage.roi_audited, .stage.roi-audited { background: #1e3d2e; color: #7fd99a; }
+
+.roi-status-section {
+  background: #1e1a17; border: 1px solid var(--border); border-radius: 12px;
+  padding: .85rem; margin: 1rem 0;
+}
+.roi-status-section .roi-link {
+  display: inline-flex; align-items: center; gap: .35rem;
+  margin: .35rem .35rem .35rem 0; padding: .45rem .7rem; border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #1a120c; font-weight: 700; text-decoration: none !important; min-height: 40px;
+}
+.roi-draft-list { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: .85rem; }
+.roi-draft-list li { margin: .25rem 0; }
+.badge.band-170k { background: #1e3d2e; color: #7fd99a; }
+.badge.band-240k { background: #1e2f4a; color: #8bb4e8; }
+.badge.capex, .badge.light-works { background: #3d3520; color: #e6c07b; }
+.badge.roi_pending, .badge.roi_draft, .badge.roi_audited { background: #2a3040; color: #9db4d4; font-size: .65rem; }

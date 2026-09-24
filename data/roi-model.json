@@ -1,0 +1,247 @@
+{
+  "model_version": "0.1.0-draft",
+  "audited_by": [],
+  "audit_status": "pending",
+  "updated": "2026-09-24",
+  "disclaimer": "Illustrative STR / short-let model for Lisbon tourist-core. Not legal, tax, or mortgage advice. IMT and regime depend on buyer profile and property value — verify with a lawyer / bank.",
+  "assumptions": [
+    {
+      "id": "purchase_price",
+      "label": "Purchase price",
+      "value": 155000,
+      "unit": "EUR",
+      "input": true,
+      "source": "User input / listing ask",
+      "note": "Default seeded to Castelo Picão T0 example."
+    },
+    {
+      "id": "closing_costs_pct",
+      "label": "Closing costs (IMT+IS+notary+registry approx)",
+      "value": 7,
+      "unit": "%",
+      "input": true,
+      "min": 4,
+      "max": 12,
+      "step": 0.1,
+      "source": "Illustrative Lisbon resale heuristic",
+      "note": "Illustrative; IMT depends on value/regime — not legal advice. Typical all-in often ~6–8% for mid-value resale."
+    },
+    {
+      "id": "furniture_fitout",
+      "label": "Furniture / fit-out",
+      "value": 6500,
+      "unit": "EUR",
+      "input": true,
+      "min": 0,
+      "max": 25000,
+      "step": 100,
+      "source": "Lisbon STR studio/T1 kit estimate",
+      "note": "Default mid of €5–8k band for compact tourist-core unit."
+    },
+    {
+      "id": "nightly_rate",
+      "label": "Nightly rate (ADR)",
+      "value": 95,
+      "unit": "EUR/night",
+      "input": true,
+      "source": "Area heuristic — Alfama/Misericórdia compact STR",
+      "note": "Suggest: Alfama/Baixa T0 ~€85–120; Mouraria edge ~€75–100; verify with AirDNA/Airbnb comps."
+    },
+    {
+      "id": "occupancy_pct",
+      "label": "Occupancy",
+      "value": 60,
+      "unit": "%",
+      "input": true,
+      "min": 20,
+      "max": 95,
+      "step": 1,
+      "source": "Tourist-core STR default 55–65%",
+      "note": "Conservative mid tourist-core; peak summer higher, winter lower."
+    },
+    {
+      "id": "platform_fees_pct",
+      "label": "Platform fees (Airbnb host)",
+      "value": 15,
+      "unit": "%",
+      "input": true,
+      "min": 0,
+      "max": 25,
+      "step": 0.5,
+      "source": "Airbnb host service fee ~15% typical",
+      "note": "Depends on host/guest-split setup; Booking.com differs."
+    },
+    {
+      "id": "avg_stay_nights",
+      "label": "Average stay length",
+      "value": 3.5,
+      "unit": "nights",
+      "input": true,
+      "min": 1,
+      "max": 14,
+      "step": 0.5,
+      "source": "Lisbon city-break heuristic 3–4 nights",
+      "note": "Used to derive turnovers/month from occupancy."
+    },
+    {
+      "id": "cleaning_per_turnover",
+      "label": "Cleaning per turnover",
+      "value": 45,
+      "unit": "EUR",
+      "input": true,
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "source": "Compact Lisbon STR clean",
+      "note": "Often partly passed to guest; model treats as owner OpEx unless you net it in ADR."
+    },
+    {
+      "id": "condo_monthly",
+      "label": "Condomínio (monthly)",
+      "value": 35,
+      "unit": "EUR/mo",
+      "input": true,
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "source": "Old-building tourist-core estimate",
+      "note": "Ask agent for exact; elevators / works special assessments extra."
+    },
+    {
+      "id": "imi_annual",
+      "label": "IMI (annual)",
+      "value": 250,
+      "unit": "EUR/yr",
+      "input": true,
+      "min": 0,
+      "max": 2000,
+      "step": 10,
+      "source": "Proxy — often ~0.3–0.45% of VPT, not purchase price",
+      "note": "Replace with caderneta predial / VPT-based figure when known."
+    },
+    {
+      "id": "utilities_monthly",
+      "label": "Utilities + Wi‑Fi (monthly)",
+      "value": 80,
+      "unit": "EUR/mo",
+      "input": true,
+      "min": 0,
+      "max": 250,
+      "step": 5,
+      "source": "Electricity + water + fibre for STR",
+      "note": "Guest-heavy use can push electricity higher in summer AC."
+    },
+    {
+      "id": "maintenance_pct_gross",
+      "label": "Maintenance / reserves",
+      "value": 5,
+      "unit": "% of gross",
+      "input": true,
+      "min": 0,
+      "max": 15,
+      "step": 0.5,
+      "source": "STR reserve rule of thumb",
+      "note": "Covers consumables, minor repairs, appliance replacement."
+    },
+    {
+      "id": "loan_amount",
+      "label": "Mortgage loan amount",
+      "value": 155000,
+      "unit": "EUR",
+      "input": true,
+      "source": "Default min(price, 170000) — Alex preapproval ceiling",
+      "note": "No personal bank details stored; generic calculator input only."
+    },
+    {
+      "id": "mortgage_rate_pct",
+      "label": "Mortgage interest rate",
+      "value": 3.5,
+      "unit": "%/yr",
+      "input": true,
+      "min": 0,
+      "max": 8,
+      "step": 0.05,
+      "source": "Illustrative PT variable/fixed mix 2026",
+      "note": "Replace with bank offer; excludes life/building insurance."
+    },
+    {
+      "id": "mortgage_term_years",
+      "label": "Mortgage term",
+      "value": 30,
+      "unit": "years",
+      "input": true,
+      "min": 5,
+      "max": 40,
+      "step": 1,
+      "source": "Standard amortising term",
+      "note": "Monthly payment via standard amortising formula."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "gross_annual_revenue",
+      "label": "Gross annual revenue",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "platform_fees_annual",
+      "label": "Platform fees (annual)",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "cleaning_annual",
+      "label": "Cleaning (annual)",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "opex_annual",
+      "label": "Other OpEx (condo+IMI+utils+maint)",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "noi",
+      "label": "Net operating income (before debt)",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "mortgage_monthly",
+      "label": "Mortgage payment (monthly)",
+      "unit": "EUR/mo"
+    },
+    {
+      "id": "mortgage_annual",
+      "label": "Mortgage (annual)",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "cash_flow",
+      "label": "Cash flow after mortgage",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "cash_on_cash_pct",
+      "label": "Cash-on-cash return",
+      "unit": "%"
+    },
+    {
+      "id": "cap_rate_pct",
+      "label": "Cap rate (NOI / price)",
+      "unit": "%"
+    },
+    {
+      "id": "break_even_occupancy_pct",
+      "label": "Break-even occupancy",
+      "unit": "%"
+    },
+    {
+      "id": "total_cash_in",
+      "label": "Total cash in (down+closing+fitout)",
+      "unit": "EUR"
+    },
+    {
+      "id": "turnovers_per_month",
+      "label": "Turnovers / month (derived)",
+      "unit": "count"
+    }
+  ]
+}

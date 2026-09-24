@@ -1,0 +1,146 @@
+{
+  "model_version": "0.1.0-draft",
+  "audit_status": "pending",
+  "drafts": {
+    "170k-1": {
+      "listing_key": "t0-em-alfama-rua-castelo-picao-ID1iUO1",
+      "band": "170k",
+      "rank_hint": 1,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 155000,
+        "nightly_rate": 100,
+        "occupancy_pct": 58,
+        "furniture_fitout": 7000,
+        "loan_amount": 155000
+      },
+      "note": "Draft — light works Alfama; ADR optimistic until comps."
+    },
+    "170k-2": {
+      "listing_key": "apartamento-t0-santa-maria-maior-lisboa-ID1fu55",
+      "band": "170k",
+      "rank_hint": 2,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 155000,
+        "nightly_rate": 90,
+        "occupancy_pct": 55,
+        "furniture_fitout": 6500,
+        "loan_amount": 155000
+      },
+      "note": "Draft — Martim Moniz edge; verify vacancy/agent."
+    },
+    "170k-3": {
+      "listing_key": "apartamento-t0-para-venda-ID1hXOc",
+      "band": "170k",
+      "rank_hint": 3,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 169900,
+        "nightly_rate": 85,
+        "occupancy_pct": 60,
+        "furniture_fitout": 2000,
+        "loan_amount": 169900
+      },
+      "note": "Draft — turnkey near Rossio; already remodelled (lower fit-out)."
+    },
+    "170k-4": {
+      "listing_key": "apartamento-t1-para-renovacao-no-coracao-de-alfama-em-lisboa-ID1hqMo",
+      "band": "170k",
+      "rank_hint": 4,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 165000,
+        "nightly_rate": 110,
+        "occupancy_pct": 60,
+        "furniture_fitout": 25000,
+        "loan_amount": 165000
+      },
+      "note": "Draft — full reno; fit-out/works lumped — bankability TBD."
+    },
+    "170k-5": {
+      "listing_key": "apartamento-t0-marvila-centro-de-lisboa-ID1h6NK",
+      "band": "170k",
+      "rank_hint": 5,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 165000,
+        "nightly_rate": 95,
+        "occupancy_pct": 55,
+        "furniture_fitout": 18000,
+        "loan_amount": 165000
+      },
+      "note": "Draft — tiny Alfama to-renovate."
+    },
+    "240k-1": {
+      "listing_key": "remax-remedios",
+      "band": "240k",
+      "rank_hint": 1,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 215000,
+        "nightly_rate": 130,
+        "occupancy_pct": 65,
+        "furniture_fitout": 3000,
+        "loan_amount": 170000
+      },
+      "note": "Draft — Remédios AL ativa (existing #1); loan capped at 170k preapproval."
+    },
+    "240k-2": {
+      "listing_key": "ID1hK3A",
+      "band": "240k",
+      "rank_hint": 2,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 189000,
+        "nightly_rate": 120,
+        "occupancy_pct": 65,
+        "furniture_fitout": 2500,
+        "loan_amount": 170000
+      },
+      "note": "Draft — Portas do Sol AL operating."
+    },
+    "240k-3": {
+      "listing_key": "ID1hLFG",
+      "band": "240k",
+      "rank_hint": 3,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 219000,
+        "nightly_rate": 115,
+        "occupancy_pct": 62,
+        "furniture_fitout": 2500,
+        "loan_amount": 170000
+      },
+      "note": "Draft — IAD Alfama AL; tiny 18 m²."
+    },
+    "240k-4": {
+      "listing_key": "ID1hXLT",
+      "band": "240k",
+      "rank_hint": 4,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 239500,
+        "nightly_rate": 140,
+        "occupancy_pct": 60,
+        "furniture_fitout": 4000,
+        "loan_amount": 170000
+      },
+      "note": "Draft — KW duplex river view; largest near 240k."
+    },
+    "240k-5": {
+      "listing_key": "ID1ilAB",
+      "band": "240k",
+      "rank_hint": 5,
+      "status": "roi_draft",
+      "assumptions": {
+        "purchase_price": 235000,
+        "nightly_rate": 145,
+        "occupancy_pct": 60,
+        "furniture_fitout": 3500,
+        "loan_amount": 170000
+      },
+      "note": "Draft — C21 Alfama T2 furnished."
+    }
+  }
+}

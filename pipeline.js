@@ -91,13 +91,34 @@
     row.classList.toggle('open', open);
   });
 
+  function renderRoiDrafts(drafts) {
+    const el = document.getElementById('roi-draft-list');
+    if (!el) return;
+    if (!drafts || !drafts.drafts) {
+      el.innerHTML = '<li>No ROI drafts yet — see <a href="roi.html">calculator</a>.</li>';
+      return;
+    }
+    const entries = Object.entries(drafts.drafts);
+    el.innerHTML = entries.map(([k, d]) => {
+      const price = d.assumptions && d.assumptions.purchase_price
+        ? '€' + Number(d.assumptions.purchase_price).toLocaleString('pt-PT')
+        : '';
+      return `<li><a href="roi.html?draft=${encodeURIComponent(k)}"><code>${escapeHtml(k)}</code></a>
+        · <span class="stage ${escapeHtml(d.status || 'roi_draft')}">${escapeHtml(d.status || 'roi_draft')}</span>
+        ${price ? ' · ' + price : ''}
+        — ${escapeHtml(d.note || '')}</li>`;
+    }).join('');
+  }
+
   Promise.all([
     fetch('data/pipeline.json').then(r => r.json()),
-    fetch('data/updates.json').then(r => r.json()).catch(() => [])
+    fetch('data/updates.json').then(r => r.json()).catch(() => []),
+    fetch('data/roi-drafts.json').then(r => r.json()).catch(() => null)
   ])
-    .then(([threads, updates]) => {
+    .then(([threads, updates, drafts]) => {
       listEl.innerHTML = threads.map(renderThread).join('');
       renderUpdates(updates);
+      renderRoiDrafts(drafts);
     })
     .catch(err => {
       listEl.innerHTML = `<div class="empty">Failed to load pipeline: ${escapeHtml(err.message)}</div>`;

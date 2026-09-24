@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>ROI calculator (draft — pending audit) · Lisbon</title>
+  <meta name="description" content="Labelled, auditable STR ROI calculator for Lisbon tourist-core — draft model pending audit. Not financial advice." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-roi">
+  <header class="site-header">
+    <div class="brand">
+      <h1>
+        <span class="full">ROI calculator</span>
+        <span class="short">ROI</span>
+      </h1>
+      <p>Draft · pending audit · <span id="model-stamp"></span></p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Shortlist</a>
+      <a href="pipeline.html">Pipeline</a>
+      <a class="active" href="roi.html">ROI</a>
+    </nav>
+  </header>
+
+  <main class="roi-wrap">
+    <div class="roi-banner" role="status">
+      <strong>ROI calculator (draft — pending audit)</strong>
+      <span id="audit-line">audit_status: pending · audited_by: []</span>
+      <span class="roi-disclaimer">Illustrative only — not legal, tax, or mortgage advice. No personal bank details are stored on this site.</span>
+    </div>
+
+    <div class="roi-grid">
+      <section class="roi-inputs" aria-label="Inputs">
+        <h2 class="section-label">Inputs</h2>
+        <div id="inputs"></div>
+        <div class="roi-actions">
+          <button type="button" class="btn" id="btn-reset">Reset to model defaults</button>
+          <button type="button" class="btn btn-ghost" id="btn-clear-ls">Clear saved inputs</button>
+        </div>
+        <label class="draft-picker">
+          Load draft stub
+          <select id="draft-select">
+            <option value="">— none —</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="roi-outputs" aria-label="Outputs">
+        <h2 class="section-label">Outputs</h2>
+        <div id="outputs" class="output-cards"></div>
+      </section>
+    </div>
+
+    <section class="roi-assumptions" aria-label="Assumptions register">
+      <h2 class="section-label">Assumptions register <span class="muted">(from data/roi-model.json)</span></h2>
+      <div class="assumptions-table-wrap">
+        <table class="assumptions-table" id="assumptions-table">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Label</th>
+              <th>Value</th>
+              <th>Unit</th>
+              <th>Source / note</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    For Alex Lozano · model versioning in <code>data/roi-model.json</code> · localStorage only on this device.
+  </footer>
+
+  <script src="roi.js"></script>
+</body>
+</html>

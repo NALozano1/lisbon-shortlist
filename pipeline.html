@@ -19,6 +19,7 @@
     <nav class="nav">
       <a href="index.html">Shortlist</a>
       <a class="active" href="pipeline.html">Pipeline</a>
+      <a href="roi.html">ROI</a>
     </nav>
   </header>
 
@@ -33,6 +34,16 @@
       <div id="updates-list" class="updates-list"></div>
     </section>
 
+    <section class="roi-status-section" id="roi-status" aria-label="ROI status">
+      <h2 class="section-label">ROI status</h2>
+      <p style="margin:0 0 .35rem;color:var(--muted);font-size:.85rem">
+        Labelled calculator (draft — pending audit). Stages: <code>roi_pending</code> · <code>roi_draft</code> · <code>roi_audited</code>.
+      </p>
+      <a class="roi-link" href="roi.html">Open ROI calculator →</a>
+      <a class="roi-link" href="roi.html?draft=170k-1" style="background:#2c2621;color:var(--accent);border:1px solid var(--border)">Load ≤170k draft</a>
+      <ul class="roi-draft-list" id="roi-draft-list"><li>Loading drafts…</li></ul>
+    </section>
+
     <div class="stage-legend" aria-label="Stage legend">
       <span class="stage waiting">Waiting</span>
       <span class="stage chased">Chased</span>
@@ -40,6 +51,9 @@
       <span class="stage notcontacted">Not contacted</span>
       <span class="stage dead">Dead</span>
       <span class="stage replied">Replied</span>
+      <span class="stage roi_pending">ROI pending</span>
+      <span class="stage roi_draft">ROI draft</span>
+      <span class="stage roi_audited">ROI audited</span>
     </div>
 
     <div id="pipeline-list" class="pipeline-list"></div>
