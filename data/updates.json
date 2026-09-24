@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "ROI 0.1.5-draft — STR/LTR toggle + soft-market refresh",
+    "body": "Dual income mode on roi.html (Short-let AL/Airbnb vs Long-let arrendamento). AirDNA cites refreshed thru Jul 2026 (65% occ / $147 ADR / ~$23.1k). Platform fees default 15.5% (EEA host-only from 2026-10-13). LTR drafts ltr-t0-smm (€1,000/mo) and ltr-t1-smm (€1,300/mo). Conservative STR defaults kept (ADR €95 / 55% / maint 8%). IMT/closing/IRS unchanged; audit_status changes_applied_awaiting_reaudit."
+  },
+  {
+    "date": "2026-09-24",
     "title": "ROI 0.1.4 audited — Seller market PASS",
     "body": "Seller market-confirmed PASS landed. Published model 0.1.4 as audited, applied T1 market-mid polish (€9,500 fit-out; €55 cleaning), and added the optional managed best-case T0 SMM draft stub; Finanças tax defaults and stack unchanged."
   },

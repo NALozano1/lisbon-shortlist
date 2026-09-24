@@ -1,22 +1,22 @@
 {
-  "model_version": "0.1.4",
+  "model_version": "0.1.5-draft",
   "audited_by": [
     {
       "agent": "Seller",
       "verdict": "PASS",
       "date": "2026-09-24",
-      "scope": "market/comps/draft stubs"
+      "scope": "market/comps/draft stubs (0.1.4; 0.1.5-draft pending re-audit)"
     },
     {
       "agent": "Finanças Docs",
       "verdict": "PASS",
       "date": "2026-09-24",
-      "scope": "IMT/closing/IRS labels (tax stack unchanged in 0.1.4)"
+      "scope": "IMT/closing/IRS labels (tax stack unchanged in 0.1.5-draft)"
     }
   ],
-  "audit_status": "audited",
+  "audit_status": "changes_applied_awaiting_reaudit",
   "updated": "2026-09-24",
-  "disclaimer": "Illustrative STR / short-let model for Lisbon tourist-core. NOI, cash flow and CoC are pre-IRS / pre-AL-tax and not legal, tax, or mortgage advice. IMT and regime depend on buyer profile and property value; mais-valia is out of scope — verify with a lawyer / bank. Ops flag: Alfama/Baixa/Bairro Alto are often RMAL-saturated; revenue assumes the unit is already licensed for AL. This is an operating assumption, not a tax conclusion.",
+  "disclaimer": "Illustrative dual-path model (STR short-let AL/Airbnb and LTR arrendamento tradicional) for Lisbon tourist-core. NOI, cash flow and CoC are pre-IRS / pre-AL-tax and not legal, tax, or mortgage advice. IMT and regime depend on buyer profile and property value; mais-valia is out of scope — verify with a lawyer / bank. Soft-market caution: AirDNA city TTM thru Jul 2026 softened (~65% occ / ~$23.1k avg) and ListingOK YoY revenue −11–13%. Dual path: use STR only on already-licensed AL; otherwise model LTR fallback. Ops flag: Alfama/Baixa/Bairro Alto are often RMAL-saturated; STR revenue assumes the unit is already licensed for AL. This is an operating assumption, not a tax conclusion.",
   "assumptions": [
     {
       "id": "purchase_price",
@@ -25,7 +25,11 @@
       "unit": "EUR",
       "input": true,
       "source": "User input / listing ask",
-      "note": "Default seeded to Castelo Picão T0 example."
+      "note": "Default seeded to Castelo Picão T0 example.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "closing_costs_pct",
@@ -37,7 +41,11 @@
       "max": 12,
       "step": 0.1,
       "source": "Illustrative Lisbon resale heuristic",
-      "note": "7% retained as optional stress/reference only; calculator uses itemised closing stack by default. IMT depends on value/regime — not legal advice."
+      "note": "7% retained as optional stress/reference only; calculator uses itemised closing stack by default. IMT depends on value/regime — not legal advice.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "imt_regime",
@@ -46,7 +54,11 @@
       "unit": "",
       "input": false,
       "source": "Model framing for investment / AL",
-      "note": "Secondary habitação; not HPP or jovem-buyer treatment. Confirm applicable regime with a lawyer."
+      "note": "Secondary habitação; not HPP or jovem-buyer treatment. Confirm applicable regime with a lawyer.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "imt_purchase_pct",
@@ -58,7 +70,11 @@
       "max": 15,
       "step": 0.1,
       "source": "Illustrative Tabela III secondary proxy — not official calculator",
-      "note": "Leave at 0 to derive an illustrative price-linked secondary-habitação proxy from worked-check interpolation; enter a positive percentage only to override. Not the official IMT calculator; verify taxable base, buyer, and property facts."
+      "note": "Leave at 0 to derive an illustrative price-linked secondary-habitação proxy from worked-check interpolation; enter a positive percentage only to override. Not the official IMT calculator; verify taxable base, buyer, and property facts.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "stamp_duty_purchase_pct",
@@ -70,7 +86,11 @@
       "max": 2,
       "step": 0.1,
       "source": "Illustrative Portuguese purchase assumption",
-      "note": "Applied to purchase price in the itemised closing-cost stack; verify legal basis and taxable base."
+      "note": "Applied to purchase price in the itemised closing-cost stack; verify legal basis and taxable base.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "notary_registry_lawyer_eur",
@@ -82,7 +102,11 @@
       "max": 10000,
       "step": 50,
       "source": "Illustrative transaction-cost placeholder",
-      "note": "Replace with quotes; included in total cash in."
+      "note": "Replace with quotes; included in total cash in.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "mortgage_stamp_duty_pct",
@@ -94,7 +118,11 @@
       "max": 2,
       "step": 0.1,
       "source": "Illustrative mortgage assumption",
-      "note": "Applied to loan amount and included in total cash in."
+      "note": "Applied to loan amount and included in total cash in.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "closing_costs_override_pct",
@@ -106,7 +134,11 @@
       "max": 20,
       "step": 0.1,
       "source": "Optional user stress input",
-      "note": "Leave at 0 to use the itemised stack; enter 7% only as a deliberate stress/override."
+      "note": "Leave at 0 to use the itemised stack; enter 7% only as a deliberate stress/override.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "furniture_fitout",
@@ -118,7 +150,50 @@
       "max": 25000,
       "step": 100,
       "source": "Lisbon STR studio/T1 kit estimate",
-      "note": "Default mid of €5–8k band for compact tourist-core unit."
+      "note": "Default mid of €5–8k band for compact tourist-core unit. LTR often lower if unfurnished.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
+    },
+    {
+      "id": "income_mode",
+      "label": "Income mode",
+      "value": "str",
+      "unit": "",
+      "input": false,
+      "source": "UI toggle / draft stub",
+      "note": "str = short-let AL/Airbnb; ltr = long-let arrendamento. Driven by the mode toggle and draft picker."
+    },
+    {
+      "id": "monthly_rent",
+      "label": "Monthly rent (LTR)",
+      "value": 1000,
+      "unit": "EUR/mo",
+      "input": true,
+      "modes": [
+        "ltr"
+      ],
+      "min": 0,
+      "max": 5000,
+      "step": 25,
+      "source": "Investropa / Idealista tourist-core underwrite 2026-09",
+      "note": "LTR T0 tourist-core mid €1,000 (€950–1,100); T1 mid €1,300 (€1,200–1,400). Asking vs signed gap often ~20%+."
+    },
+    {
+      "id": "vacancy_months",
+      "label": "Vacancy (months / year)",
+      "value": 1,
+      "unit": "months",
+      "input": true,
+      "modes": [
+        "ltr"
+      ],
+      "min": 0,
+      "max": 6,
+      "step": 0.25,
+      "source": "Investropa 2026 underwrite (1 month stress)",
+      "note": "Gross annual = rent × 12 × (1 − vacancy/12). Default 1 month (~8%). Market-ready stock may be 3–4%."
     },
     {
       "id": "nightly_rate",
@@ -126,8 +201,11 @@
       "value": 95,
       "unit": "EUR/night",
       "input": true,
-      "source": "AirDNA Lisbon city Pages overview (updated 2026-09-22; data through Aug 2026) + Airbtics Alfama (Feb 2025–Jan 2026) + ListingOK Lisbon (Jun 2025–May 2026)",
-      "note": "AirDNA: ~15.8k listings, TTM average revenue ~$33.9k, occupancy 70%, ADR $143, RevPAR $100. Airbtics Alfama: median ~€36k, ADR €113, occupancy 85% — upper/optimistic, not the global default. ListingOK Lisbon: ~72% occupancy, ADR ~€139–141 city-wide. City ADR is too rich for a compact T0; suggest studio/T0 ADR €95–115, with Alfama €113 as a better area mid for mixed stock. Property AirDNA Rentalizer needs a paid login/pasted comps. Default remains €95."
+      "source": "AirDNA Lisbon overview (data thru Jul 2026; page updated 2026-08-05) + BNBCalc / GuestFavorites size×area + Airbtics (upper only)",
+      "note": "Conservative T0 default €95. AirDNA city: 65% occ, ADR $147, ~$23.1k avg revenue (softer than prior ~$33.9k/70% cite). City ADR is too rich for compact T0; suggest studio/T0 €95–115 stress, market-mid €105–115. Airbtics Alfama ~€113 ADR / 85% occ is upper/optimistic, not global default. Property AirDNA Rentalizer needs paid login/pasted comps.",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "occupancy_pct",
@@ -138,20 +216,26 @@
       "min": 20,
       "max": 95,
       "step": 1,
-      "source": "AirDNA Lisbon city Pages overview (updated 2026-09-22; data through Aug 2026) + Airbtics Alfama (Feb 2025–Jan 2026) + ListingOK Lisbon (Jun 2025–May 2026)",
-      "note": "Keep the conservative default at 55%. AirDNA city occupancy is 70%; ListingOK is ~72% city-wide; Airbtics Alfama is 85% and upper/optimistic, not a global default. Underwrite market-mid cases at AirDNA-like 55–70% unless a unit has proven history; property AirDNA Rentalizer needs a paid login/pasted comps."
+      "source": "AirDNA Lisbon overview (thru Jul 2026 / updated 2026-08-05) + ListingOK / GuestFavorites / underwriting policy",
+      "note": "Keep conservative default at 55%. AirDNA city occupancy now 65% (thru Jul 2026); ListingOK ~72%; GuestFavorites ~67%; Airbtics 80%+ is upper/optimistic, not a global default. Underwrite market-mid at 60–65% unless the unit has proven history. Soft-market: ListingOK YoY revenue −11–13%.",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "platform_fees_pct",
       "label": "Platform fees (Airbnb host)",
-      "value": 15,
+      "value": 15.5,
       "unit": "%",
       "input": true,
       "min": 0,
       "max": 25,
       "step": 0.5,
-      "source": "Airbnb host service fee ~15% typical",
-      "note": "Host-heavy stress default; depends on host/guest-split setup and platform."
+      "source": "Airbnb EEA single host fee ~15.5% (mandatory from 2026-10-13) / Lodgify 2026-08-28",
+      "note": "Default 15.5% host-only fee for EEA from 2026-10-13 (was often ~3% host + guest fee). Legacy split setups may differ — verify current host account.",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "avg_stay_nights",
@@ -163,7 +247,10 @@
       "max": 14,
       "step": 0.5,
       "source": "Lisbon city-break heuristic 3–4 nights",
-      "note": "Used to derive turnovers/month from occupancy."
+      "note": "Used to derive turnovers/month from occupancy.",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "cleaning_per_turnover",
@@ -175,7 +262,10 @@
       "max": 150,
       "step": 5,
       "source": "Compact Lisbon STR clean",
-      "note": "Model charges the owner every time; conservative if the guest separately pays a cleaning fee."
+      "note": "Model charges the owner every time; conservative if the guest separately pays a cleaning fee.",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "condo_monthly",
@@ -187,7 +277,11 @@
       "max": 300,
       "step": 5,
       "source": "Old-building tourist-core estimate",
-      "note": "Ask agent for exact; elevators / works special assessments extra."
+      "note": "Ask agent for exact; elevators / works special assessments extra.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "imi_annual",
@@ -199,7 +293,11 @@
       "max": 2000,
       "step": 10,
       "source": "Proxy — often ~0.3–0.45% of VPT, not purchase price",
-      "note": "VPT-based proxy; replace with caderneta predial / VPT figure when known. Optional quick check: VPT × 0.0035."
+      "note": "VPT-based proxy; replace with caderneta predial / VPT figure when known. Optional quick check: VPT × 0.0035.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "utilities_monthly",
@@ -210,8 +308,12 @@
       "min": 0,
       "max": 250,
       "step": 5,
-      "source": "Electricity + water + fibre for STR",
-      "note": "Electricity + water + fibre for STR; guest-heavy use can push electricity higher."
+      "source": "STR owner OpEx / LTR usually tenant-paid",
+      "note": "STR default €100/mo (electricity + water + fibre; guest-heavy use can push higher). LTR default €0 — tenant typically pays; editable if marketing inclusive furnished (€30–60 fibre).",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "insurance_monthly",
@@ -223,7 +325,11 @@
       "max": 500,
       "step": 5,
       "source": "Illustrative OpEx placeholder",
-      "note": "Life + multirisk home insurance placeholder; replace with bank/insurer quotes."
+      "note": "Life + multirisk home insurance placeholder; replace with bank/insurer quotes.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "insurance_annual",
@@ -245,7 +351,11 @@
       "max": 30,
       "step": 0.5,
       "source": "Optional user input",
-      "note": "Default 0%; add if a manager is used."
+      "note": "STR: default 0% self-managed; stress 15–25% full co-host. LTR: default 0% self / optional ~8% remote management of rent.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "irs_rental_pct",
@@ -257,7 +367,11 @@
       "max": 100,
       "step": 1,
       "source": "Optional illustrative stress input",
-      "note": "Optional stress only: illustrative % of NOI only — not legal Cat. F. Cat. F treatment is based on taxable rents and depends on facts/regime; default 0 = pre-tax."
+      "note": "Optional stress only: illustrative % of NOI only — not legal Cat. F. Cat. F treatment is based on taxable rents and depends on facts/regime; default 0 = pre-tax.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "irs_rental_tax",
@@ -296,7 +410,11 @@
       "unit": "EUR",
       "input": false,
       "source": "Alex preapproval ceiling",
-      "note": "Generic ceiling only; no bank names or personal details stored."
+      "note": "Generic ceiling only; no bank names or personal details stored.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "maintenance_pct_gross",
@@ -307,8 +425,12 @@
       "min": 0,
       "max": 15,
       "step": 0.5,
-      "source": "STR reserve rule of thumb",
-      "note": "Conservative reserve for consumables, minor repairs, and appliance replacement."
+      "source": "STR reserve rule of thumb / LTR % of annual rent",
+      "note": "STR default 8% of gross booking revenue; optional 10% stress for unreformed high-turnover tourist-core stock. LTR default ~7% of annual rent (or ~1% of price). Mode switch applies mode-appropriate default when resetting.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "ltv_pct",
@@ -320,7 +442,11 @@
       "max": 90,
       "step": 1,
       "source": "Conservative investment / AL default",
-      "note": "Default 70%; loan recomputes as min(price × LTV, €170,000) until you edit the loan. Alex note: preapproval ceiling €170k."
+      "note": "Default 70%; loan recomputes as min(price × LTV, €170,000) until you edit the loan. Alex note: preapproval ceiling €170k.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "loan_amount",
@@ -329,7 +455,11 @@
       "unit": "EUR",
       "input": true,
       "source": "Default 70% LTV capped at €170,000",
-      "note": "Default loan = min(purchase price × 70%, €170,000); generic calculator input only. Alex note: preapproval ceiling €170k."
+      "note": "Default loan = min(purchase price × 70%, €170,000); generic calculator input only. Alex note: preapproval ceiling €170k.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "mortgage_rate_pct",
@@ -341,7 +471,11 @@
       "max": 8,
       "step": 0.05,
       "source": "Illustrative PT variable/fixed mix 2026",
-      "note": "Replace with bank offer; excludes life/building insurance."
+      "note": "Replace with bank offer; excludes life/building insurance.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "mortgage_term_years",
@@ -353,95 +487,194 @@
       "max": 40,
       "step": 1,
       "source": "Standard amortising term",
-      "note": "Monthly payment via standard amortising formula."
+      "note": "Monthly payment via standard amortising formula.",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     }
   ],
   "outputs": [
     {
       "id": "gross_annual_revenue",
-      "label": "Gross booking revenue (before fees)",
-      "unit": "EUR/yr"
+      "label": "Gross annual revenue (before fees)",
+      "unit": "EUR/yr",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "platform_fees_annual",
       "label": "Platform fees (annual)",
-      "unit": "EUR/yr"
+      "unit": "EUR/yr",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "cleaning_annual",
       "label": "Cleaning (annual; owner-paid)",
-      "unit": "EUR/yr"
+      "unit": "EUR/yr",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "opex_annual",
       "label": "Other OpEx (condo+IMI+utils+insurance+management+maint)",
-      "unit": "EUR/yr"
+      "unit": "EUR/yr",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "noi",
       "label": "Net operating income (before debt)",
-      "unit": "EUR/yr"
+      "unit": "EUR/yr",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "mortgage_monthly",
       "label": "Mortgage payment (monthly)",
-      "unit": "EUR/mo"
+      "unit": "EUR/mo",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "mortgage_annual",
       "label": "Mortgage (annual)",
-      "unit": "EUR/yr"
+      "unit": "EUR/yr",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "cash_flow",
       "label": "Cash flow after mortgage (pre-tax)",
-      "unit": "EUR/yr"
+      "unit": "EUR/yr",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "cash_flow_after_irs",
       "label": "Cash flow after mortgage (after IRS stress)",
-      "unit": "EUR/yr"
+      "unit": "EUR/yr",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "cash_on_cash_pct",
       "label": "Cash-on-cash return (pre-tax)",
-      "unit": "%"
+      "unit": "%",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "cash_on_cash_after_irs_pct",
       "label": "Cash-on-cash return after IRS stress",
-      "unit": "%"
+      "unit": "%",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "cap_rate_pct",
       "label": "Cap rate (NOI / price)",
-      "unit": "%"
+      "unit": "%",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "break_even_occupancy_pct",
       "label": "Break-even occupancy",
-      "unit": "%"
+      "unit": "%",
+      "modes": [
+        "str"
+      ]
     },
     {
       "id": "total_cash_in",
       "label": "Total cash in (down+closing+fitout)",
-      "unit": "EUR"
+      "unit": "EUR",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "imt_eur",
       "label": "IMT € (cash-in; illustrative Tabela III secondary proxy — not official calculator)",
-      "unit": "EUR"
+      "unit": "EUR",
+      "modes": [
+        "str",
+        "ltr"
+      ]
     },
     {
       "id": "turnovers_per_month",
       "label": "Turnovers / month (derived)",
-      "unit": "count"
+      "unit": "count",
+      "modes": [
+        "str"
+      ]
     }
   ],
   "reviewers": {
-    "Seller": "PASS 2026-09-24 (market/comps/draft stubs; market-confirmed)",
-    "Finanças Docs": "PASS 2026-09-24 retained for IMT/closing/IRS labels; tax stack unchanged in 0.1.4"
+    "Seller": "0.1.4 PASS 2026-09-24 retained; 0.1.5-draft market+LTR changes awaiting re-audit",
+    "Finanças Docs": "PASS 2026-09-24 retained for IMT/closing/IRS labels; tax stack unchanged in 0.1.5-draft"
   },
-  "audit_notes": "Seller market-confirmed PASS on 2026-09-24 for market inputs, comps context, and draft stubs. Applied non-blocking T1 market-mid polish (furniture/fit-out €9,500 and cleaning €55) and added an explicitly illustrative managed best-case T0 scenario in the draft layer. Finanças Docs prior PASS is retained for IMT/closing/IRS labels; the audited tax stack and global defaults were not changed.",
-  "market_note": "Seller size×area working grid: BNBCalc Lisbon size ladder cross-checked with GuestFavorites parish multipliers (Santa Maria Maior/Alfama–Baixa ×1.12, Misericórdia ×1.10, Santo António ×1.13, Arroios ×0.95). Market-mid drafts use AirDNA-like 55–70% occupancy; Airbtics 80%+ occupancy is not the global default. Central AL availability/licensing remains an ops diligence item."
+  "audit_notes": "0.1.5-draft: dual income mode (STR/LTR), refreshed AirDNA cites thru Jul 2026 (65% occ / $147 ADR / ~$23.1k city avg), platform fees default 15.5% (EEA host-only from 2026-10-13), LTR stubs ltr-t0-smm / ltr-t1-smm, soft-market + RMAL licensed-AL notes. Conservative STR defaults kept (ADR €95 / occ 55% / maint 8%; optional 10% for old high-turnover stock). IMT/closing/IRS legal framing unchanged. audit_status: changes_applied_awaiting_reaudit.",
+  "market_note": "AirDNA Lisbon overview data thru Jul 2026 (page updated 2026-08-05): 65% occ, ADR $147, RevPAR $94, avg active revenue ~$23.1k — softer than prior ~70% / ~$33.9k cite; reinforces conservative defaults. ListingOK Lisbon YoY revenue −11–13% (soft-market). Seller size×area working grid: BNBCalc Lisbon size ladder × GuestFavorites parish multipliers (SMM ×1.12, Misericórdia ×1.10, Santo António ×1.13, Arroios ×0.95; GuestFavorites Dec 2025–Aug 2026). Market-mid drafts use 60–65% occ; Airbtics 80%+ is not the global default. STR path assumes licensed AL (RMAL); LTR is the fallback when AL blocked.",
+  "income_modes": {
+    "default": "str",
+    "modes": [
+      {
+        "id": "str",
+        "label": "Short-let (AL / Airbnb)"
+      },
+      {
+        "id": "ltr",
+        "label": "Long-let (arrendamento)"
+      }
+    ],
+    "note": "Toggle switches income inputs and OpEx stack. STR uses ADR×occ; LTR uses monthly rent×(1−vacancy/12)."
+  },
+  "mode_defaults": {
+    "str": {
+      "income_mode": "str",
+      "nightly_rate": 95,
+      "occupancy_pct": 55,
+      "platform_fees_pct": 15.5,
+      "avg_stay_nights": 3.5,
+      "cleaning_per_turnover": 45,
+      "utilities_monthly": 100,
+      "maintenance_pct_gross": 8,
+      "management_fee_pct": 0
+    },
+    "ltr": {
+      "income_mode": "ltr",
+      "monthly_rent": 1000,
+      "vacancy_months": 1,
+      "utilities_monthly": 0,
+      "maintenance_pct_gross": 7,
+      "management_fee_pct": 0
+    }
+  }
 }

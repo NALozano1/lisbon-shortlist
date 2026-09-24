@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>ROI calculator (model 0.1.4 · audited 24 Sep 2026 · still illustrative) · Lisbon</title>
-  <meta name="description" content="Labelled, auditable STR ROI calculator for Lisbon tourist-core — model 0.1.4 audited · still illustrative. Not financial advice." />
+  <title>ROI calculator (model 0.1.5-draft · awaiting re-audit · still illustrative) · Lisbon</title>
+  <meta name="description" content="Labelled, auditable STR/LTR ROI calculator for Lisbon tourist-core — model 0.1.5-draft · still illustrative. Not financial advice." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="page-roi">
@@ -14,7 +14,7 @@
         <span class="full">ROI calculator</span>
         <span class="short">ROI</span>
       </h1>
-      <p>Audited · still illustrative · <span id="model-stamp"></span></p>
+      <p>Draft · still illustrative · <span id="model-stamp"></span></p>
     </div>
     <nav class="nav">
       <a href="index.html">Shortlist</a>
@@ -25,14 +25,22 @@
 
   <main class="roi-wrap">
     <div class="roi-banner" role="status">
-      <strong>ROI calculator (model 0.1.4 · audited 24 Sep 2026 · still illustrative)</strong>
-      <span id="audit-line">audit_status: audited</span>
-      <span class="roi-disclaimer">Pre-tax · excludes IRS / AL tax · illustrative only — not legal, tax, or mortgage advice. No personal bank details are stored on this site.</span>
+      <strong>ROI calculator (model 0.1.5-draft · awaiting re-audit · still illustrative)</strong>
+      <span id="audit-line">audit_status: changes_applied_awaiting_reaudit</span>
+      <span class="roi-disclaimer">Pre-tax · excludes IRS / AL tax · illustrative only — not legal, tax, or mortgage advice. Dual path: Short-let (licensed AL) or Long-let arrendamento. Soft-market: AirDNA city avg softened thru Jul 2026. No personal bank details are stored on this site.</span>
     </div>
 
     <div class="roi-grid">
       <section class="roi-inputs" aria-label="Inputs">
         <h2 class="section-label">Inputs</h2>
+        <div class="income-mode-toggle" role="group" aria-label="Income mode">
+          <span class="income-mode-label">Income mode</span>
+          <div class="income-mode-btns">
+            <button type="button" class="mode-btn active" id="mode-str" data-mode="str" aria-pressed="true">Short-let (AL / Airbnb)</button>
+            <button type="button" class="mode-btn" id="mode-ltr" data-mode="ltr" aria-pressed="false">Long-let (arrendamento)</button>
+          </div>
+          <p class="income-mode-hint" id="mode-hint">STR: nightly ADR, occupancy, platform fees, cleaning. Assumes licensed AL in RMAL zones.</p>
+        </div>
         <div id="inputs"></div>
         <div class="roi-actions">
           <button type="button" class="btn" id="btn-reset">Reset to model defaults</button>
@@ -44,15 +52,15 @@
             <option value="">— none —</option>
           </select>
         </label>
-        <p class="roi-draft-note">Market-mid drafts use comps mid (AirDNA-like 55–70% occupancy); the calculator default remains the conservative 55% case.</p>
+        <p class="roi-draft-note">STR market-mid drafts use 60–65% occ; calculator STR default remains ADR €95 @ 55%. LTR drafts (ltr-t0-smm / ltr-t1-smm) switch to long-let mode automatically.</p>
       </section>
 
       <section class="roi-outputs" aria-label="Outputs">
         <h2 class="section-label">Outputs</h2>
         <div class="roi-tax-banner">NOI, cash flow, and CoC are pre-IRS / illustrative. Optional IRS stress is not tax advice.</div>
         <div id="outputs" class="output-cards"></div>
-        <p class="roi-footnote">CoC equity = down payment + closing costs + fit-out. Cleaning is charged to the owner in this conservative model. Cash flow / CoC: pre-tax · excludes IRS / AL tax.</p>
-        <div class="typology-hint"><strong>Typology hints:</strong> T0 ADR €85–100 · fit-out €6.5k · clean €45; T1 ADR €110–130 · fit-out €9–12k · clean €55–70.</div>
+        <p class="roi-footnote" id="roi-footnote">CoC equity = down payment + closing costs + fit-out. Cleaning is charged to the owner in this conservative STR model. Cash flow / CoC: pre-tax · excludes IRS / AL tax.</p>
+        <div class="typology-hint" id="typology-hint"><strong>Typology hints (STR):</strong> T0 ADR €85–100 · fit-out €6.5k · clean €45; T1 ADR €110–130 · fit-out €9–12k · clean €55–70. <strong>LTR:</strong> T0 €950–1,100/mo · T1 €1,200–1,400/mo · vac ~1 mo · maint ~7% of rent.</div>
       </section>
     </div>
 

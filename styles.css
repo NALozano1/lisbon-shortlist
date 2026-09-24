@@ -425,3 +425,27 @@ a:hover { text-decoration: underline; }
 .badge.band-240k { background: #1e2f4a; color: #8bb4e8; }
 .badge.capex, .badge.light-works { background: #3d3520; color: #e6c07b; }
 .badge.roi_pending, .badge.roi_draft, .badge.roi_audited { background: #2a3040; color: #9db4d4; font-size: .65rem; }
+
+/* Income mode toggle (ROI 0.1.5) */
+.income-mode-toggle {
+  display: flex; flex-direction: column; gap: .45rem;
+  margin-bottom: .85rem; padding: .75rem; border-radius: 10px;
+  background: #1e1a17; border: 1px solid var(--border);
+}
+.income-mode-label {
+  font-size: .75rem; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); font-weight: 650;
+}
+.income-mode-btns { display: flex; flex-wrap: wrap; gap: .4rem; }
+.mode-btn {
+  flex: 1; min-width: 9rem; min-height: 44px;
+  background: #12100e; color: var(--text); border: 1px solid var(--border);
+  border-radius: 8px; padding: .5rem .7rem; font: inherit; font-size: .85rem;
+  font-weight: 650; cursor: pointer;
+}
+.mode-btn.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #1a120c; border-color: transparent;
+}
+.income-mode-hint { margin: 0; color: var(--muted); font-size: .72rem; line-height: 1.35; }
+.roi-field[hidden], .roi-field.is-hidden { display: none; }

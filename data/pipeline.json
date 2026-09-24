@@ -1,17 +1,17 @@
 [
   {
-    "id": "roi-model-v014",
-    "agency": "ROI model 0.1.4-draft",
-    "related": "Global STR assumptions — see roi.html",
+    "id": "roi-model-v015",
+    "agency": "ROI model 0.1.5-draft",
+    "related": "Global STR + LTR assumptions — see roi.html",
     "stage": "roi_draft",
-    "stage_label": "ROI 0.1.4-draft · awaiting market re-audit",
+    "stage_label": "ROI 0.1.5-draft · awaiting re-audit",
     "roi_status": "roi_draft",
     "last_action": "2026-09-24",
-    "last_action_note": "Market inputs revised; market-mid stubs added; awaiting Seller market re-confirm",
+    "last_action_note": "STR/LTR toggle; AirDNA Jul-2026 refresh; LTR stubs; awaiting Seller/Finanças re-audit",
     "bullets": [
-      "Market-mid T0/T1 stubs use comps mid; calculator default stays ADR €95 @ 55%",
-      "Tax/IRS/IMT/closing/LTV/CoC fields unchanged",
-      "No personal mortgage details on the public site"
+      "Toggle Short-let vs Long-let on roi.html; draft picker sets mode",
+      "STR default ADR €95 @ 55% / platform 15.5%; LTR T0 €1k / T1 €1.3k vac 1mo",
+      "Tax/IRS/IMT/closing stack unchanged; no personal bank details"
     ]
   },
   {
@@ -19,10 +19,10 @@
     "agency": "≤€170k top picks — ROI drafts",
     "related": "Castelo Picão, Beco Achada, Martim Vaz, Regueira reno, São Rafael",
     "stage": "roi_audited",
-    "stage_label": "ROI 0.1.4-draft · market-mid stubs / awaiting re-audit",
+    "stage_label": "ROI 0.1.5-draft · STR stubs + LTR path / awaiting re-audit",
     "roi_status": "roi_draft",
     "last_action": "2026-09-24",
-    "last_action_note": "Listing stubs retained; market-mid T0/area stubs added in roi-drafts.json",
+    "last_action_note": "STR stubs retained; LTR T0 SMM stub added (ltr-t0-smm)",
     "bullets": [
       "Most ≤170k core stock is capex — model furniture/works carefully",
       "See Shortlist filter ≤€170k"
@@ -40,10 +40,10 @@
     "agency": "≤€240k top 5 — ROI drafts",
     "related": "Remédios AL, Portas do Sol AL, IAD Alfama, KW duplex, C21 T2",
     "stage": "roi_audited",
-    "stage_label": "ROI 0.1.4-draft · market-mid stubs / awaiting re-audit",
+    "stage_label": "ROI 0.1.5-draft · STR stubs + LTR path / awaiting re-audit",
     "roi_status": "roi_draft",
     "last_action": "2026-09-24",
-    "last_action_note": "Listing stubs retained; market-mid T1/area stubs added; awaiting Seller market re-confirm",
+    "last_action_note": "STR stubs retained; LTR T1 SMM stub added (ltr-t1-smm)",
     "bullets": [
       "Loan amount defaults to min(price, 170000) in calculator"
     ],

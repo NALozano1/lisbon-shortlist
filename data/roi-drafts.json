@@ -1,6 +1,6 @@
 {
-  "model_version": "0.1.4",
-  "audit_status": "audited",
+  "model_version": "0.1.5-draft",
+  "audit_status": "changes_applied_awaiting_reaudit",
   "drafts": {
     "170k-1": {
       "listing_key": "t0-em-alfama-rua-castelo-picao-ID1iUO1",
@@ -13,9 +13,11 @@
         "occupancy_pct": 58,
         "furniture_fitout": 7000,
         "loan_amount": 108500.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — light works Alfama; ADR optimistic until comps."
+      "note": "Draft — light works Alfama; ADR optimistic until comps.",
+      "income_mode": "str"
     },
     "170k-2": {
       "listing_key": "apartamento-t0-santa-maria-maior-lisboa-ID1fu55",
@@ -28,9 +30,11 @@
         "occupancy_pct": 55,
         "furniture_fitout": 6500,
         "loan_amount": 108500.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — Martim Moniz edge; verify vacancy/agent."
+      "note": "Draft — Martim Moniz edge; verify vacancy/agent.",
+      "income_mode": "str"
     },
     "170k-3": {
       "listing_key": "apartamento-t0-para-venda-ID1hXOc",
@@ -43,9 +47,11 @@
         "occupancy_pct": 55,
         "furniture_fitout": 2000,
         "loan_amount": 118930.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — turnkey near Rossio; already remodelled (lower fit-out)."
+      "note": "Draft — turnkey near Rossio; already remodelled (lower fit-out).",
+      "income_mode": "str"
     },
     "170k-4": {
       "listing_key": "apartamento-t1-para-renovacao-no-coracao-de-alfama-em-lisboa-ID1hqMo",
@@ -58,9 +64,11 @@
         "occupancy_pct": 55,
         "furniture_fitout": 25000,
         "loan_amount": 115500.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — full reno; fit-out/works lumped — bankability TBD."
+      "note": "Draft — full reno; fit-out/works lumped — bankability TBD.",
+      "income_mode": "str"
     },
     "170k-5": {
       "listing_key": "apartamento-t0-marvila-centro-de-lisboa-ID1h6NK",
@@ -73,9 +81,11 @@
         "occupancy_pct": 55,
         "furniture_fitout": 18000,
         "loan_amount": 115500.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — tiny Alfama to-renovate."
+      "note": "Draft — tiny Alfama to-renovate.",
+      "income_mode": "str"
     },
     "240k-1": {
       "listing_key": "remax-remedios",
@@ -88,9 +98,11 @@
         "occupancy_pct": 65,
         "furniture_fitout": 3000,
         "loan_amount": 150500.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — Remédios AL ativa (existing #1); loan capped at 170k preapproval."
+      "note": "Draft — Remédios AL ativa (existing #1); loan capped at 170k preapproval.",
+      "income_mode": "str"
     },
     "240k-2": {
       "listing_key": "ID1hK3A",
@@ -103,9 +115,11 @@
         "occupancy_pct": 65,
         "furniture_fitout": 2500,
         "loan_amount": 132300.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — Portas do Sol AL operating."
+      "note": "Draft — Portas do Sol AL operating.",
+      "income_mode": "str"
     },
     "240k-3": {
       "listing_key": "ID1hLFG",
@@ -118,9 +132,11 @@
         "occupancy_pct": 62,
         "furniture_fitout": 2500,
         "loan_amount": 153300.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — IAD Alfama AL; tiny 18 m²."
+      "note": "Draft — IAD Alfama AL; tiny 18 m².",
+      "income_mode": "str"
     },
     "240k-4": {
       "listing_key": "ID1hXLT",
@@ -133,9 +149,11 @@
         "occupancy_pct": 55,
         "furniture_fitout": 4000,
         "loan_amount": 167650.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — KW duplex river view; largest near 240k."
+      "note": "Draft — KW duplex river view; largest near 240k.",
+      "income_mode": "str"
     },
     "240k-5": {
       "listing_key": "ID1ilAB",
@@ -148,9 +166,11 @@
         "occupancy_pct": 55,
         "furniture_fitout": 3500,
         "loan_amount": 164500.0,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Draft — C21 Alfama T2 furnished."
+      "note": "Draft — C21 Alfama T2 furnished.",
+      "income_mode": "str"
     },
     "market-mid-studio": {
       "band": "170k",
@@ -161,9 +181,11 @@
         "occupancy_pct": 65,
         "furniture_fitout": 6500,
         "loan_amount": 108500,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Market-mid stub — T0 × Santa Maria Maior (SMM) / Alfama–Baixa tourist-core. Cites AirDNA Lisbon city Pages overview (updated 2026-09-22; data through Aug 2026) and Airbtics Alfama (Feb 2025–Jan 2026); Airbtics 85% occupancy is upper/optimistic, not the global default. BNBCalc size ladder + GuestFavorites parish multipliers provide the size×area cross-check; property AirDNA Rentalizer needs a paid login/pasted comps. GuestFavorites SMM multiplier ×1.12; working grid €24–27k gross. Gross check ≈€26.1k at ADR €110 × 65%; ADR is a mid case, not the €95 / 55% conservative global default."
+      "note": "Market-mid stub — T0 × Santa Maria Maior (SMM) / Alfama–Baixa tourist-core. Cites AirDNA Lisbon overview (data thru Jul 2026; updated 2026-08-05: 65% occ / $147 ADR / ~$23.1k avg) and Airbtics Alfama (Feb 2025–Jan 2026); Airbtics 85% occupancy is upper/optimistic, not the global default. BNBCalc size ladder + GuestFavorites parish multipliers provide the size×area cross-check; property AirDNA Rentalizer needs a paid login/pasted comps. GuestFavorites SMM multiplier ×1.12; working grid €24–27k gross. Gross check ≈€26.1k at ADR €110 × 65%; ADR is a mid case, not the €95 / 55% conservative global default.",
+      "income_mode": "str"
     },
     "market-mid-t1": {
       "band": "240k",
@@ -175,9 +197,11 @@
         "furniture_fitout": 9500,
         "loan_amount": 150500,
         "ltv_pct": 70,
-        "cleaning_per_turnover": 55
+        "cleaning_per_turnover": 55,
+        "income_mode": "str"
       },
-      "note": "Market-mid stub — T1 × Santa Maria Maior (SMM) / Alfama–Baixa tourist-core. Cites AirDNA Lisbon city Pages overview (updated 2026-09-22; data through Aug 2026) and Airbtics Alfama (Feb 2025–Jan 2026); Airbtics 85% occupancy is upper/optimistic, not the global default. BNBCalc size ladder + GuestFavorites parish multipliers provide the size×area cross-check; property AirDNA Rentalizer needs a paid login/pasted comps. GuestFavorites SMM multiplier ×1.12; working grid €31–32k gross. Better T1 mid ADR €125–140; gross check ≈€30.8k at ADR €130 × 65%. Market-mid only; not the €95 / 55% conservative global default."
+      "note": "Market-mid stub — T1 × Santa Maria Maior (SMM) / Alfama–Baixa tourist-core. Cites AirDNA Lisbon overview (data thru Jul 2026; updated 2026-08-05: 65% occ / $147 ADR / ~$23.1k avg) and Airbtics Alfama (Feb 2025–Jan 2026); Airbtics 85% occupancy is upper/optimistic, not the global default. BNBCalc size ladder + GuestFavorites parish multipliers provide the size×area cross-check; property AirDNA Rentalizer needs a paid login/pasted comps. GuestFavorites SMM multiplier ×1.12; working grid €31–32k gross. Better T1 mid ADR €125–140; gross check ≈€30.8k at ADR €130 × 65%. Market-mid only; not the €95 / 55% conservative global default.",
+      "income_mode": "str"
     },
     "market-mid-studio-misericordia": {
       "band": "170k",
@@ -188,9 +212,11 @@
         "occupancy_pct": 65,
         "furniture_fitout": 6500,
         "loan_amount": 108500,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Optional grid stub — T0 × Misericórdia. BNBCalc size ladder × GuestFavorites Misericórdia multiplier ×1.10; working gross €23–26k. ADR €105 @ 65% gives ≈€24.9k; market-mid, not a global default."
+      "note": "Optional grid stub — T0 × Misericórdia. BNBCalc size ladder × GuestFavorites Misericórdia multiplier ×1.10; working gross €23–26k. ADR €105 @ 65% gives ≈€24.9k; market-mid, not a global default.",
+      "income_mode": "str"
     },
     "market-mid-t1-misericordia": {
       "band": "240k",
@@ -202,9 +228,11 @@
         "furniture_fitout": 9500,
         "loan_amount": 150500,
         "ltv_pct": 70,
-        "cleaning_per_turnover": 55
+        "cleaning_per_turnover": 55,
+        "income_mode": "str"
       },
-      "note": "Optional grid stub — T1 × Misericórdia. BNBCalc size ladder × GuestFavorites Misericórdia multiplier ×1.10; working gross €30–31k. ADR €125 @ 65% gives ≈€29.7k; market-mid, not a global default."
+      "note": "Optional grid stub — T1 × Misericórdia. BNBCalc size ladder × GuestFavorites Misericórdia multiplier ×1.10; working gross €30–31k. ADR €125 @ 65% gives ≈€29.7k; market-mid, not a global default.",
+      "income_mode": "str"
     },
     "market-mid-studio-arroios": {
       "band": "170k",
@@ -215,9 +243,11 @@
         "occupancy_pct": 60,
         "furniture_fitout": 6500,
         "loan_amount": 108500,
-        "ltv_pct": 70
+        "ltv_pct": 70,
+        "income_mode": "str"
       },
-      "note": "Optional conservative grid stub — T0 × Arroios / near-core. BNBCalc size ladder × GuestFavorites Arroios multiplier ×0.95; working gross €20–23k. ADR €95 @ 60% gives ≈€20.8k; below the SMM market-mid case."
+      "note": "Optional conservative grid stub — T0 × Arroios / near-core. BNBCalc size ladder × GuestFavorites Arroios multiplier ×0.95; working gross €20–23k. ADR €95 @ 60% gives ≈€20.8k; below the SMM market-mid case.",
+      "income_mode": "str"
     },
     "best-case-managed-t0-smm": {
       "band": "170k",
@@ -232,10 +262,56 @@
         "maintenance_pct_gross": 6,
         "irs_rental_pct": 0,
         "loan_amount": 108500,
+        "ltv_pct": 70,
+        "income_mode": "str"
+      },
+      "note": "Managed best-case path — not the conservative default. T0 × Santa Maria Maior (SMM) / Alfama–Baixa; ADR €110 @ 65% aligned with the market-mid T0 case. Early-years IRS 0 scenario assumes accountant-confirmed construction-cost / obras offset — illustrative only, not tax advice; verify with accountant.",
+      "income_mode": "str"
+    },
+    "ltr-t0-smm": {
+      "listing_key": null,
+      "band": "170k",
+      "status": "roi_draft",
+      "income_mode": "ltr",
+      "assumptions": {
+        "income_mode": "ltr",
+        "purchase_price": 155000,
+        "monthly_rent": 1000,
+        "vacancy_months": 1,
+        "furniture_fitout": 4000,
+        "utilities_monthly": 0,
+        "maintenance_pct_gross": 7,
+        "management_fee_pct": 0,
+        "condo_monthly": 60,
+        "imi_annual": 250,
+        "insurance_monthly": 18,
+        "loan_amount": 108500,
         "ltv_pct": 70
       },
-      "note": "Managed best-case path — not the conservative default. T0 × Santa Maria Maior (SMM) / Alfama–Baixa; ADR €110 @ 65% aligned with the market-mid T0 case. Early-years IRS 0 scenario assumes accountant-confirmed construction-cost / obras offset — illustrative only, not tax advice; verify with accountant."
+      "note": "LTR T0 × Santa Maria Maior / tourist-core. Monthly rent €1,000 mid (€950–1,100 band); vacancy 1 month (~8%). Gross ≈ €11,000 after vacancy (€12k × 11/12). OpEx: tenant pays utils (€0 landlord); condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
+    },
+    "ltr-t1-smm": {
+      "listing_key": null,
+      "band": "240k",
+      "status": "roi_draft",
+      "income_mode": "ltr",
+      "assumptions": {
+        "income_mode": "ltr",
+        "purchase_price": 215000,
+        "monthly_rent": 1300,
+        "vacancy_months": 1,
+        "furniture_fitout": 5000,
+        "utilities_monthly": 0,
+        "maintenance_pct_gross": 7,
+        "management_fee_pct": 0,
+        "condo_monthly": 60,
+        "imi_annual": 300,
+        "insurance_monthly": 20,
+        "loan_amount": 150500,
+        "ltv_pct": 70
+      },
+      "note": "LTR T1 × Santa Maria Maior / tourist-core. Monthly rent €1,300 mid (€1,200–1,400 band); vacancy 1 month (~8%). Gross ≈ €14,300 after vacancy (€15.6k × 11/12). OpEx: tenant pays utils; condo/IMI/insurance apply; maint ~7% of annual rent; management 0% self (optional ~8% remote). Fallback when AL/RMAL blocks STR. Not tax advice."
     }
   },
-  "note": "Listing stubs use 70% LTV capped at €170k; market-mid stubs use BNBCalc size ladder + GuestFavorites parish multipliers and AirDNA-like 55–70% occupancy. T1 market-mid polish uses €9,500 furniture/fit-out and €55 cleaning. Calculator default remains ADR €95 @ 55% (≈€19k gross); Airbtics 80%+ is not a global default. The managed best-case stub is an optional scenario-layer illustration, not the conservative default; global tax defaults are unchanged."
+  "note": "Listing stubs use 70% LTV capped at €170k; STR market-mid stubs use BNBCalc × GuestFavorites and 60–65% occ. Calculator STR default remains ADR €95 @ 55% / platform 15.5% / maint 8%. LTR stubs ltr-t0-smm (€1,000/mo, vac 1) and ltr-t1-smm (€1,300/mo, vac 1) set income_mode=ltr. Airbtics 80%+ is not a global default. Draft picker sets income mode from each stub. Model 0.1.5-draft awaiting re-audit; tax stack unchanged."
 }
