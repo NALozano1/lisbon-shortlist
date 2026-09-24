@@ -7,7 +7,7 @@ Living shortlist, outreach tracker, and **ROI calculator (draft — pending audi
 ## Pages
 - `index.html` — shortlist + map (`data/listings.json`) — filter chips include **≤€170k** / **≤€240k**
 - `pipeline.html` — outreach + **ROI status** (`data/pipeline.json`, `data/updates.json`, `data/roi-drafts.json`)
-- `roi.html` — labelled STR ROI calculator (`data/roi-model.json`, `roi.js`)
+- `roi.html` — labelled STR ROI calculator (`data/roi-model.json`, `roi.js`), explicitly pre-tax and pending full audit
 
 ## How to append (no HTML rewrites)
 
@@ -63,23 +63,25 @@ File: `data/roi-model.json`
 | Field | Meaning |
 |-------|---------|
 | `model_version` | Semver string, e.g. `0.1.0-draft` — **bump when any default assumption changes** |
-| `audit_status` | `pending` \| `audited` \| `rejected` |
-| `audited_by` | Array of reviewer names (empty until audit) |
+| `audit_status` | `pending` \| `changes_applied_awaiting_reaudit` \| `audited` \| `rejected` |
+| `audited_by` | Array of final reviewer names (empty until re-audit) |
 | `assumptions[]` | Every input: `id`, `label`, `value`, `unit`, `source`, `note` |
 | `outputs[]` | Labelled metric ids the UI must show |
+| `reviewers` | Review outcomes; changes can be applied while awaiting re-audit |
 
 Rules:
 1. Never silently change a default — bump `model_version` and note why in `data/updates.json`.
-2. After a human audit, set `audit_status: "audited"` and append to `audited_by`.
-3. Draft per-listing stubs live in `data/roi-drafts.json` (keyed ids like `170k-1`). Load via `roi.html?draft=170k-1`.
-4. Calculator persists last inputs in **browser localStorage only** — no personal mortgage data in the repo.
+2. Record each review in `reviewers`; apply requested changes and keep `audit_status` at `changes_applied_awaiting_reaudit` until the reviewers re-audit.
+3. Only after re-audit, set `audit_status: "audited"` and append to `audited_by`.
+4. Draft per-listing stubs live in `data/roi-drafts.json` (keyed ids like `170k-1`). Load via `roi.html?draft=170k-1`.
+5. Calculator persists last inputs in **browser localStorage only** — no personal mortgage data in the repo.
 
 Formula sketch (see `roi.js`):
 - Gross = ADR × 365 × occupancy
-- NOI = Gross − platform fees − cleaning − condo − IMI − utilities − maintenance%
+- NOI = Gross − platform fees − cleaning − condo − IMI − utilities − insurance − management fee − maintenance%
 - Mortgage = standard amortising monthly payment
 - Cash flow = NOI − mortgage annual
-- Cash-on-cash = cash flow / (down payment + closing% + fit-out)
+- Cash-on-cash = pre-tax cash flow / (down payment + itemised closing stack or explicit stress override + fit-out)
 - Cap rate = NOI / purchase price
 - Break-even occupancy solves cash flow = 0
 

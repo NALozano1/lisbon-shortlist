@@ -317,6 +317,26 @@ a:hover { text-decoration: underline; }
 }
 .roi-banner strong { color: var(--accent); font-size: 1.05rem; }
 .roi-disclaimer { color: var(--muted); font-size: .8rem; }
+.roi-tax-banner {
+  margin: 0 0 .75rem;
+  padding: .65rem .75rem;
+  border: 1px solid #70552d;
+  background: #2a2419;
+  color: #f0d9a3;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+.roi-footnote, .typology-hint {
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.45;
+  margin: .75rem 0 0;
+}
+.typology-hint {
+  padding-top: .5rem;
+  border-top: 1px solid var(--line);
+}
+
 .roi-grid {
   display: grid; grid-template-columns: 1.1fr 1fr; gap: 1rem; align-items: start;
 }

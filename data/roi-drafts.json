@@ -1,5 +1,5 @@
 {
-  "model_version": "0.1.0-draft",
+  "model_version": "0.1.2-draft",
   "audit_status": "pending",
   "drafts": {
     "170k-1": {
@@ -12,7 +12,8 @@
         "nightly_rate": 100,
         "occupancy_pct": 58,
         "furniture_fitout": 7000,
-        "loan_amount": 155000
+        "loan_amount": 108500.0,
+        "ltv_pct": 70
       },
       "note": "Draft — light works Alfama; ADR optimistic until comps."
     },
@@ -26,7 +27,8 @@
         "nightly_rate": 90,
         "occupancy_pct": 55,
         "furniture_fitout": 6500,
-        "loan_amount": 155000
+        "loan_amount": 108500.0,
+        "ltv_pct": 70
       },
       "note": "Draft — Martim Moniz edge; verify vacancy/agent."
     },
@@ -38,9 +40,10 @@
       "assumptions": {
         "purchase_price": 169900,
         "nightly_rate": 85,
-        "occupancy_pct": 60,
+        "occupancy_pct": 55,
         "furniture_fitout": 2000,
-        "loan_amount": 169900
+        "loan_amount": 118930.0,
+        "ltv_pct": 70
       },
       "note": "Draft — turnkey near Rossio; already remodelled (lower fit-out)."
     },
@@ -52,9 +55,10 @@
       "assumptions": {
         "purchase_price": 165000,
         "nightly_rate": 110,
-        "occupancy_pct": 60,
+        "occupancy_pct": 55,
         "furniture_fitout": 25000,
-        "loan_amount": 165000
+        "loan_amount": 115500.0,
+        "ltv_pct": 70
       },
       "note": "Draft — full reno; fit-out/works lumped — bankability TBD."
     },
@@ -68,7 +72,8 @@
         "nightly_rate": 95,
         "occupancy_pct": 55,
         "furniture_fitout": 18000,
-        "loan_amount": 165000
+        "loan_amount": 115500.0,
+        "ltv_pct": 70
       },
       "note": "Draft — tiny Alfama to-renovate."
     },
@@ -82,7 +87,8 @@
         "nightly_rate": 130,
         "occupancy_pct": 65,
         "furniture_fitout": 3000,
-        "loan_amount": 170000
+        "loan_amount": 150500.0,
+        "ltv_pct": 70
       },
       "note": "Draft — Remédios AL ativa (existing #1); loan capped at 170k preapproval."
     },
@@ -96,7 +102,8 @@
         "nightly_rate": 120,
         "occupancy_pct": 65,
         "furniture_fitout": 2500,
-        "loan_amount": 170000
+        "loan_amount": 132300.0,
+        "ltv_pct": 70
       },
       "note": "Draft — Portas do Sol AL operating."
     },
@@ -110,7 +117,8 @@
         "nightly_rate": 115,
         "occupancy_pct": 62,
         "furniture_fitout": 2500,
-        "loan_amount": 170000
+        "loan_amount": 153300.0,
+        "ltv_pct": 70
       },
       "note": "Draft — IAD Alfama AL; tiny 18 m²."
     },
@@ -122,9 +130,10 @@
       "assumptions": {
         "purchase_price": 239500,
         "nightly_rate": 140,
-        "occupancy_pct": 60,
+        "occupancy_pct": 55,
         "furniture_fitout": 4000,
-        "loan_amount": 170000
+        "loan_amount": 167650.0,
+        "ltv_pct": 70
       },
       "note": "Draft — KW duplex river view; largest near 240k."
     },
@@ -136,11 +145,13 @@
       "assumptions": {
         "purchase_price": 235000,
         "nightly_rate": 145,
-        "occupancy_pct": 60,
+        "occupancy_pct": 55,
         "furniture_fitout": 3500,
-        "loan_amount": 170000
+        "loan_amount": 164500.0,
+        "ltv_pct": 70
       },
       "note": "Draft — C21 Alfama T2 furnished."
     }
-  }
+  },
+  "note": "Listing stubs use 70% LTV capped at €170k; occupancy defaults are conservative and ADR varies by typology."
 }

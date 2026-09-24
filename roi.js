@@ -31,7 +31,11 @@
 
   function compute(v) {
     const price = Number(v.purchase_price) || 0;
-    const closePct = Number(v.closing_costs_pct) || 0;
+    const closeOverridePct = Number(v.closing_costs_override_pct) || 0;
+    const imtPct = Number(v.imt_purchase_pct) || 0;
+    const stampPurchasePct = Number(v.stamp_duty_purchase_pct) || 0;
+    const notaryLegal = Number(v.notary_registry_lawyer_eur) || 0;
+    const mortgageStampPct = Number(v.mortgage_stamp_duty_pct) || 0;
     const fitout = Number(v.furniture_fitout) || 0;
     const adr = Number(v.nightly_rate) || 0;
     const occ = (Number(v.occupancy_pct) || 0) / 100;
@@ -41,8 +45,16 @@
     const condo = Number(v.condo_monthly) || 0;
     const imi = Number(v.imi_annual) || 0;
     const utils = Number(v.utilities_monthly) || 0;
+    const insurance = Number(v.insurance_monthly) || 0;
+    const managementPct = (Number(v.management_fee_pct) || 0) / 100;
+    const irsPct = (Number(v.irs_rental_pct) || 0) / 100;
     const maintPct = (Number(v.maintenance_pct_gross) || 0) / 100;
     const loan = Number(v.loan_amount) || 0;
+    const closingStack =
+      price * ((imtPct + stampPurchasePct) / 100) +
+      notaryLegal +
+      loan * (mortgageStampPct / 100);
+    const closing = closeOverridePct > 0 ? price * (closeOverridePct / 100) : closingStack;
     const rate = Number(v.mortgage_rate_pct) || 0;
     const term = Number(v.mortgage_term_years) || 0;
 
@@ -52,13 +64,13 @@
     const turnoversMonth = (365 * occ) / avgStay / 12;
     const cleaningAnnual = clean * turnoversMonth * 12;
     const maint = gross * maintPct;
-    const opexOther = condo * 12 + imi + utils * 12 + maint;
+    const opexOther = condo * 12 + imi + utils * 12 + insurance * 12 + maint + gross * managementPct;
     const noi = gross - platform - cleaningAnnual - opexOther;
     const mortMo = amortMonthly(loan, rate, term);
     const mortYr = mortMo * 12;
     const cashFlow = noi - mortYr;
+    const cashFlowAfterIrs = cashFlow - Math.max(noi, 0) * irsPct;
     const down = Math.max(price - loan, 0);
-    const closing = price * (closePct / 100);
     const cashIn = down + closing + fitout;
     const coc = cashIn > 0 ? (cashFlow / cashIn) * 100 : null;
     const cap = price > 0 ? (noi / price) * 100 : null;
@@ -68,13 +80,13 @@
     // platform = gross * feePct
     // cleaning = clean * (365*occ/avgStay)
     // maint = gross * maintPct
-    // fixed = condo*12 + imi + utils*12 + mortYr
+    // fixed = condo*12 + imi + utils*12 + insurance*12 + mortYr
     // noi - mortYr = 0 => gross - platform - cleaning - maint - (condo*12+imi+utils*12) - mortYr = 0
     // gross*(1 - feePct - maintPct) - clean*(365/avgStay)*occ - fixed = 0
     // occ * [adr*365*(1-fee-maint) - clean*365/avgStay] = fixed
-    const fixed = condo * 12 + imi + utils * 12 + mortYr;
+    const fixed = condo * 12 + imi + utils * 12 + insurance * 12 + mortYr;
     const varPerOcc =
-      adr * 365 * (1 - feePct - maintPct) - clean * (365 / avgStay);
+      adr * 365 * (1 - feePct - maintPct - managementPct) - clean * (365 / avgStay);
     let be = null;
     if (varPerOcc > 0) {
       be = (fixed / varPerOcc) * 100;
@@ -91,6 +103,7 @@
       mortgage_monthly: mortMo,
       mortgage_annual: mortYr,
       cash_flow: cashFlow,
+      cash_flow_after_irs: cashFlowAfterIrs,
       cash_on_cash_pct: coc,
       cap_rate_pct: cap,
       break_even_occupancy_pct: be,
@@ -99,14 +112,20 @@
     };
   }
 
+  function suggestedLoan(v) {
+    const price = Number(v.purchase_price) || 0;
+    const ltv = Number(v.ltv_pct) || 0;
+    const cap = Number(v.loan_cap_eur) || 170000;
+    return Math.min(price * (ltv / 100), cap);
+  }
+
   function defaultValues() {
     const v = {};
     (model.assumptions || []).forEach((a) => {
       v[a.id] = a.value;
     });
-    // loan default min(price, 170000)
-    const price = Number(v.purchase_price) || 0;
-    v.loan_amount = Math.min(price, 170000);
+    // loan default min(price × LTV, €170k)
+    v.loan_amount = suggestedLoan(v);
     return v;
   }
 
@@ -151,11 +170,11 @@
       inp.addEventListener('input', () => {
         const id = inp.id.replace(/^in-/, '');
         values[id] = inp.value === '' ? 0 : Number(inp.value);
-        if (id === 'purchase_price') {
-          // keep loan at min(price, 170k) unless user already lowered it below
-          const sug = Math.min(Number(values.purchase_price) || 0, 170000);
+        if (id === 'purchase_price' || id === 'ltv_pct') {
+          // Recompute from LTV while the loan remains unlocked by the user.
+          const sug = suggestedLoan(values);
           const loanInp = document.getElementById('in-loan_amount');
-          if (loanInp && (Number(values.loan_amount) > sug || values._loanAuto !== false)) {
+          if (loanInp && values._loanAuto !== false) {
             values.loan_amount = sug;
             loanInp.value = sug;
           }
@@ -174,7 +193,9 @@
     (model.outputs || []).forEach((o) => {
       meta[o.id] = o;
     });
-    const order = (model.outputs || []).map((o) => o.id);
+    const order = (model.outputs || [])
+      .map((o) => o.id)
+      .filter((id) => id !== 'cash_flow_after_irs' || (Number(values.irs_rental_pct) || 0) > 0);
     outputsEl.innerHTML = order
       .map((id) => {
         const m = meta[id] || { label: id, unit: '' };
@@ -278,6 +299,11 @@
         Object.keys(saved).forEach((k) => {
           if (k in values || k === '_loanAuto') values[k] = saved[k];
         });
+        // Migrate old unlocked saves so the former 100% LTV loan is not retained.
+        if (saved._loanAuto !== false) {
+          values._loanAuto = true;
+          values.loan_amount = suggestedLoan(values);
+        }
       }
 
       if (drafts && drafts.drafts) {

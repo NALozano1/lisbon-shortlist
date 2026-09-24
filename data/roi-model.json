@@ -1,9 +1,9 @@
 {
-  "model_version": "0.1.0-draft",
+  "model_version": "0.1.2-draft",
   "audited_by": [],
-  "audit_status": "pending",
+  "audit_status": "changes_applied_awaiting_reaudit",
   "updated": "2026-09-24",
-  "disclaimer": "Illustrative STR / short-let model for Lisbon tourist-core. Not legal, tax, or mortgage advice. IMT and regime depend on buyer profile and property value — verify with a lawyer / bank.",
+  "disclaimer": "Illustrative STR / short-let model for Lisbon tourist-core. NOI, cash flow and CoC are pre-IRS / pre-AL-tax and not legal, tax, or mortgage advice. IMT and regime depend on buyer profile and property value; mais-valia is out of scope — verify with a lawyer / bank.",
   "assumptions": [
     {
       "id": "purchase_price",
@@ -16,15 +16,84 @@
     },
     {
       "id": "closing_costs_pct",
-      "label": "Closing costs (IMT+IS+notary+registry approx)",
+      "label": "Closing costs reference / stress override",
       "value": 7,
       "unit": "%",
-      "input": true,
+      "input": false,
       "min": 4,
       "max": 12,
       "step": 0.1,
       "source": "Illustrative Lisbon resale heuristic",
-      "note": "Illustrative; IMT depends on value/regime — not legal advice. Typical all-in often ~6–8% for mid-value resale."
+      "note": "7% retained as optional stress/reference only; calculator uses itemised closing stack by default. IMT depends on value/regime — not legal advice."
+    },
+    {
+      "id": "imt_regime",
+      "label": "IMT regime",
+      "value": "secondary",
+      "unit": "",
+      "input": false,
+      "source": "Model framing for investment / AL",
+      "note": "Secondary habitação; not HPP or jovem-buyer treatment. Confirm applicable regime with a lawyer."
+    },
+    {
+      "id": "imt_purchase_pct",
+      "label": "IMT estimate (secondary habitação)",
+      "value": 3.7,
+      "unit": "%",
+      "input": true,
+      "min": 0,
+      "max": 15,
+      "step": 0.1,
+      "source": "Illustrative purchase-side estimate",
+      "note": "Use an actual IMT simulation for the property/buyer; this estimate plus stamp duty targets roughly 4.0–4.5% purchase-side."
+    },
+    {
+      "id": "stamp_duty_purchase_pct",
+      "label": "Purchase stamp duty",
+      "value": 0.8,
+      "unit": "%",
+      "input": true,
+      "min": 0,
+      "max": 2,
+      "step": 0.1,
+      "source": "Illustrative Portuguese purchase assumption",
+      "note": "Applied to purchase price in the itemised closing-cost stack; verify legal basis and taxable base."
+    },
+    {
+      "id": "notary_registry_lawyer_eur",
+      "label": "Notary / registry / lawyer",
+      "value": 1500,
+      "unit": "EUR",
+      "input": true,
+      "min": 0,
+      "max": 10000,
+      "step": 50,
+      "source": "Illustrative transaction-cost placeholder",
+      "note": "Replace with quotes; included in total cash in."
+    },
+    {
+      "id": "mortgage_stamp_duty_pct",
+      "label": "Mortgage stamp duty",
+      "value": 0.6,
+      "unit": "%",
+      "input": true,
+      "min": 0,
+      "max": 2,
+      "step": 0.1,
+      "source": "Illustrative mortgage assumption",
+      "note": "Applied to loan amount and included in total cash in."
+    },
+    {
+      "id": "closing_costs_override_pct",
+      "label": "Closing-cost override / stress",
+      "value": 0,
+      "unit": "%",
+      "input": true,
+      "min": 0,
+      "max": 20,
+      "step": 0.1,
+      "source": "Optional user stress input",
+      "note": "Leave at 0 to use the itemised stack; enter 7% only as a deliberate stress/override."
     },
     {
       "id": "furniture_fitout",
@@ -50,14 +119,14 @@
     {
       "id": "occupancy_pct",
       "label": "Occupancy",
-      "value": 60,
+      "value": 55,
       "unit": "%",
       "input": true,
       "min": 20,
       "max": 95,
       "step": 1,
       "source": "Tourist-core STR default 55–65%",
-      "note": "Conservative mid tourist-core; peak summer higher, winter lower."
+      "note": "Conservative tourist-core default; peak summer higher, winter lower."
     },
     {
       "id": "platform_fees_pct",
@@ -69,7 +138,7 @@
       "max": 25,
       "step": 0.5,
       "source": "Airbnb host service fee ~15% typical",
-      "note": "Depends on host/guest-split setup; Booking.com differs."
+      "note": "Host-heavy stress default; depends on host/guest-split setup and platform."
     },
     {
       "id": "avg_stay_nights",
@@ -85,7 +154,7 @@
     },
     {
       "id": "cleaning_per_turnover",
-      "label": "Cleaning per turnover",
+      "label": "Cleaning per turnover (owner-paid)",
       "value": 45,
       "unit": "EUR",
       "input": true,
@@ -93,12 +162,12 @@
       "max": 150,
       "step": 5,
       "source": "Compact Lisbon STR clean",
-      "note": "Often partly passed to guest; model treats as owner OpEx unless you net it in ADR."
+      "note": "Model charges the owner every time; conservative if the guest separately pays a cleaning fee."
     },
     {
       "id": "condo_monthly",
       "label": "Condomínio (monthly)",
-      "value": 35,
+      "value": 50,
       "unit": "EUR/mo",
       "input": true,
       "min": 0,
@@ -117,45 +186,142 @@
       "max": 2000,
       "step": 10,
       "source": "Proxy — often ~0.3–0.45% of VPT, not purchase price",
-      "note": "Replace with caderneta predial / VPT-based figure when known."
+      "note": "VPT-based proxy; replace with caderneta predial / VPT figure when known. Optional quick check: VPT × 0.0035."
     },
     {
       "id": "utilities_monthly",
       "label": "Utilities + Wi‑Fi (monthly)",
-      "value": 80,
+      "value": 100,
       "unit": "EUR/mo",
       "input": true,
       "min": 0,
       "max": 250,
       "step": 5,
       "source": "Electricity + water + fibre for STR",
-      "note": "Guest-heavy use can push electricity higher in summer AC."
+      "note": "Electricity + water + fibre for STR; guest-heavy use can push electricity higher."
+    },
+    {
+      "id": "insurance_monthly",
+      "label": "Insurance (life + MRH, monthly)",
+      "value": 30,
+      "unit": "EUR/mo",
+      "input": true,
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "source": "Illustrative OpEx placeholder",
+      "note": "Life + multirisk home insurance placeholder; replace with bank/insurer quotes."
+    },
+    {
+      "id": "insurance_annual",
+      "label": "Insurance (annual placeholder)",
+      "value": null,
+      "unit": "EUR/yr",
+      "input": false,
+      "include": false,
+      "source": "Placeholder — represented by insurance_monthly",
+      "note": "Out of scope as a separate input; use insurance_monthly above."
+    },
+    {
+      "id": "management_fee_pct",
+      "label": "Management fee",
+      "value": 0,
+      "unit": "% of gross",
+      "input": true,
+      "min": 0,
+      "max": 30,
+      "step": 0.5,
+      "source": "Optional user input",
+      "note": "Default 0%; add if a manager is used."
+    },
+    {
+      "id": "irs_rental_pct",
+      "label": "IRS rental tax stress",
+      "value": 0,
+      "unit": "% of NOI",
+      "input": true,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "source": "Optional illustrative stress input",
+      "note": "Default 0 = pre-tax; Cat. F 28% mode is a rough stress only and actual treatment depends on facts/regime."
+    },
+    {
+      "id": "irs_rental_tax",
+      "label": "IRS rental tax",
+      "value": null,
+      "unit": "",
+      "input": false,
+      "include": false,
+      "source": "Out of scope by default",
+      "note": "Pre-tax model; use irs_rental_pct only as an optional illustrative stress."
+    },
+    {
+      "id": "al_compliance_annual",
+      "label": "AL compliance (annual placeholder)",
+      "value": null,
+      "unit": "EUR/yr",
+      "input": false,
+      "include": false,
+      "source": "Missing assumption placeholder",
+      "note": "Out of scope; add verified licensing/compliance costs when known."
+    },
+    {
+      "id": "mais_valia",
+      "label": "Mais-valia tax",
+      "value": null,
+      "unit": "",
+      "input": false,
+      "include": false,
+      "source": "Out of scope",
+      "note": "Sale-side capital-gains / mais-valia tax is excluded from this operating model."
+    },
+    {
+      "id": "loan_cap_eur",
+      "label": "Loan cap",
+      "value": 170000,
+      "unit": "EUR",
+      "input": false,
+      "source": "Alex preapproval ceiling",
+      "note": "Generic ceiling only; no bank names or personal details stored."
     },
     {
       "id": "maintenance_pct_gross",
       "label": "Maintenance / reserves",
-      "value": 5,
+      "value": 8,
       "unit": "% of gross",
       "input": true,
       "min": 0,
       "max": 15,
       "step": 0.5,
       "source": "STR reserve rule of thumb",
-      "note": "Covers consumables, minor repairs, appliance replacement."
+      "note": "Conservative reserve for consumables, minor repairs, and appliance replacement."
+    },
+    {
+      "id": "ltv_pct",
+      "label": "Loan-to-value (LTV)",
+      "value": 70,
+      "unit": "%",
+      "input": true,
+      "min": 0,
+      "max": 90,
+      "step": 1,
+      "source": "Conservative investment / AL default",
+      "note": "Default 70%; loan recomputes as min(price × LTV, €170,000) until you edit the loan. Alex note: preapproval ceiling €170k."
     },
     {
       "id": "loan_amount",
       "label": "Mortgage loan amount",
-      "value": 155000,
+      "value": 108500,
       "unit": "EUR",
       "input": true,
-      "source": "Default min(price, 170000) — Alex preapproval ceiling",
-      "note": "No personal bank details stored; generic calculator input only."
+      "source": "Default 70% LTV capped at €170,000",
+      "note": "Default loan = min(purchase price × 70%, €170,000); generic calculator input only. Alex note: preapproval ceiling €170k."
     },
     {
       "id": "mortgage_rate_pct",
       "label": "Mortgage interest rate",
-      "value": 3.5,
+      "value": 4.0,
       "unit": "%/yr",
       "input": true,
       "min": 0,
@@ -180,7 +346,7 @@
   "outputs": [
     {
       "id": "gross_annual_revenue",
-      "label": "Gross annual revenue",
+      "label": "Gross booking revenue (before fees)",
       "unit": "EUR/yr"
     },
     {
@@ -190,12 +356,12 @@
     },
     {
       "id": "cleaning_annual",
-      "label": "Cleaning (annual)",
+      "label": "Cleaning (annual; owner-paid)",
       "unit": "EUR/yr"
     },
     {
       "id": "opex_annual",
-      "label": "Other OpEx (condo+IMI+utils+maint)",
+      "label": "Other OpEx (condo+IMI+utils+insurance+management+maint)",
       "unit": "EUR/yr"
     },
     {
@@ -215,7 +381,12 @@
     },
     {
       "id": "cash_flow",
-      "label": "Cash flow after mortgage",
+      "label": "Cash flow after mortgage (pre-tax)",
+      "unit": "EUR/yr"
+    },
+    {
+      "id": "cash_flow_after_irs",
+      "label": "Cash flow after mortgage (after IRS stress)",
       "unit": "EUR/yr"
     },
     {
@@ -243,5 +414,10 @@
       "label": "Turnovers / month (derived)",
       "unit": "count"
     }
-  ]
+  ],
+  "reviewers": {
+    "Seller": "PASS WITH CHANGES 2026-09-24",
+    "Finanças Docs": "PASS WITH CHANGES 2026-09-24"
+  },
+  "audit_notes": "Seller and Finanças Docs changes applied; awaiting re-audit before audited status."
 }

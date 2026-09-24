@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-09-24",
+    "title": "Seller audit PASS WITH CHANGES; Finanças Docs PASS WITH CHANGES",
+    "body": "Applied Seller LTV/OpEx fixes and Finanças Docs closing-cost, insurance, utilities, tax-stress, and pre-tax-label fixes; awaiting re-audit."
+  },
+  {
+    "date": "2026-09-24",
     "title": "≤€170k pass + ROI calculator (draft)",
     "body": "Hard-cap €170k tourist-core search logged (8 ranked picks; Misericórdia/Baixa/Chiado empty under cap). ROI calculator page live (model 0.1.0-draft, audit pending). Filter chip ≤€170k on shortlist."
   },

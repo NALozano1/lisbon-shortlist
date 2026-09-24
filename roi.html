@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>ROI calculator (draft — pending audit) · Lisbon</title>
-  <meta name="description" content="Labelled, auditable STR ROI calculator for Lisbon tourist-core — draft model pending audit. Not financial advice." />
+  <title>ROI calculator (draft — pending full audit) · Lisbon</title>
+  <meta name="description" content="Labelled, auditable STR ROI calculator for Lisbon tourist-core — draft model pending full audit. Not financial advice." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="page-roi">
@@ -14,7 +14,7 @@
         <span class="full">ROI calculator</span>
         <span class="short">ROI</span>
       </h1>
-      <p>Draft · pending audit · <span id="model-stamp"></span></p>
+      <p>Draft · pending full audit · <span id="model-stamp"></span></p>
     </div>
     <nav class="nav">
       <a href="index.html">Shortlist</a>
@@ -25,9 +25,9 @@
 
   <main class="roi-wrap">
     <div class="roi-banner" role="status">
-      <strong>ROI calculator (draft — pending audit)</strong>
+      <strong>ROI calculator (draft — pending full audit)</strong>
       <span id="audit-line">audit_status: pending · audited_by: []</span>
-      <span class="roi-disclaimer">Illustrative only — not legal, tax, or mortgage advice. No personal bank details are stored on this site.</span>
+      <span class="roi-disclaimer">Pre-tax · excludes IRS / AL tax · illustrative only — not legal, tax, or mortgage advice. No personal bank details are stored on this site.</span>
     </div>
 
     <div class="roi-grid">
@@ -48,7 +48,10 @@
 
       <section class="roi-outputs" aria-label="Outputs">
         <h2 class="section-label">Outputs</h2>
+        <div class="roi-tax-banner">NOI, cash flow, and CoC are pre-IRS / illustrative. Optional IRS stress is not tax advice.</div>
         <div id="outputs" class="output-cards"></div>
+        <p class="roi-footnote">CoC equity = down payment + closing costs + fit-out. Cleaning is charged to the owner in this conservative model. Cash flow / CoC: pre-tax · excludes IRS / AL tax.</p>
+        <div class="typology-hint"><strong>Typology hints:</strong> T0 ADR €85–100 · fit-out €6.5k · clean €45; T1 ADR €110–130 · fit-out €9–12k · clean €55–70.</div>
       </section>
     </div>
 
