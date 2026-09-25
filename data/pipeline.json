@@ -81,11 +81,11 @@
     "related": "Beato T1 (was €235k)",
     "stage": "dead",
     "stage_label": "Dead / Gone",
-    "last_action": "2026-09-23",
-    "last_action_note": "Listing gone 24 Sep; chases unanswered",
+    "last_action": "2026-09-25",
+    "last_action_note": "Stock chase (listing already gone); no reply",
     "bullets": [
       "Beato listing confirmed GONE (HTTP 410) 24 Sep",
-      "Stock chases 17 / 21 / 23 Sep — no reply"
+      "Stock chases 17 / 21 / 23 / 25 Sep — no reply"
     ],
     "roi_status": null
   },
@@ -95,10 +95,10 @@
     "related": "General stock follow-up",
     "stage": "chased",
     "stage_label": "Chased · no reply",
-    "last_action": "2026-09-23",
+    "last_action": "2026-09-25",
     "last_action_note": "Stock chase; no reply",
     "bullets": [
-      "Stock chases 17 / 21 / 23 Sep"
+      "Stock chases 17 / 21 / 23 / 25 Sep"
     ],
     "roi_status": null
   },
@@ -108,10 +108,10 @@
     "related": "General stock follow-up",
     "stage": "chased",
     "stage_label": "Chased · no reply",
-    "last_action": "2026-09-23",
+    "last_action": "2026-09-25",
     "last_action_note": "Stock chase; no reply",
     "bullets": [
-      "Stock chases 17 / 21 / 23 Sep"
+      "Stock chases 17 / 21 / 23 / 25 Sep"
     ],
     "roi_status": null
   },
@@ -121,10 +121,10 @@
     "related": "General stock follow-up",
     "stage": "chased",
     "stage_label": "Chased · no reply",
-    "last_action": "2026-09-23",
+    "last_action": "2026-09-25",
     "last_action_note": "Stock chase; no reply",
     "bullets": [
-      "Stock chases 17 / 21 / 23 Sep"
+      "Stock chases 17 / 21 / 23 / 25 Sep"
     ],
     "roi_status": null
   },
@@ -138,11 +138,11 @@
     "related": "Estrela T0 (was reserved)",
     "stage": "reserved",
     "stage_label": "Reserved",
-    "last_action": "2026-09-23",
+    "last_action": "2026-09-25",
     "last_action_note": "Estrela reserved; chased; no new reply",
     "bullets": [
       "Asked to ping if it frees + other stock",
-      "Chases 17 / 21 / 23 Sep — no new reply"
+      "Chases 17 / 21 / 23 / 25 Sep — no new reply"
     ],
     "roi_status": null
   },
