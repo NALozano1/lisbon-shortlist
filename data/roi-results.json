@@ -1,6 +1,6 @@
 {
   "model_version": "0.1.6",
-  "as_of": "2026-09-24",
+  "as_of": "2026-10-01",
   "timezone": "Europe/Lisbon",
   "generated_at": "2026-09-24T16:18:51+01:00",
   "method_note": "Batch mirrors live roi.js compute + data/roi-model.json defaults (0.1.6; mortgage term 40y). Property-level AirDNA Rentalizer was NOT available — validation is parish/city comps (AirDNA Lisbon TTM thru Jul 2026: ~65% occ / $147 ADR / ~$23.1k avg; BNBCalc size ladder × GuestFavorites parish multipliers; Idealista LTR asking mids 2026-09-24). No bank personal details. Pre-IRS / pre-AL-tax; IMT illustrative Tabela III secondary proxy. STR path on AL=false listings assumes licence obtainable/already licensed — regulatory risk.",
@@ -108,7 +108,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 14
+      "rank_str_mid_coc": 14,
+      "price_band_190k": false
     },
     {
       "listing_rank": 2,
@@ -120,7 +121,7 @@
       "area_parish": "Alfama / Portas do Sol",
       "parish_bucket": "smm",
       "al": true,
-      "band": "240k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/estudio-em-alfama-com-licenca-al-portas-do-sol-ID1hK3A",
       "loan_eur": 132300.0,
       "ltv_effective_pct": 70.0,
@@ -179,7 +180,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 19
+      "rank_str_mid_coc": 19,
+      "price_band_190k": true
     },
     {
       "listing_rank": 3,
@@ -252,7 +254,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 17
+      "rank_str_mid_coc": 17,
+      "price_band_190k": false
     },
     {
       "listing_rank": 4,
@@ -324,7 +327,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 28
+      "rank_str_mid_coc": 28,
+      "price_band_190k": false
     },
     {
       "listing_rank": 5,
@@ -397,7 +401,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 2
+      "rank_str_mid_coc": 2,
+      "price_band_190k": false
     },
     {
       "listing_rank": 6,
@@ -468,7 +473,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 15
+      "rank_str_mid_coc": 15,
+      "price_band_190k": false
     },
     {
       "listing_rank": 7,
@@ -541,7 +547,8 @@
       "high_uncertainty_reno": true,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 8
+      "rank_str_mid_coc": 8,
+      "price_band_190k": false
     },
     {
       "listing_rank": 8,
@@ -612,7 +619,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 29
+      "rank_str_mid_coc": 29,
+      "price_band_190k": false
     },
     {
       "listing_rank": 9,
@@ -624,7 +632,7 @@
       "area_parish": "Misericórdia / Bica",
       "parish_bucket": "misericordia",
       "al": false,
-      "band": "240k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/t0-com-mezanino-misericordia-lisboa-ID1iJFC",
       "loan_eur": 129500.0,
       "ltv_effective_pct": 70.0,
@@ -683,7 +691,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 21
+      "rank_str_mid_coc": 21,
+      "price_band_190k": true
     },
     {
       "listing_rank": 10,
@@ -755,7 +764,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 23
+      "rank_str_mid_coc": 23,
+      "price_band_190k": false
     },
     {
       "listing_rank": 11,
@@ -767,7 +777,7 @@
       "area_parish": "Alfama",
       "parish_bucket": "smm",
       "al": false,
-      "band": "240k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-remodelado-alfama-ID1hvGE",
       "loan_eur": 126000.0,
       "ltv_effective_pct": 70.0,
@@ -826,7 +836,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 13
+      "rank_str_mid_coc": 13,
+      "price_band_190k": true
     },
     {
       "listing_rank": 12,
@@ -838,7 +849,7 @@
       "area_parish": "Santa Maria Maior / Martim Moniz",
       "parish_bucket": "smm",
       "al": true,
-      "band": "240k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/estudio-t0-com-mezzanine-perto-do-metro-martim-moniz-ID1iSCN",
       "loan_eur": 122500.0,
       "ltv_effective_pct": 70.0,
@@ -897,7 +908,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 10
+      "rank_str_mid_coc": 10,
+      "price_band_190k": true
     },
     {
       "listing_rank": 13,
@@ -968,7 +980,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 33
+      "rank_str_mid_coc": 33,
+      "price_band_190k": false
     },
     {
       "listing_rank": 14,
@@ -1039,7 +1052,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 24
+      "rank_str_mid_coc": 24,
+      "price_band_190k": false
     },
     {
       "listing_rank": 15,
@@ -1110,7 +1124,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 32
+      "rank_str_mid_coc": 32,
+      "price_band_190k": false
     },
     {
       "listing_rank": 16,
@@ -1181,7 +1196,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 31
+      "rank_str_mid_coc": 31,
+      "price_band_190k": false
     },
     {
       "listing_rank": 17,
@@ -1252,7 +1268,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 20
+      "rank_str_mid_coc": 20,
+      "price_band_190k": false
     },
     {
       "listing_rank": 18,
@@ -1264,7 +1281,7 @@
       "area_parish": "Alfama / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/t0-em-alfama-rua-castelo-picao-ID1iUO1",
       "loan_eur": 108500.0,
       "ltv_effective_pct": 70.0,
@@ -1324,7 +1341,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 6
+      "rank_str_mid_coc": 6,
+      "price_band_190k": true
     },
     {
       "listing_rank": 19,
@@ -1336,7 +1354,7 @@
       "area_parish": "São Cristóvão e São Lourenço / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-santa-maria-maior-lisboa-ID1fu55",
       "loan_eur": 108500.0,
       "ltv_effective_pct": 70.0,
@@ -1396,7 +1414,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 5
+      "rank_str_mid_coc": 5,
+      "price_band_190k": true
     },
     {
       "listing_rank": 20,
@@ -1408,7 +1427,7 @@
       "area_parish": "Pena / Arroios",
       "parish_bucket": "arroios",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-para-venda-ID1hXOc",
       "loan_eur": 118930.0,
       "ltv_effective_pct": 70.0,
@@ -1467,7 +1486,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 25
+      "rank_str_mid_coc": 25,
+      "price_band_190k": true
     },
     {
       "listing_rank": 21,
@@ -1479,7 +1499,7 @@
       "area_parish": "Alfama / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-renovacao-no-coracao-de-alfama-em-lisboa-ID1hqMo",
       "loan_eur": 115500.0,
       "ltv_effective_pct": 70.0,
@@ -1539,7 +1559,8 @@
       "high_uncertainty_reno": true,
       "ready_to_let": false,
       "needs_works": true,
-      "rank_str_mid_coc": 7
+      "rank_str_mid_coc": 7,
+      "price_band_190k": true
     },
     {
       "listing_rank": 22,
@@ -1551,7 +1572,7 @@
       "area_parish": "Alfama / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-marvila-centro-de-lisboa-ID1h6NK",
       "loan_eur": 115500.0,
       "ltv_effective_pct": 70.0,
@@ -1611,7 +1632,8 @@
       "high_uncertainty_reno": true,
       "ready_to_let": false,
       "needs_works": true,
-      "rank_str_mid_coc": 16
+      "rank_str_mid_coc": 16,
+      "price_band_190k": true
     },
     {
       "listing_rank": 23,
@@ -1623,7 +1645,7 @@
       "area_parish": "Socorro / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-remodelacao-r-c-beco-do-imaginario-lisboa-ID1idgw",
       "loan_eur": 97300.0,
       "ltv_effective_pct": 70.0,
@@ -1683,7 +1705,8 @@
       "high_uncertainty_reno": true,
       "ready_to_let": false,
       "needs_works": true,
-      "rank_str_mid_coc": 1
+      "rank_str_mid_coc": 1,
+      "price_band_190k": true
     },
     {
       "listing_rank": 24,
@@ -1695,7 +1718,7 @@
       "area_parish": "Socorro / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/t1-para-obras-em-predio-reabilitado-lisboa-ID1i5Jf",
       "loan_eur": 111300.0,
       "ltv_effective_pct": 70.0,
@@ -1755,7 +1778,8 @@
       "high_uncertainty_reno": true,
       "ready_to_let": false,
       "needs_works": true,
-      "rank_str_mid_coc": 3
+      "rank_str_mid_coc": 3,
+      "price_band_190k": true
     },
     {
       "listing_rank": 25,
@@ -1767,7 +1791,7 @@
       "area_parish": "Socorro / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "170k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1iarR",
       "loan_eur": 111300.0,
       "ltv_effective_pct": 70.0,
@@ -1827,7 +1851,8 @@
       "high_uncertainty_reno": true,
       "ready_to_let": false,
       "needs_works": true,
-      "rank_str_mid_coc": 4
+      "rank_str_mid_coc": 4,
+      "price_band_190k": true
     },
     {
       "listing_rank": 26,
@@ -1839,7 +1864,7 @@
       "area_parish": "Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "240k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-para-venda-ID1iDqw",
       "loan_eur": 120750.0,
       "ltv_effective_pct": 70.0,
@@ -1898,7 +1923,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 9
+      "rank_str_mid_coc": 9,
+      "price_band_190k": true
     },
     {
       "listing_rank": 27,
@@ -1970,7 +1996,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 11
+      "rank_str_mid_coc": 11,
+      "price_band_190k": false
     },
     {
       "listing_rank": 28,
@@ -2042,7 +2069,8 @@
       "high_uncertainty_reno": true,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 12
+      "rank_str_mid_coc": 12,
+      "price_band_190k": false
     },
     {
       "listing_rank": 29,
@@ -2054,7 +2082,7 @@
       "area_parish": "Santa Maria Maior",
       "parish_bucket": "smm",
       "al": true,
-      "band": "240k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1hPdu",
       "loan_eur": 129500.0,
       "ltv_effective_pct": 70.0,
@@ -2113,7 +2141,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 18
+      "rank_str_mid_coc": 18,
+      "price_band_190k": true
     },
     {
       "listing_rank": 30,
@@ -2184,7 +2213,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 26
+      "rank_str_mid_coc": 26,
+      "price_band_190k": false
     },
     {
       "listing_rank": 31,
@@ -2196,7 +2226,7 @@
       "area_parish": "Alfama / Santa Maria Maior",
       "parish_bucket": "smm",
       "al": false,
-      "band": "240k",
+      "band": "190k",
       "url": "https://www.imovirtual.com/pt/anuncio/apartamento-remodelado-alfama-ID1hvGB",
       "loan_eur": 133000.0,
       "ltv_effective_pct": 70.0,
@@ -2255,7 +2285,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 22
+      "rank_str_mid_coc": 22,
+      "price_band_190k": true
     },
     {
       "listing_rank": 32,
@@ -2326,7 +2357,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 27
+      "rank_str_mid_coc": 27,
+      "price_band_190k": false
     },
     {
       "listing_rank": 33,
@@ -2397,7 +2429,8 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 30
+      "rank_str_mid_coc": 30,
+      "price_band_190k": false
     }
   ]
 }

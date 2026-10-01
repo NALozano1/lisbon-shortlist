@@ -422,6 +422,7 @@ a:hover { text-decoration: underline; }
 .roi-draft-list { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: .85rem; }
 .roi-draft-list li { margin: .25rem 0; }
 .badge.band-170k { background: #1e3d2e; color: #7fd99a; }
+.badge.band-190k { background: #1e3d2e; color: #7fd99a; }
 .badge.band-240k { background: #1e2f4a; color: #8bb4e8; }
 .badge.capex, .badge.light-works { background: #3d3520; color: #e6c07b; }
 .badge.roi_pending, .badge.roi_draft, .badge.roi_audited { background: #2a3040; color: #9db4d4; font-size: .65rem; }

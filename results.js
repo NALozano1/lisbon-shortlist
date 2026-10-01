@@ -7,7 +7,7 @@
 
   let results = [];
   let readiness = 'ready';
-  let filter = 'all';
+  let filter = '190k';
   let sortKey = 'str_mid_coverage';
 
   const fmtEur = (n) => {
@@ -32,6 +32,7 @@
   function matchesFilter(r) {
     if (readiness === 'ready' && r.ready_to_let === false) return false;
     if (filter === 'all') return true;
+    if (filter === '190k') return !!r.price_band_190k || r.band === '190k' || (r.price_eur != null && r.price_eur <= 190000);
     if (filter === '170k') return !!r.price_band_170k || r.band === '170k' || (r.price_eur != null && r.price_eur <= 170000);
     if (filter === 'al') return !!r.al;
     return true;
@@ -132,7 +133,7 @@
     render();
   });
 
-  fetch('data/roi-results.json?v=20260924-turnkey')
+  fetch('data/roi-results.json?v=20261001-190k')
     .then((r) => {
       if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
       return r.json();

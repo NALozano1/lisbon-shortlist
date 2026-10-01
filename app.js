@@ -11,7 +11,7 @@
   let roiByUrl = {};
   let roiByRank = {};
   let readiness = 'ready';
-  let filter = 'all';
+  let filter = '190k';
   let sortKey = 'rank';
   let map, markersLayer, markerByRank = {};
   let mapReady = false;
@@ -49,8 +49,8 @@
   function matchesFilter(d) {
     if (readiness === 'ready' && d.ready_to_let === false) return false;
     if (filter === 'all') return true;
-    if (filter === '170k') return d.band === '170k' || (d.price_eur != null && d.price_eur <= 170000);
-    if (filter === '240k') return d.band === '240k' || (d.price_eur != null && d.price_eur > 170000 && d.price_eur <= 240000);
+    if (filter === '190k') return !!d.price_band_190k || d.band === '190k' || (d.price_eur != null && d.price_eur <= 190000);
+    if (filter === '170k') return !!d.price_band_170k || d.band === '170k' || (d.price_eur != null && d.price_eur <= 170000);
     if (filter === 'al') return !!d.al;
     if (filter === 'price-cut') return (d.status_chips || []).includes('price-cut') || /price-cut/i.test(d.status || '');
     if (filter === 'NEW') return (d.status_chips || []).includes('NEW') || /\bNEW\b/i.test(d.status || '');
@@ -104,10 +104,10 @@
         badges.push(`<span class="badge ${c}">${c === 'price-cut' ? 'Price cut' : c}</span>`);
       });
       if (d.al) badges.push('<span class="badge AL">AL</span>');
-      if (d.band === '170k' || (d.price_eur != null && d.price_eur <= 170000)) {
-        badges.push('<span class="badge band-170k">≤€170k</span>');
-      } else if (d.band === '240k') {
-        badges.push('<span class="badge band-240k">≤€240k</span>');
+      if (d.price_band_190k || d.band === '190k' || (d.price_eur != null && d.price_eur <= 190000)) {
+        badges.push('<span class="badge band-190k">≤€190k</span>');
+      } else if (d.price_eur != null && d.price_eur <= 240000) {
+        badges.push('<span class="badge band-240k">>€190k</span>');
       }
       if (d.roi_status) badges.push(`<span class="badge ${d.roi_status}">${d.roi_status.replace('roi_', 'ROI ')}</span>`);
       if (d.parish_filter) badges.push(`<span class="badge parish">${d.parish_filter}</span>`);
@@ -308,7 +308,7 @@
 
   Promise.all([
     fetch('data/listings.json').then(r => r.json()),
-    fetch('data/roi-results.json?v=20260924-turnkey').then(r => r.ok ? r.json() : null).catch(() => null)
+    fetch('data/roi-results.json?v=20261001-190k').then(r => r.ok ? r.json() : null).catch(() => null)
   ])
     .then(([data, roi]) => {
       listings = data;

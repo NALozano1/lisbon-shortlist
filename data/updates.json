@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-10-01",
+    "title": "Preapproval reband → ≤€190k",
+    "body": "Mortgage preapproval now €190k (was €170k). Hard search cap ≤€190k; dropped ≤€240k stretch as default UI. Recount: ready ≤€190k = 10; ready >€190k (hidden by default) = 18; obras = 5. Results + Shortlist default filters: Ready only + ≤€190k. Fresh scrape for new ≤€190k stock in progress."
+  },
+  {
+    "date": "2026-10-01",
     "title": "Agent follow-up chases",
     "body": "No new estate-agent replies since Andreia (CB City) 14 Sep. Sent stock follow-ups to Siimgroup Beato, Pata Brava, CB Seed, ERA Laranjeiras, and C21 João. Skipped CB City (Andréa owns the search). Sep 30 routine had failed; catch-up chase after 2+ working days since 25 Sep."
   },

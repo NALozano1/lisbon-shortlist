@@ -5,7 +5,7 @@ Living shortlist, outreach tracker, and **ROI calculator (draft — pending audi
 **Live:** https://nalozano1.github.io/lisbon-shortlist/
 
 ## Pages
-- `index.html` — shortlist + map (`data/listings.json`) — filter chips include **≤€170k** / **≤€240k**
+- `index.html` — shortlist + map (`data/listings.json`) — filter chips include **≤€190k** (preapproval; over-budget stretch hidden by default)**
 - `pipeline.html` — outreach + **ROI status** (`data/pipeline.json`, `data/updates.json`, `data/roi-drafts.json`)
 - `roi.html` — labelled STR/LTR ROI calculator (`data/roi-model.json`, `roi.js`), explicitly pre-tax and pending full audit
 - `results.html` — ranked batch ROI for all 25 (`data/roi-results.json`); CoC + 40y mortgage coverage chips; mobile stacked cards
@@ -23,7 +23,7 @@ Edit `data/listings.json` — append an object (or bump `rank`). Useful fields:
 | `agency`, `phone`, `url` | Contact |
 | `notes` | One short line |
 | `status_chips` | e.g. `["NEW"]`, `["price-cut"]`, `["170k"]` |
-| `band` | `"170k"` or `"240k"` (filter chips) |
+| `band` | `"190k"` or `"240k"`; also `price_band_190k` boolean |
 | `roi_status` | `roi_pending` \| `roi_draft` \| `roi_audited` |
 | `al` | `true` if AL licence |
 | `lat`, `lng` | Map pin |
