@@ -1,8 +1,18 @@
 [
   {
     "date": "2026-10-01",
-    "title": "Preapproval reband → ≤€190k",
-    "body": "Mortgage preapproval now €190k (was €170k). Hard search cap ≤€190k; dropped ≤€240k stretch as default UI. Recount: ready ≤€190k = 10; ready >€190k (hidden by default) = 18; obras = 5. Results + Shortlist default filters: Ready only + ≤€190k. Fresh scrape for new ≤€190k stock in progress."
+    "title": "≤€190k band + agent outreach",
+    "body": "Mortgage band set to ≤€190k. Analysis emailed to Alex. First-contact emails sent on #12,#2,#11,#9,#18,#29."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Preapproval reband → ≤€190k + 2 new ready",
+    "body": "Mortgage preapproval now €190k (was €170k). Hard search cap ≤€190k; ≤€240k stretch hidden by default. Recount now: ready ≤€190k = 12; ready >€190k = 18; obras = 5. Imovirtual scrape +2 NEW ready AL: Charmoso estúdio Socorro/SMM €180k; T0 Remodelado Alfama €187k. Seen 52→54; skipped 21 dups; Idealista DataDome (no bypass). No agent emails this run."
+  },
+  {
+    "date": "2026-10-01",
+    "title": "Agent follow-up chases",
+    "body": "No new estate-agent replies since Andreia (CB City) 14 Sep. Sent stock follow-ups to Siimgroup Beato, Pata Brava, CB Seed, ERA Laranjeiras, and C21 João. Skipped CB City (Andréa owns the search). Sep 30 routine had failed; catch-up chase after 2+ working days since 25 Sep."
   },
   {
     "date": "2026-10-01",

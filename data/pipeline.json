@@ -206,5 +206,56 @@
       33
     ],
     "roi_status": "roi_draft"
+  },
+  {
+    "id": "new-ready-20261001",
+    "agency": "New ready-to-let finds (this run)",
+    "related": "Charmoso estúdio em Lisboa com licença A, T0 Remodelado em ALFAMA",
+    "stage": "notcontacted",
+    "stage_label": "Not contacted",
+    "last_action": "2026-10-01",
+    "last_action_note": "Added by expand+dedup run — do not email agents this run",
+    "bullets": [
+      "2 new ready-to-let tourist-core ≤€190k",
+      "Seen-cache dedup active; Idealista skipped if blocked"
+    ],
+    "listing_ranks": [
+      34,
+      35
+    ],
+    "roi_status": "roi_draft"
+  },
+  {
+    "id": "outreach-190k-2026-10-01",
+    "title": "≤€190k top picks — first contact sent",
+    "stage": "contacted",
+    "as_of": "2026-10-01",
+    "emails_sent": [
+      {
+        "to": "nacoes@century21.pt",
+        "listing": "#12 Martim Moniz AL"
+      },
+      {
+        "to": "realtyart@century21.pt",
+        "listing": "#2 Portas do Sol AL"
+      },
+      {
+        "to": "nacoes@century21.pt + carlos.silvestre@century21.pt",
+        "listing": "#11 Outeirinho"
+      },
+      {
+        "to": "mariajoao.sousa@predimed.pt",
+        "listing": "#9 Bica"
+      },
+      {
+        "to": "geral@tgrealestate.pt",
+        "listing": "#18 Castelo Picão"
+      },
+      {
+        "to": "metro@remax.pt",
+        "listing": "#29 SMM AL"
+      }
+    ],
+    "last_action_note": "Warm availability asks sent 1 Oct PT from alex.lozano@agentmail.to; analysis emailed to NunoAlexandreLozano@gmail.com"
   }
 ]
