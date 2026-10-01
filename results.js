@@ -88,7 +88,7 @@
         <span class="shortlet-label">Short-let:</span>
         <strong>${shortletText}</strong>
       </div>
-      <p class="shortlet-detail">Pays ~${fmtEur(mid.income_monthly)}/mo after all STR costs · mortgage ~${fmtEur(r.mortgage_monthly_eur || mid.mortgage_monthly_40y)}/mo (40y)</p>
+      <p class="shortlet-detail">Pays ~${fmtEur(mid.income_monthly)}/mo after all STR costs · mortgage ~${fmtEur(r.mortgage_monthly_eur || mid.mortgage_monthly_40y)}/mo</p>
       <p class="longlet-line">Long-let: <strong class="${longlet.className}">${longletText}</strong></p>
       <p class="cash-needed">Cash needed ~${fmtCash(r.cash_in_eur)}</p>
       ${badges(r) ? `<div class="badges">${badges(r)}</div>` : ''}
@@ -133,7 +133,7 @@
     render();
   });
 
-  fetch('data/roi-results.json?v=20261001-190k')
+  fetch('data/roi-results.json?v=0.1.7-bankquote')
     .then((r) => {
       if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
       return r.json();

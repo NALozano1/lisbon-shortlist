@@ -1,6 +1,6 @@
 (() => {
-  const LS_KEY = 'lisbon-roi-inputs-v015';
-  const CACHE_BUST = '0.1.5b';
+  const LS_KEY = 'lisbon-roi-inputs-v017';
+  const CACHE_BUST = '0.1.7';
   const inputsEl = document.getElementById('inputs');
   const outputsEl = document.getElementById('outputs');
   const tableBody = document.querySelector('#assumptions-table tbody');
@@ -41,6 +41,17 @@
     const modes = o.modes;
     if (!modes || !modes.length) return true;
     return modes.includes(mode);
+  }
+
+  // Bank quote constants (Alex Lozano 2026-10-01)
+  // €690/month on €190,000 loan — scale linearly for other loan amounts
+  const BANK_QUOTE_LOAN_EUR = 190000;
+  const BANK_QUOTE_PAYMENT_EUR = 690;
+
+  function bankQuoteMonthly(loanEur) {
+    const loan = Number(loanEur) || 0;
+    if (loan <= 0) return 0;
+    return BANK_QUOTE_PAYMENT_EUR * (loan / BANK_QUOTE_LOAN_EUR);
   }
 
   function amortMonthly(principal, annualRatePct, years) {
@@ -122,7 +133,7 @@
         maint +
         gross * managementPct;
       const noi = gross - opexOther;
-      const mortMo = amortMonthly(loan, rate, term);
+      const mortMo = bankQuoteMonthly(loan);
       const mortYr = mortMo * 12;
       const cashFlow = noi - mortYr;
       const cashFlowAfterIrs = cashFlow - Math.max(noi, 0) * irsPct;
@@ -174,7 +185,7 @@
       maint +
       gross * managementPct;
     const noi = gross - platform - cleaningAnnual - opexOther;
-    const mortMo = amortMonthly(loan, rate, term);
+    const mortMo = bankQuoteMonthly(loan);
     const mortYr = mortMo * 12;
     const cashFlow = noi - mortYr;
     const cashFlowAfterIrs = cashFlow - Math.max(noi, 0) * irsPct;
