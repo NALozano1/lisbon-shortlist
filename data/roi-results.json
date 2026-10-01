@@ -2,7 +2,7 @@
   "model_version": "0.1.6",
   "as_of": "2026-10-01",
   "timezone": "Europe/Lisbon",
-  "generated_at": "2026-09-24T16:18:51+01:00",
+  "generated_at": "2026-10-01T17:31:19+01:00",
   "method_note": "Batch mirrors live roi.js compute + data/roi-model.json defaults (0.1.6; mortgage term 40y). Property-level AirDNA Rentalizer was NOT available — validation is parish/city comps (AirDNA Lisbon TTM thru Jul 2026: ~65% occ / $147 ADR / ~$23.1k avg; BNBCalc size ladder × GuestFavorites parish multipliers; Idealista LTR asking mids 2026-09-24). No bank personal details. Pre-IRS / pre-AL-tax; IMT illustrative Tabela III secondary proxy. STR path on AL=false listings assumes licence obtainable/already licensed — regulatory risk.",
   "assumptions_shared": {
     "ltv_pct": 70,
@@ -37,7 +37,7 @@
     "idealista_ltr": "/workspace/seller-str-comps/lisbon-ltr-rents-2026-09-24.md",
     "underwriting": "/workspace/lisbon-rent-underwriting-2026-09.md"
   },
-  "count": 33,
+  "count": 35,
   "results": [
     {
       "listing_rank": 1,
@@ -108,7 +108,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 14,
+      "rank_str_mid_coc": 15,
       "price_band_190k": false
     },
     {
@@ -180,7 +180,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 19,
+      "rank_str_mid_coc": 20,
       "price_band_190k": true
     },
     {
@@ -254,7 +254,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 17,
+      "rank_str_mid_coc": 18,
       "price_band_190k": false
     },
     {
@@ -327,7 +327,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 28,
+      "rank_str_mid_coc": 30,
       "price_band_190k": false
     },
     {
@@ -473,7 +473,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 15,
+      "rank_str_mid_coc": 16,
       "price_band_190k": false
     },
     {
@@ -619,7 +619,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 29,
+      "rank_str_mid_coc": 31,
       "price_band_190k": false
     },
     {
@@ -691,7 +691,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 21,
+      "rank_str_mid_coc": 22,
       "price_band_190k": true
     },
     {
@@ -764,7 +764,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 23,
+      "rank_str_mid_coc": 24,
       "price_band_190k": false
     },
     {
@@ -980,7 +980,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 33,
+      "rank_str_mid_coc": 35,
       "price_band_190k": false
     },
     {
@@ -1052,7 +1052,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 24,
+      "rank_str_mid_coc": 25,
       "price_band_190k": false
     },
     {
@@ -1124,7 +1124,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 32,
+      "rank_str_mid_coc": 34,
       "price_band_190k": false
     },
     {
@@ -1196,7 +1196,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 31,
+      "rank_str_mid_coc": 33,
       "price_band_190k": false
     },
     {
@@ -1268,7 +1268,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 20,
+      "rank_str_mid_coc": 21,
       "price_band_190k": false
     },
     {
@@ -1486,7 +1486,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 25,
+      "rank_str_mid_coc": 26,
       "price_band_190k": true
     },
     {
@@ -1632,7 +1632,7 @@
       "high_uncertainty_reno": true,
       "ready_to_let": false,
       "needs_works": true,
-      "rank_str_mid_coc": 16,
+      "rank_str_mid_coc": 17,
       "price_band_190k": true
     },
     {
@@ -2141,7 +2141,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 18,
+      "rank_str_mid_coc": 19,
       "price_band_190k": true
     },
     {
@@ -2213,7 +2213,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 26,
+      "rank_str_mid_coc": 27,
       "price_band_190k": false
     },
     {
@@ -2285,7 +2285,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 22,
+      "rank_str_mid_coc": 23,
       "price_band_190k": true
     },
     {
@@ -2357,7 +2357,7 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 27,
+      "rank_str_mid_coc": 28,
       "price_band_190k": false
     },
     {
@@ -2429,8 +2429,151 @@
       "high_uncertainty_reno": false,
       "ready_to_let": true,
       "needs_works": false,
-      "rank_str_mid_coc": 30,
+      "rank_str_mid_coc": 32,
       "price_band_190k": false
+    },
+    {
+      "listing_rank": 34,
+      "title": "Charmoso estúdio em Lisboa com licença AL",
+      "price_eur": 180000.0,
+      "area_m2": 19.37,
+      "typology_raw": "T0",
+      "typology": "T0",
+      "area_parish": "Socorro / Santa Maria Maior",
+      "parish_bucket": "smm",
+      "al": true,
+      "band": "190k",
+      "url": "https://www.imovirtual.com/pt/anuncio/charmoso-estudio-em-lisboa-com-licenca-al-ID1iX8R",
+      "loan_eur": 126000.0,
+      "ltv_effective_pct": 70.0,
+      "fitout_eur": 6500.0,
+      "cash_in_eur": 67736.0,
+      "imt_eur": 3540.0,
+      "closing_eur": 7236.0,
+      "mortgage_monthly_eur": 526.6,
+      "mortgage_term_years": 40,
+      "str_cons": {
+        "adr": 95,
+        "occ_pct": 55,
+        "gross": 19071.25,
+        "noi": 9598.43,
+        "cf": 3279.21,
+        "coc_pct": 4.8,
+        "cap_pct": 5.3,
+        "mortgage_monthly_40y": 526.6,
+        "income_monthly": 799.87,
+        "coverage_ratio": 1.52,
+        "coverage_flag": "comfortable"
+      },
+      "str_mid": {
+        "adr": 110,
+        "occ_pct": 65,
+        "gross": 26097.5,
+        "noi": 14504.23,
+        "cf": 8185.0,
+        "coc_pct": 12.1,
+        "cap_pct": 8.1,
+        "mortgage_monthly_40y": 526.6,
+        "income_monthly": 1208.69,
+        "coverage_ratio": 2.3,
+        "coverage_flag": "comfortable"
+      },
+      "ltr": {
+        "monthly_rent": 850.0,
+        "gross": 9350.0,
+        "noi": 7485.5,
+        "cf": 1166.27,
+        "coc_pct": 1.7,
+        "cap_pct": 4.2,
+        "mortgage_monthly_40y": 526.6,
+        "income_monthly": 623.79,
+        "coverage_ratio": 1.18,
+        "coverage_flag": "tight"
+      },
+      "validation_notes": [
+        "STR mid gross €26,098 within/near expected band €24,000–27,000",
+        "AL=true on listing — STR path assumes operating/transferable licence (verify RNAL)",
+        "LTR rent €850/mo — Idealista asking mid 2026-09-24"
+      ],
+      "financeable_loan_cap": true,
+      "price_band_170k": false,
+      "price_band_190k": true,
+      "str_mid_cf_negative": false,
+      "high_uncertainty_reno": false,
+      "ready_to_let": true,
+      "needs_works": false
+    },
+    {
+      "listing_rank": 35,
+      "title": "T0 Remodelado em ALFAMA",
+      "price_eur": 187000.0,
+      "area_m2": 16.0,
+      "typology_raw": "T0",
+      "typology": "T0",
+      "area_parish": "Alfama / Santa Maria Maior",
+      "parish_bucket": "smm",
+      "al": true,
+      "band": "190k",
+      "url": "https://www.imovirtual.com/pt/anuncio/t0-remodelado-em-alfama-ID1iVhJ",
+      "loan_eur": 130900.0,
+      "ltv_effective_pct": 70.0,
+      "fitout_eur": 18000.0,
+      "cash_in_eur": 81777.23,
+      "imt_eur": 3895.83,
+      "closing_eur": 7677.23,
+      "mortgage_monthly_eur": 547.08,
+      "mortgage_term_years": 40,
+      "str_cons": {
+        "adr": 95,
+        "occ_pct": 55,
+        "gross": 19071.25,
+        "noi": 9598.43,
+        "cf": 3033.46,
+        "coc_pct": 3.7,
+        "cap_pct": 5.1,
+        "mortgage_monthly_40y": 547.08,
+        "income_monthly": 799.87,
+        "coverage_ratio": 1.46,
+        "coverage_flag": "comfortable"
+      },
+      "str_mid": {
+        "adr": 110,
+        "occ_pct": 65,
+        "gross": 26097.5,
+        "noi": 14504.23,
+        "cf": 7939.25,
+        "coc_pct": 9.7,
+        "cap_pct": 7.8,
+        "mortgage_monthly_40y": 547.08,
+        "income_monthly": 1208.69,
+        "coverage_ratio": 2.21,
+        "coverage_flag": "comfortable"
+      },
+      "ltr": {
+        "monthly_rent": 850.0,
+        "gross": 9350.0,
+        "noi": 7485.5,
+        "cf": 920.52,
+        "coc_pct": 1.1,
+        "cap_pct": 4.0,
+        "mortgage_monthly_40y": 547.08,
+        "income_monthly": 623.79,
+        "coverage_ratio": 1.14,
+        "coverage_flag": "tight"
+      },
+      "validation_notes": [
+        "STR mid gross €26,098 within/near expected band €24,000–27,000",
+        "AL=true on listing — STR path assumes operating/transferable licence (verify RNAL)",
+        "LTR rent €850/mo — Idealista asking mid 2026-09-24",
+        "HIGH UNCERTAINTY: reno/obras fit-out €18,000 (illustrative €15–25k band; not a contractor quote)"
+      ],
+      "financeable_loan_cap": true,
+      "price_band_170k": false,
+      "price_band_190k": true,
+      "str_mid_cf_negative": false,
+      "high_uncertainty_reno": true,
+      "ready_to_let": true,
+      "needs_works": false
     }
   ]
 }

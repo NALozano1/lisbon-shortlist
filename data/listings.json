@@ -1531,5 +1531,99 @@
     "ready_to_let": true,
     "price_band_190k": false,
     "price_band_170k": false
+  },
+  {
+    "rank": 34,
+    "title": "Charmoso estúdio em Lisboa com licença AL",
+    "price_eur": 180000,
+    "area_m2": 19.37,
+    "typology": "T0",
+    "area_parish": "Socorro / Santa Maria Maior",
+    "parish_filter": "Socorro",
+    "agency": "eXp Portugal",
+    "phone": "+351211238770",
+    "url": "https://www.imovirtual.com/pt/anuncio/charmoso-estudio-em-lisboa-com-licenca-al-ID1iX8R",
+    "notes": "AL mentioned; Descubra este encantador estúdio de 19,37 m² situado numa das zonas mais tradicionais de Lisboa. O imóvel, com licença de AL, destaca-se pelo seu ambiente acolhedor, perfeito para ",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW",
+      "190k",
+      "AL"
+    ],
+    "al": true,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl4MTJxY2tvZXV0Ny1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.hfJd68RQmGvP4JhxLdhnekOxzDdWg3UozoRqs5XwewU/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVtMjQ1NTEzZWpiMDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.p1L_fLI8MxHPcOEMDUJFUokkqgDqytrlC49dgWeyjA8/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijh1YmxvMjc0cW1oMTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.qDCNNQB-c-uS_8ZwqAenu9iYbtkdmgYAnfj4opkbuTU/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjkzMTM2aXp4MTFmYTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.GdXooUzEZtGATao_TL2_JNtLARf5OoMBoc61J-DWr38/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd5bWZ3OHI5NmRoczMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.IMQPBgE4xF4i9ar0hO8ytc4SRt1OxK2qDBTngDXsEh4/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd2N3F3YXc0aTEzZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.84h0xiYtJPXlbmaIP6PE5iyRNDn0eJef-mRCEzaC0Ko/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im12aWF5cnBneGI4OTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.KyPJevvlGU5tz6-_Whaso39hRRwy1mGgKgmpFpZ57bM/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImMzd2txNjdncjh6ay1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.AcMV_ad0od8o46uwu91zoo5uZp65N99OorwxXm-5CDA/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdxanM4NGhwanpvczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1f1itpb1vflo5tR7KR82ifEcqHRzTQPlVgCsWbddK-E/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndndjBqMzdheGcwMzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.524r8eHa4VT5CiwrxSNiDe8y0HR067TjvJustfQk25w/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.7167,
+    "lng": -9.1333,
+    "coord_source": "listing",
+    "street": "Largo das Olarias",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/charmoso-estudio-em-lisboa-com-licenca-al-ID1iX8R"
+      }
+    ],
+    "band": "190k",
+    "price_band_190k": true,
+    "price_band_170k": false,
+    "roi_status": "computed",
+    "ready_to_let": true
+  },
+  {
+    "rank": 35,
+    "title": "T0 Remodelado em ALFAMA",
+    "price_eur": 187000,
+    "area_m2": 16.0,
+    "typology": "T0",
+    "area_parish": "Alfama / Santa Maria Maior",
+    "parish_filter": "Alfama",
+    "agency": "KW Ábaco",
+    "phone": "+351217920620",
+    "url": "https://www.imovirtual.com/pt/anuncio/t0-remodelado-em-alfama-ID1iVhJ",
+    "notes": "AL mentioned; T0 RENOVADO EM ALFAMA Descubra este encantador apartamento T0 no coração de Alfama. Uma oportunidade de investimento num dos bairros mais autênticos e emblemático de Lisboa, replet",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW",
+      "190k",
+      "AL"
+    ],
+    "al": true,
+    "photos": [
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdpenF5bXkzZDl4MTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ue6ohc-4-RjyKxBqmnFMCjvK_IKOFgFjqdqBOjbTRDs/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ3ZjgyaXo4Z3ZzZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.Oocf-rCrgvWZS1egsxMxzE2IrDq4rFYDa_b_To-5eu0/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE5cWVldXR3NDhlazItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.atr5lzi6wCm-TiYcPdlOtUnPSZQblZlwnaMa9sjEhFk/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndvNm9vdmVkZG1iMjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.TaEZQjhxve6seIaHGP1Qz2L89pvFDI0KBZLeuW3y0uE/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY4OW5xYmthZjVhci1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.WNxX4iszWFN2g4DzBFh0_eYtUI4N7fyvFPNbiCv8mx8/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBoOWNuY3AxOXppdS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.aON0ay0K_jYjUVABWHIM5lG4d2ejhJTlav9igA8u-TQ/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE0NzIyYjJsNnR4MjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.HRuARB0myEYOJ9-DnJDGxSvczm_rne8jdyYVQY4hnAY/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImpjYmg1cG43d2VqODItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DwPOJ3zMsvzyjlh_SEFB7jHXZNmCIzG3A7sJQraQmy4/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImY0bXp3ejlwZGdldC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.BQ-hN-HZAwwCMm9cnI5M7cV8BccXDLxsNR-_hg3yXF4/image;s=2048x1536;q=80",
+      "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndycG01bXFnYzhrMzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.NuzHATX1GWSnbs6Qc13pf4RmxUPvt2tz8E9O-EsR658/image;s=2048x1536;q=80"
+    ],
+    "lat": 38.71234,
+    "lng": -9.12891,
+    "coord_source": "listing",
+    "street": "Largo Peneireiro",
+    "portals": [
+      {
+        "name": "Imovirtual",
+        "url": "https://www.imovirtual.com/pt/anuncio/t0-remodelado-em-alfama-ID1iVhJ"
+      }
+    ],
+    "band": "190k",
+    "price_band_190k": true,
+    "price_band_170k": false,
+    "roi_status": "computed",
+    "ready_to_let": true
   }
 ]
