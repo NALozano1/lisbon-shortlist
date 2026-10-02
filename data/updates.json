@@ -6,6 +6,11 @@
   },
   {
     "date": "2026-10-01",
+    "title": "ROI 0.1.7 — bank quote mortgage",
+    "body": "Mortgage payment now uses Alex bank quote (€690/mo on €190k loan, scaled linearly) instead of 4%/40y amortisation formula. All coverage ratios and leftover-after-mortgage recalculated. Example #12 Martim Moniz: payment €512→€445/mo, LTR coverage 1.22×→1.40× (tight→comfortable). Formula: payment = 690 × (loan / 190000)."
+  },
+  {
+    "date": "2026-10-01",
     "title": "+2 NEW ready ≤€190k (AL) after scrape",
     "body": "Imovirtual newest-first SMM+Misericórdia ≤€190k: +#34 Charmoso estúdio Socorro/SMM €180k AL (eXp, 19.37m²); +#35 T0 Remodelado Alfama €187k AL (KW Ábaco, 16m²). Seen 52→54; skipped 21 dups; Idealista DataDome (no bypass). Recount: ready ≤€190k=12, ready >€190k=18, obras=5. Results default Ready+≤€190k."
   },
