@@ -1625,5 +1625,215 @@
     "price_band_170k": false,
     "roi_status": "computed",
     "ready_to_let": true
+  },
+  {
+    "rank": 36,
+    "title": "RE/MAX Prestige T1 remodelado Escadinhas dos Remédios €170k",
+    "price_eur": 170000,
+    "area_m2": 24.0,
+    "typology": "T1",
+    "area_parish": "Alfama / Santa Maria Maior",
+    "parish_filter": "Alfama",
+    "agency": "RE/MAX Prestige — Sónia Pais",
+    "phone": "+351 964 061 361",
+    "url": "https://www.idealista.pt/imovel/35373273/",
+    "notes": "NEW Idealista 2026-10-02; remodelado in 2-floor remodelado building; tourist-core Alfama; distinct from #1 (45m²/€215k same street/agent). AL not stated. Bom estado.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [],
+    "lat": 38.71285,
+    "lng": -9.12584,
+    "coord_source": "approx_street",
+    "street": "Escadinhas dos Remédios",
+    "portals": [
+      {
+        "name": "Idealista",
+        "url": "https://www.idealista.pt/imovel/35373273/"
+      }
+    ],
+    "band": "190k",
+    "roi_status": "pending",
+    "ready_to_let": true,
+    "price_band_190k": true,
+    "price_band_170k": true
+  },
+  {
+    "rank": 37,
+    "title": "RE/MAX Yes T0 remodelado Travessa Chão do Loureiro",
+    "price_eur": 175000,
+    "area_m2": 20.0,
+    "typology": "T0",
+    "area_parish": "Alfama / Santa Maria Maior",
+    "parish_filter": "Alfama",
+    "agency": "RE/MAX Yes",
+    "phone": null,
+    "url": "https://www.idealista.pt/imovel/35370206/",
+    "notes": "NEW Idealista 2026-10-02; totally remodelado+mobilado+equipped kitchen; between Castelo and Sé; pronto a habitar. Phone reveal-gated on Idealista.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [],
+    "lat": 38.7115,
+    "lng": -9.1325,
+    "coord_source": "approx_street",
+    "street": "Travessa do Chão do Loureiro",
+    "portals": [
+      {
+        "name": "Idealista",
+        "url": "https://www.idealista.pt/imovel/35370206/"
+      }
+    ],
+    "band": "190k",
+    "roi_status": "pending",
+    "ready_to_let": true,
+    "price_band_190k": true,
+    "price_band_170k": false
+  },
+  {
+    "rank": 38,
+    "title": "RE/MAX Trilogy T0 loft Mouraria Marquês Ponte de Lima",
+    "price_eur": 163000,
+    "area_m2": 14.0,
+    "typology": "T0",
+    "area_parish": "Mouraria / Santa Maria Maior",
+    "parish_filter": "Mouraria",
+    "agency": "RE/MAX Trilogy — Judite Alvaleide",
+    "phone": "+351 966 214 574",
+    "url": "https://remax.pt/pt/imoveis/venda-apartamento-t0-lisboa-santa-maria-maior/126891031-4",
+    "notes": "NEW Remax 2026-10-02; price-cut from €169k; remodelado loft, AC, kitchenette; tiny 14m² úteis 13; R/C Mouraria near Martim Moniz. STR-capable location, size risk.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW",
+      "price-cut"
+    ],
+    "al": false,
+    "photos": [],
+    "lat": 38.7162,
+    "lng": -9.1365,
+    "coord_source": "approx_street",
+    "street": "Rua Marquês Ponte de Lima",
+    "portals": [
+      {
+        "name": "RE/MAX",
+        "url": "https://remax.pt/pt/imoveis/venda-apartamento-t0-lisboa-santa-maria-maior/126891031-4"
+      }
+    ],
+    "band": "190k",
+    "roi_status": "pending",
+    "ready_to_let": true,
+    "price_band_190k": true,
+    "price_band_170k": true
+  },
+  {
+    "rank": 39,
+    "title": "KW Ábaco T0 renovado Beco do Loureiro Alfama",
+    "price_eur": 187000,
+    "area_m2": 20.0,
+    "typology": "T0",
+    "area_parish": "Alfama / Santa Maria Maior",
+    "parish_filter": "Alfama",
+    "agency": "KW Ábaco",
+    "phone": "+351 910 206 130",
+    "url": "https://www.idealista.pt/imovel/35362798/",
+    "notes": "NEW Idealista 2026-10-02; T0 renovado Alfama; same agency/price as #35 but different street (Beco do Loureiro vs Largo Peneireiro) and larger (20 vs 16m²). Confirm not a twin/repost.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [],
+    "lat": 38.712,
+    "lng": -9.1305,
+    "coord_source": "approx_street",
+    "street": "Beco do Loureiro 1",
+    "portals": [
+      {
+        "name": "Idealista",
+        "url": "https://www.idealista.pt/imovel/35362798/"
+      }
+    ],
+    "band": "190k",
+    "roi_status": "pending",
+    "ready_to_let": true,
+    "price_band_190k": true,
+    "price_band_170k": false
+  },
+  {
+    "rank": 40,
+    "title": "C21 Nações T0 Mouraria/Martim Moniz €175k",
+    "price_eur": 175000,
+    "area_m2": 28.0,
+    "typology": "T0",
+    "area_parish": "Mouraria - Castelo / Santa Maria Maior",
+    "parish_filter": "Mouraria",
+    "agency": "Century 21 Nações",
+    "phone": "+351 933 259 228",
+    "url": "https://www.idealista.pt/imovel/35332205/",
+    "notes": "NEW Idealista 2026-10-02; 28m² near Martim Moniz metro; listed bom estado (not obras). Confirm photos/fit-out before chase. Phone = known C21 Nações V mobile from #12.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW"
+    ],
+    "al": false,
+    "photos": [],
+    "lat": 38.7165,
+    "lng": -9.1358,
+    "coord_source": "approx_parish",
+    "street": null,
+    "portals": [
+      {
+        "name": "Idealista",
+        "url": "https://www.idealista.pt/imovel/35332205/"
+      }
+    ],
+    "band": "190k",
+    "roi_status": "pending",
+    "ready_to_let": true,
+    "price_band_190k": true,
+    "price_band_170k": false
+  },
+  {
+    "rank": 41,
+    "title": "VS Brothers T0 Campolide remodelado com AL €150k",
+    "price_eur": 150000,
+    "area_m2": 15.0,
+    "typology": "T0",
+    "area_parish": "Campolide",
+    "parish_filter": "Campolide",
+    "agency": "VS Brothers Real Estate",
+    "phone": null,
+    "url": "https://www.idealista.pt/imovel/35365315/",
+    "notes": "NEW Idealista 2026-10-02; secondary parish (not tourist-core) but currently operating AL; remodelado ~1.5y; common patio. Twin Idealista 35365924 same price/size. LTR/STR backup outlier.",
+    "status": "NEW live",
+    "status_chips": [
+      "NEW",
+      "secondary"
+    ],
+    "al": true,
+    "photos": [],
+    "lat": 38.7265,
+    "lng": -9.1635,
+    "coord_source": "approx_parish",
+    "street": "Rua de Campolide",
+    "portals": [
+      {
+        "name": "Idealista",
+        "url": "https://www.idealista.pt/imovel/35365315/"
+      },
+      {
+        "name": "Idealista",
+        "url": "https://www.idealista.pt/imovel/35365924/"
+      }
+    ],
+    "band": "190k",
+    "roi_status": "pending",
+    "ready_to_let": true,
+    "price_band_190k": true,
+    "price_band_170k": true
   }
 ]

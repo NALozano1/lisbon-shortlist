@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-10-01T17:31:19+01:00",
-  "count": 54,
+  "updated": "2026-10-02T11:30:00+01:00",
+  "count": 60,
   "listings": {
     "https://remax.pt/pt/imoveis/venda-apartamento-t1-lisboa-santa-maria-maior/123751650-19": {
       "url": "https://remax.pt/pt/imoveis/venda-apartamento-t1-lisboa-santa-maria-maior/123751650-19",
@@ -611,6 +611,66 @@
       "price_eur": 187000.0,
       "typology": "T0",
       "listing_rank": 35
+    },
+    "https://www.idealista.pt/imovel/35373273": {
+      "url": "https://www.idealista.pt/imovel/35373273/",
+      "canonical_url": "https://www.idealista.pt/imovel/35373273",
+      "portal": "idealista",
+      "portal_id": "35373273",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "outcome": "shortlisted",
+      "listing_rank": 36
+    },
+    "https://www.idealista.pt/imovel/35370206": {
+      "url": "https://www.idealista.pt/imovel/35370206/",
+      "canonical_url": "https://www.idealista.pt/imovel/35370206",
+      "portal": "idealista",
+      "portal_id": "35370206",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "outcome": "shortlisted",
+      "listing_rank": 37
+    },
+    "https://remax.pt/pt/imoveis/venda-apartamento-t0-lisboa-santa-maria-maior/126891031-4": {
+      "url": "https://remax.pt/pt/imoveis/venda-apartamento-t0-lisboa-santa-maria-maior/126891031-4",
+      "canonical_url": "https://remax.pt/pt/imoveis/venda-apartamento-t0-lisboa-santa-maria-maior/126891031-4",
+      "portal": "remax",
+      "portal_id": "126891031-4",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "outcome": "shortlisted",
+      "listing_rank": 38
+    },
+    "https://www.idealista.pt/imovel/35362798": {
+      "url": "https://www.idealista.pt/imovel/35362798/",
+      "canonical_url": "https://www.idealista.pt/imovel/35362798",
+      "portal": "idealista",
+      "portal_id": "35362798",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "outcome": "shortlisted",
+      "listing_rank": 39
+    },
+    "https://www.idealista.pt/imovel/35332205": {
+      "url": "https://www.idealista.pt/imovel/35332205/",
+      "canonical_url": "https://www.idealista.pt/imovel/35332205",
+      "portal": "idealista",
+      "portal_id": "35332205",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "outcome": "shortlisted",
+      "listing_rank": 40
+    },
+    "https://www.idealista.pt/imovel/35365315": {
+      "url": "https://www.idealista.pt/imovel/35365315/",
+      "canonical_url": "https://www.idealista.pt/imovel/35365315",
+      "portal": "idealista",
+      "portal_id": "35365315",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "outcome": "shortlisted",
+      "listing_rank": 41
     }
   }
 }
