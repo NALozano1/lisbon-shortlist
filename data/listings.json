@@ -1590,14 +1590,14 @@
     "agency": "KW Ábaco",
     "phone": "+351217920620",
     "url": "https://www.imovirtual.com/pt/anuncio/t0-remodelado-em-alfama-ID1iVhJ",
-    "notes": "AL mentioned; T0 RENOVADO EM ALFAMA Descubra este encantador apartamento T0 no coração de Alfama. Uma oportunidade de investimento num dos bairros mais autênticos e emblemático de Lisboa, replet",
-    "status": "NEW live",
+    "notes": "KW Ângela Barbosa confirmed 2 Oct 2026: NO AL license — listing only says potential for AL. Largo Peneireiro 16m² remodelado €187k (~€11.7k/m²).",
+    "status": "live · no AL (agent confirmed)",
     "status_chips": [
       "NEW",
       "190k",
-      "AL"
+      "no-AL"
     ],
-    "al": true,
+    "al": false,
     "photos": [
       "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdpenF5bXkzZDl4MTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ue6ohc-4-RjyKxBqmnFMCjvK_IKOFgFjqdqBOjbTRDs/image;s=2048x1536;q=80",
       "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ3ZjgyaXo4Z3ZzZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.Oocf-rCrgvWZS1egsxMxzE2IrDq4rFYDa_b_To-5eu0/image;s=2048x1536;q=80",
