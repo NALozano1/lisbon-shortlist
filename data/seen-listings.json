@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated": "2026-10-02T11:30:00+01:00",
-  "count": 60,
+  "updated": "2026-10-05T09:17:35+01:00",
+  "count": 67,
   "listings": {
     "https://remax.pt/pt/imoveis/venda-apartamento-t1-lisboa-santa-maria-maior/123751650-19": {
       "url": "https://remax.pt/pt/imoveis/venda-apartamento-t1-lisboa-santa-maria-maior/123751650-19",
@@ -19,7 +19,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1hK3A",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 2
     },
@@ -89,7 +89,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iJFC",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 9
     },
@@ -109,7 +109,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1hvGE",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 11
     },
@@ -119,7 +119,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iSCN",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 12
     },
@@ -179,7 +179,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iUO1",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 18
     },
@@ -189,7 +189,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1fu55",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 19
     },
@@ -209,7 +209,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1hqMo",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 21
     },
@@ -219,7 +219,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1h6NK",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 22
     },
@@ -229,7 +229,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1idgw",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 23
     },
@@ -249,7 +249,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iarR",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "listing_rank": 25
     },
@@ -281,7 +281,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1idgt",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "rejected",
       "reject_reason": "needs_works",
       "title": "Apartamento T1 para Remodelação | R/C - Beco do Imaginário, Lisboa"
@@ -292,7 +292,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1i5zv",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "rejected",
       "reject_reason": "needs_works",
       "title": "Oportunidade | T1 para obras em prédio com áreas comuns reabilitadas |"
@@ -303,7 +303,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iUJb",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "rejected",
       "title": "T1+1 para reabilitação total em Alfama",
       "price_eur": 189000.0,
@@ -429,7 +429,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iirk",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "rejected",
       "title": "Estúdio Totalmente Equipado e Mobilado em Alfama (junto à Estação S...",
       "price_eur": 185000.0,
@@ -453,7 +453,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iarU",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "rejected",
       "reject_reason": "needs_works",
       "title": "Apartamento T1 para venda"
@@ -464,7 +464,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iarL",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "rejected",
       "reject_reason": "needs_works",
       "title": "Apartamento T1 para venda"
@@ -488,7 +488,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1hQUH",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "rejected",
       "title": "Apartamento T0 para venda",
       "price_eur": 100000.0,
@@ -501,7 +501,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1hPdu",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "title": "Apartamento T1 para venda",
       "price_eur": 185000.0,
@@ -527,7 +527,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1hvGB",
       "first_seen": "2026-09-24",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "title": "Apartamento Remodelado -  Alfama",
       "price_eur": 190000.0,
@@ -592,7 +592,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iX8R",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "title": "Charmoso estúdio em Lisboa com licença AL",
       "price_eur": 180000.0,
@@ -605,7 +605,7 @@
       "portal": "imovirtual",
       "portal_id": "ID1iVhJ",
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-05",
       "outcome": "shortlisted",
       "title": "T0 Remodelado em ALFAMA",
       "price_eur": 187000.0,
@@ -671,6 +671,80 @@
       "last_seen": "2026-10-02",
       "outcome": "shortlisted",
       "listing_rank": 41
+    },
+    "https://idealista.pt/imovel/35373273": {
+      "url": "https://www.idealista.pt/imovel/35373273/",
+      "canonical_url": "https://idealista.pt/imovel/35373273",
+      "portal": "idealista",
+      "portal_id": "35373273",
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "outcome": "shortlisted",
+      "listing_rank": 36
+    },
+    "https://idealista.pt/imovel/35370206": {
+      "url": "https://www.idealista.pt/imovel/35370206/",
+      "canonical_url": "https://idealista.pt/imovel/35370206",
+      "portal": "idealista",
+      "portal_id": "35370206",
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "outcome": "shortlisted",
+      "listing_rank": 37
+    },
+    "https://idealista.pt/imovel/35362798": {
+      "url": "https://www.idealista.pt/imovel/35362798/",
+      "canonical_url": "https://idealista.pt/imovel/35362798",
+      "portal": "idealista",
+      "portal_id": "35362798",
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "outcome": "shortlisted",
+      "listing_rank": 39
+    },
+    "https://idealista.pt/imovel/35332205": {
+      "url": "https://www.idealista.pt/imovel/35332205/",
+      "canonical_url": "https://idealista.pt/imovel/35332205",
+      "portal": "idealista",
+      "portal_id": "35332205",
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "outcome": "shortlisted",
+      "listing_rank": 40
+    },
+    "https://idealista.pt/imovel/35365315": {
+      "url": "https://www.idealista.pt/imovel/35365315/",
+      "canonical_url": "https://idealista.pt/imovel/35365315",
+      "portal": "idealista",
+      "portal_id": "35365315",
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "outcome": "shortlisted",
+      "listing_rank": 41
+    },
+    "https://idealista.pt/imovel/35365924": {
+      "url": "https://www.idealista.pt/imovel/35365924/",
+      "canonical_url": "https://idealista.pt/imovel/35365924",
+      "portal": "idealista",
+      "portal_id": "35365924",
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "outcome": "shortlisted",
+      "listing_rank": 41
+    },
+    "https://imovirtual.com/pt/anuncio/t1-na-mouraria-id1ixul": {
+      "url": "https://www.imovirtual.com/pt/anuncio/t1-na-mouraria-ID1iXUl",
+      "canonical_url": "https://imovirtual.com/pt/anuncio/t1-na-mouraria-id1ixul",
+      "portal": "imovirtual",
+      "portal_id": "ID1iXUl",
+      "first_seen": "2026-10-05",
+      "last_seen": "2026-10-05",
+      "outcome": "rejected",
+      "title": "T1 na Mouraria",
+      "price_eur": 170000.0,
+      "typology": "T1",
+      "reject_reason": "under_full_renovation_visits_from_2026-11-26",
+      "note": "ZOME PR1ME T1 €170k Beco do Alegrete (Mouraria/Socorro); \"em fase de remodelação total\", visitas a partir 26 Nov; not ready-to-let now — recheck after completion"
     }
   }
 }
