@@ -1,5 +1,24 @@
 [
   {
+    "id": "str-managers-escadinhas",
+    "agency": "STR managers — Escadinhas #36 income quotes",
+    "related": "Escadinhas dos Remédios 7 · T1 €170k (#36)",
+    "stage": "replied",
+    "stage_label": "1 of 6 replied (Houst)",
+    "last_action": "2026-10-05",
+    "last_action_note": "Houst: studio €16,050/yr net to owner, T1 €18,500/yr",
+    "bullets": [
+      "Houst (Yuvraj Singh): studio ~€1,340/mo, T1 ~€1,540/mo after Houst 18%+IVA and platform fees",
+      "Net excludes utilities, condo, IMI, insurance, tax",
+      "Waiting: Lisbon Smart Stay, InLove, Smiling Properties, Alojoeste (sent 4 Oct)",
+      "Apartments Alfama bounced; RE/MAX Sónia visita ask sent 4 Oct, no reply yet"
+    ],
+    "listing_ranks": [
+      36
+    ],
+    "roi_status": null
+  },
+  {
     "id": "roi-model-v015",
     "agency": "ROI model 0.1.5-draft",
     "related": "Global STR + LTR assumptions — see roi.html",
